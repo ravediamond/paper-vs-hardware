@@ -1,0 +1,6 @@
+episode_index,policy,failure_mode,gemini_onset,claude_onset,offset_frames
+2,act,missed_grasp_retried,180,174,6
+18,smolvla,missed_grasp,349,239,110
+30,smolvla_vlacpp_fa,wrong_object,201,200,1
+36,smolvla_vlacpp_fa,missed_grasp,418,129,289
+66,turbovla_v2,wrong_object,7,10,-3

@@ -3,6 +3,7 @@
 Posts:
 - https://shissorobotics.com/blog/2026/10/23/paper-vs-hardware-robometer/
 - https://shissorobotics.com/blog/2026/10/16/judging-a-rollout-the-zero-false-positive-rule/
+- https://shissorobotics.com/blog/2026/10/26/audit-your-labels-where-they-matter/
 
 On the site: shissorobotics.com result 7.
 

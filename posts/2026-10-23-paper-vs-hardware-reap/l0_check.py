@@ -32,5 +32,10 @@ check("v2 caught (of 8, median of seeds)", med("risk_logistic:true", "caught"), 
 check("v2 false interventions (of 42, median of seeds)", med("risk_logistic:true", "fi"), 5, 0)
 check("v2 common horizon (frames)", v2["T_common"]["Put the blue bowl in the pink bowl."], 374, 0)
 
+sp = list(csv.DictReader(open(E / "onsets_spot_check.csv")))
+off = sorted(int(r["gemini_onset"]) - int(r["claude_onset"]) for r in sp)
+check("onset spot check, n (count)", len(sp), 5, 0)
+check("onset offset median, frames (recomputed from Gemini vs by-eye onsets)", statistics.median(off), 6, 0)
+check("largest onset offset, frames (recomputed)", max(off), 289, 0)
 print("L0", "PASS" if fails == 0 else f"FAIL ({fails})")
 sys.exit(1 if fails else 0)

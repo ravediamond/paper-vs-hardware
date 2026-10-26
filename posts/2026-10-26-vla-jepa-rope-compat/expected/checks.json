@@ -1,0 +1,68 @@
+{
+ "versions": {
+  "torch": "2.11.0",
+  "lerobot_file": "/src/src/lerobot/__init__.py",
+  "transformers": "5.5.4"
+ },
+ "load_s": 236.51472282409668,
+ "strict_keys": {
+  "missing_world_model": [],
+  "unexpected_world_model": [],
+  "missing_other": [
+   "model.qwen.model.model.language_model.embed_tokens.weight"
+  ],
+  "unexpected_other": [],
+  "predictor_tensors": 152,
+  "encoder_tensors": 587,
+  "value_mismatch_world_model": []
+ },
+ "causal_world_model_context": false,
+ "observation_delta_indices": [
+  0,
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28
+ ],
+ "peak_vram_mb_batch1": 6027.52001953125,
+ "parity_max_abs": 0.0,
+ "determinism_identical": true,
+ "legacy_l1_check_windows": [
+  1.239079236984253,
+  1.1413073539733887,
+  1.1930510997772217,
+  1.2562757730484009,
+  1.1630916595458984,
+  1.1701252460479736
+ ],
+ "copy_last_l1_check_windows": [
+  2.2442116737365723,
+  2.2549614906311035,
+  2.2323503494262695,
+  2.22723126411438,
+  2.2040069103240967,
+  2.2779839038848877
+ ],
+ "random_init_legacy_l1": [
+  1.9956824779510498,
+  2.0483832359313965,
+  2.008394956588745,
+  1.9701411724090576,
+  2.0111255645751953,
+  2.0163774490356445
+ ],
+ "rotary_sanity": {
+  "legacy_vs_fixed_max_abs": 7.58621951647932,
+  "fixed_pair_norm_preserved_max_err": 8.881784197001252e-16,
+  "fixed_pair_angle_vs_one_frequency_max_err": 1.3322676295501878e-15,
+  "legacy_pair_norm_preserved_max_err": 2.1938318795204745
+ },
+ "seconds_per_window": {
+  "median": 2.8647635159995843,
+  "max": 2.870635505998507,
+  "n": 4
+ }
+}

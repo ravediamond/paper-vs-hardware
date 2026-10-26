@@ -2,6 +2,7 @@
 
 Posts:
 - https://shissorobotics.com/blog/2026/09/29/three-policies-on-a-300-dollar-arm/
+- https://shissorobotics.com/blog/2026/10/26/p99-is-not-a-tail/
 
 ## Claim
 
