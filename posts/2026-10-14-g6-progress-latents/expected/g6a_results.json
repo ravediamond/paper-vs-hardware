@@ -1,0 +1,497 @@
+{
+ "protocol": "wm_train/G6A_PROTOCOL.md",
+ "device": "mps",
+ "rest_tol": 0.9634,
+ "n_train_end_not_at_rest": 7,
+ "cycles_hist": {
+  "1": 182
+ },
+ "bank_per_task": {
+  "['Put the blue bowl in the pink bowl.']": 75,
+  "['Put the pink bowl in the blue bowl.']": 82
+ },
+ "n_val_end_not_at_rest": 2,
+ "train_loeo_t2_auroc_all_candidates": {
+  "W1/both": 0.9924,
+  "W2-8x8/top/all": 0.9998,
+  "W2-8x8/both/all": 0.993,
+  "W2-16x16/top/all": 0.9998,
+  "W2-16x16/both/all": 0.9675,
+  "W2-8x8/top/work4": 0.9555,
+  "W2-8x8/top/work8": 0.9955,
+  "W2-8x8/top/work16": 0.9994,
+  "W2-8x8/top/work32": 0.9996,
+  "W2-8x8/both/work4": 0.9546,
+  "W2-8x8/both/work8": 0.9837,
+  "W2-8x8/both/work16": 0.989,
+  "W2-8x8/both/work32": 0.991,
+  "W2-16x16/top/work16": 0.9665,
+  "W2-16x16/top/work32": 0.9924,
+  "W2-16x16/top/work64": 0.9978,
+  "W2-16x16/top/work128": 0.999,
+  "W2-16x16/both/work16": 0.9492,
+  "W2-16x16/both/work32": 0.9731,
+  "W2-16x16/both/work64": 0.9748,
+  "W2-16x16/both/work128": 0.9729
+ },
+ "selected_N": {
+  "8x8/top": 32,
+  "8x8/both": 32,
+  "16x16/top": 128,
+  "16x16/both": 64
+ },
+ "train_loeo_t2_auroc": {
+  "W1/both": 0.9924,
+  "W2-8x8/top/all": 0.9998,
+  "W2-8x8/top/work32": 0.9996,
+  "W2-8x8/both/all": 0.993,
+  "W2-8x8/both/work32": 0.991,
+  "W2-16x16/top/all": 0.9998,
+  "W2-16x16/top/work128": 0.999,
+  "W2-16x16/both/all": 0.9675,
+  "W2-16x16/both/work64": 0.9748
+ },
+ "best_w2_variant_by_train": "W2-16x16/top/all",
+ "done_threshold_nearest": {
+  "W1/both": 9.1786,
+  "W2-8x8/top/all": 5.3808,
+  "W2-8x8/top/work32": 6.0646,
+  "W2-8x8/both/all": 7.1537,
+  "W2-8x8/both/work32": 8.5248,
+  "W2-16x16/top/all": 6.7051,
+  "W2-16x16/top/work128": 7.8253,
+  "W2-16x16/both/all": 9.2452,
+  "W2-16x16/both/work64": 11.0137
+ },
+ "variants": {
+  "W1/both": {
+   "nearest": {
+    "t1_median_spearman": -0.499,
+    "t1_ci95": [
+     -0.6087,
+     -0.383
+    ],
+    "t2_auroc": 0.9728,
+    "t2_ci95": [
+     0.9344,
+     0.9995
+    ],
+    "t2_secondary_midepisode_auroc": 0.9998,
+    "t2_secondary_ci95": [
+     0.9989,
+     1.0
+    ],
+    "done_threshold": 9.1786,
+    "tpr_at_threshold": 0.92,
+    "fpr_at_threshold": 0.1634,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.5019,
+    "t1_ci95": [
+     -0.5792,
+     -0.4271
+    ],
+    "t2_auroc": 0.9757,
+    "t2_ci95": [
+     0.9428,
+     0.9983
+    ],
+    "t2_secondary_midepisode_auroc": 0.9997,
+    "t2_secondary_ci95": [
+     0.9989,
+     1.0
+    ],
+    "done_threshold": 10.8561,
+    "tpr_at_threshold": 0.96,
+    "fpr_at_threshold": 0.1634,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-8x8/top/all": {
+   "nearest": {
+    "t1_median_spearman": -0.3806,
+    "t1_ci95": [
+     -0.5409,
+     -0.2861
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.999,
+    "t2_secondary_ci95": [
+     0.9968,
+     1.0
+    ],
+    "done_threshold": 5.3808,
+    "tpr_at_threshold": 0.76,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.371,
+    "t1_ci95": [
+     -0.5394,
+     -0.2883
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9991,
+    "t2_secondary_ci95": [
+     0.9968,
+     1.0
+    ],
+    "done_threshold": 5.8231,
+    "tpr_at_threshold": 0.76,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-8x8/top/work32": {
+   "nearest": {
+    "t1_median_spearman": -0.4213,
+    "t1_ci95": [
+     -0.6479,
+     -0.3093
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9989,
+    "t2_secondary_ci95": [
+     0.9962,
+     1.0
+    ],
+    "done_threshold": 6.0646,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.4217,
+    "t1_ci95": [
+     -0.635,
+     -0.3082
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9988,
+    "t2_secondary_ci95": [
+     0.9959,
+     1.0
+    ],
+    "done_threshold": 6.8283,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-8x8/both/all": {
+   "nearest": {
+    "t1_median_spearman": -0.3202,
+    "t1_ci95": [
+     -0.3517,
+     -0.2995
+    ],
+    "t2_auroc": 0.9807,
+    "t2_ci95": [
+     0.943,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 1.0,
+    "t2_secondary_ci95": [
+     1.0,
+     1.0
+    ],
+    "done_threshold": 7.1537,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.3258,
+    "t1_ci95": [
+     -0.3418,
+     -0.291
+    ],
+    "t2_auroc": 0.974,
+    "t2_ci95": [
+     0.9316,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 1.0,
+    "t2_secondary_ci95": [
+     1.0,
+     1.0
+    ],
+    "done_threshold": 7.585,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-8x8/both/work32": {
+   "nearest": {
+    "t1_median_spearman": -0.3508,
+    "t1_ci95": [
+     -0.3847,
+     -0.3084
+    ],
+    "t2_auroc": 0.9855,
+    "t2_ci95": [
+     0.9589,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 1.0,
+    "t2_secondary_ci95": [
+     1.0,
+     1.0
+    ],
+    "done_threshold": 8.5248,
+    "tpr_at_threshold": 0.88,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.3537,
+    "t1_ci95": [
+     -0.3694,
+     -0.314
+    ],
+    "t2_auroc": 0.9756,
+    "t2_ci95": [
+     0.9294,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 1.0,
+    "t2_secondary_ci95": [
+     0.9999,
+     1.0
+    ],
+    "done_threshold": 8.8541,
+    "tpr_at_threshold": 0.8,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-16x16/top/all": {
+   "nearest": {
+    "t1_median_spearman": -0.3865,
+    "t1_ci95": [
+     -0.5642,
+     -0.3057
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9986,
+    "t2_secondary_ci95": [
+     0.9953,
+     1.0
+    ],
+    "done_threshold": 6.7051,
+    "tpr_at_threshold": 0.8,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.3688,
+    "t1_ci95": [
+     -0.5636,
+     -0.283
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9987,
+    "t2_secondary_ci95": [
+     0.9959,
+     1.0
+    ],
+    "done_threshold": 7.179,
+    "tpr_at_threshold": 0.8,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-16x16/top/work128": {
+   "nearest": {
+    "t1_median_spearman": -0.4203,
+    "t1_ci95": [
+     -0.7332,
+     -0.3073
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9957,
+    "t2_secondary_ci95": [
+     0.9894,
+     0.9999
+    ],
+    "done_threshold": 7.8253,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.4202,
+    "t1_ci95": [
+     -0.7376,
+     -0.3087
+    ],
+    "t2_auroc": 1.0,
+    "t2_ci95": [
+     1.0,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 0.9967,
+    "t2_secondary_ci95": [
+     0.9912,
+     1.0
+    ],
+    "done_threshold": 8.4432,
+    "tpr_at_threshold": 0.88,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-16x16/both/all": {
+   "nearest": {
+    "t1_median_spearman": -0.3182,
+    "t1_ci95": [
+     -0.3651,
+     -0.281
+    ],
+    "t2_auroc": 0.9648,
+    "t2_ci95": [
+     0.9195,
+     0.997
+    ],
+    "t2_secondary_midepisode_auroc": 1.0,
+    "t2_secondary_ci95": [
+     1.0,
+     1.0
+    ],
+    "done_threshold": 9.2452,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0584,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.3273,
+    "t1_ci95": [
+     -0.3757,
+     -0.2933
+    ],
+    "t2_auroc": 0.9723,
+    "t2_ci95": [
+     0.9292,
+     1.0
+    ],
+    "t2_secondary_midepisode_auroc": 1.0,
+    "t2_secondary_ci95": [
+     1.0,
+     1.0
+    ],
+    "done_threshold": 9.5396,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0,
+    "n_neg_frames": 257
+   }
+  },
+  "W2-16x16/both/work64": {
+   "nearest": {
+    "t1_median_spearman": -0.3321,
+    "t1_ci95": [
+     -0.4193,
+     -0.2891
+    ],
+    "t2_auroc": 0.9605,
+    "t2_ci95": [
+     0.9064,
+     0.9973
+    ],
+    "t2_secondary_midepisode_auroc": 0.9999,
+    "t2_secondary_ci95": [
+     0.9996,
+     1.0
+    ],
+    "done_threshold": 11.0137,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0428,
+    "n_neg_frames": 257
+   },
+   "nearest3": {
+    "t1_median_spearman": -0.3446,
+    "t1_ci95": [
+     -0.388,
+     -0.2984
+    ],
+    "t2_auroc": 0.9647,
+    "t2_ci95": [
+     0.9178,
+     0.9984
+    ],
+    "t2_secondary_midepisode_auroc": 0.9999,
+    "t2_secondary_ci95": [
+     0.9996,
+     1.0
+    ],
+    "done_threshold": 11.7999,
+    "tpr_at_threshold": 0.84,
+    "fpr_at_threshold": 0.0428,
+    "n_neg_frames": 257
+   }
+  }
+ },
+ "stall": {
+  "variant": "W2-16x16/top/all",
+  "d_ref": 9.3395,
+  "W_s": 8.0,
+  "eps_frac_of_dref": 0.02,
+  "train_false_stall_rate": 0.3821656050955414,
+  "train_grid": {
+   "W2.0_eps0.0": 1.0,
+   "W2.0_eps0.01": 1.0,
+   "W2.0_eps0.02": 1.0,
+   "W2.0_eps0.05": 1.0,
+   "W2.0_eps0.1": 1.0,
+   "W3.0_eps0.0": 1.0,
+   "W3.0_eps0.01": 1.0,
+   "W3.0_eps0.02": 1.0,
+   "W3.0_eps0.05": 1.0,
+   "W3.0_eps0.1": 1.0,
+   "W5.0_eps0.0": 0.9936,
+   "W5.0_eps0.01": 1.0,
+   "W5.0_eps0.02": 1.0,
+   "W5.0_eps0.05": 1.0,
+   "W5.0_eps0.1": 1.0,
+   "W8.0_eps0.0": 0.3822,
+   "W8.0_eps0.01": 0.3822,
+   "W8.0_eps0.02": 0.3822,
+   "W8.0_eps0.05": 0.4076,
+   "W8.0_eps0.1": 0.4395
+  },
+  "val_false_stall_rate_indicative": 0.32
+ },
+ "t3_t4": "pending: the 81 gate rollouts are not on this machine (G6A_PROTOCOL.md); indicative only when run (8 failures with video)",
+ "t5": "see report (Orin)",
+ "seconds": 100
+}

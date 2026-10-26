@@ -1,0 +1,48 @@
+{
+  "gate": "G6b",
+  "date": "2026-10-18",
+  "device": "mps",
+  "overall_verdict": "FAIL",
+  "level1_w1": {
+    "t1_spearman_rho": -0.7214798662283717,
+    "t1_spearman_ci95": [
+      -0.793174501515958,
+      -0.6467315993909385
+    ],
+    "false_stall_rate": 0.32,
+    "g10_sanity_judge_auroc": 1.0,
+    "g10_sanity_judge_ci95": [
+      0.9999999999999999,
+      1.0
+    ],
+    "g10_sanity_gt_auroc": 0.9703225806451613,
+    "g10_sanity_gt_ci95": [
+      0.9356523569023568,
+      0.9938085273095594
+    ]
+  },
+  "level2_hjepa": {
+    "t1_spearman_rho": -0.7267904089722663,
+    "t1_spearman_ci95": [
+      -0.7901068954659819,
+      -0.587363695539943
+    ],
+    "false_stall_rate": 0.52,
+    "g10_sanity_judge_auroc": 0.9976608187134504,
+    "g10_sanity_judge_ci95": [
+      0.9914772727272727,
+      1.0
+    ],
+    "g10_sanity_gt_auroc": 0.9374193548387096,
+    "g10_sanity_gt_ci95": [
+      0.8845636924803592,
+      0.9783235129068463
+    ]
+  },
+  "gates_status": {
+    "pass_t1_monotonicity": false,
+    "pass_false_stall": false,
+    "pass_g10_sanity": true,
+    "overall_pass": false
+  }
+}
