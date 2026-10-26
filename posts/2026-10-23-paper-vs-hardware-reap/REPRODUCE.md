@@ -11,12 +11,12 @@ Expected: every line `ok`, last line `L0 PASS`. Tolerance: the rounding the post
 
 ## L1: rerun the analysis
 
-Pins: lerobot-jetson container + transformers 5.19.0; rollouts @ `bad1c8ea`; W1 weights (**private until gate 2**); onsets from Gemini 3.8 Flash in `expected/onsets.csv` (v1 only; v2 uses none).
+Pins: lerobot-jetson container + transformers 5.19.0; rollouts @ `bad1c8ea`; W1 weights (public since 2026-10-26); onsets from Gemini 3.8 Flash in `expected/onsets.csv` (v1 only; v2 uses none).
 
 ```bash
 python scripts/run_reap_v2.py --help
 ```
-Status: **pending visibility** (W1 weights private).
+Status: inputs public since 2026-10-26; the token-free rerun is **not yet re-verified** here.
 
 ## L2: rerun on hardware
 

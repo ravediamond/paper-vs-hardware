@@ -11,9 +11,9 @@ Expected: every line `ok`, last line `L0 PASS`. Each line says whether the numbe
 
 ## L1: rerun the analysis
 
-Pins: W1 / W2 weights (**private until gate 2**); rollouts `ravediamond/so101-bowls-policy-rollouts` @ `bad1c8ea`.
+Pins: W1 / W2 weights (public since 2026-10-26); rollouts `ravediamond/so101-bowls-policy-rollouts` @ `bad1c8ea`.
 
-`python scripts/g10_eval.py --help`. Status: **pending visibility**.
+`python scripts/g10_eval.py --help`. Status: inputs public since 2026-10-26 (W1 / W2′); the token-free rerun is **not yet re-verified** here.
 
 ## L2: rerun on hardware
 

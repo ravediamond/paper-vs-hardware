@@ -11,9 +11,9 @@ Expected: every line `ok`, last line `L0 PASS`. Each line says whether the numbe
 
 ## L1: rerun the analysis
 
-Pins: W2′ weights in `ravediamond/lewm-w2-so101-bowls` folder `w2prime/` (**private until gate 2**); DINOv2-S.
+Pins: W2′ weights in `ravediamond/lewm-w2-so101-bowls` folder `w2prime/` (public since 2026-10-26); DINOv2-S.
 
-`python scripts/g1_suite.py --help`. Status: **pending visibility**.
+`python scripts/g1_suite.py --help`. Status: inputs public since 2026-10-26 (W1 / W2′); the token-free rerun is **not yet re-verified** here.
 
 ## L2: rerun on hardware
 
