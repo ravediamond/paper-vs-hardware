@@ -1,0 +1,21 @@
+policy,device,task,trial_id,timestamp,latency_p50,latency_p99,latency_mean,control_hz_achieved,control_hz_jitter,vram_peak_mb_torch,vram_peak_mb_tegrastats,condition,success,failure_mode,rollout_path
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T103741,2026-09-29T10:37:41+02:00,5.8,111.85,7.7,29.12,9.76,1482,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T103907,2026-09-29T10:39:07+02:00,5.83,99.15,7.5,29.08,9.85,1455,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T104730,2026-09-29T10:47:30+02:00,5.86,105.5,7.81,29.14,9.36,1514,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T104838,2026-09-29T10:48:38+02:00,5.87,95.33,7.21,29.18,9.17,1459,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T105107,2026-09-29T10:51:07+02:00,5.86,97.09,7.26,29.18,9.19,1459,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T105209,2026-09-29T10:52:09+02:00,5.87,94.61,7.39,29.19,9.12,1459,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T105457,2026-09-29T10:54:57+02:00,5.86,92.02,7.28,29.2,9.01,1459,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T105553,2026-09-29T10:55:53+02:00,5.86,96.2,7.18,29.17,9.19,1459,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T105717,2026-09-29T10:57:17+02:00,5.87,93.14,7.52,29.19,9.08,1459,,normal,True,,<local path>
+act,m1,bowl_blue_in_pink,act_m1_bowl_blue_in_pink_20260929T105911,2026-09-29T10:59:11+02:00,5.86,91.75,7.36,29.18,9.04,1459,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T113206,2026-09-29T11:32:06+02:00,2.42,954.14,24.21,19.28,129.96,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T113307,2026-09-29T11:33:07+02:00,2.43,950.77,23.23,19.41,128.4,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T113600,2026-09-29T11:36:00+02:00,2.45,950.08,23.11,19.48,127.4,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114028,2026-09-29T11:40:28+02:00,2.43,950.33,23.04,19.43,128.11,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114130,2026-09-29T11:41:30+02:00,2.46,955.89,23.46,19.31,130.14,1708,,normal,False,missed_grasp,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114244,2026-09-29T11:42:44+02:00,2.43,953.37,23.27,19.38,128.96,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114341,2026-09-29T11:43:41+02:00,2.42,955.0,23.27,19.41,128.5,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114435,2026-09-29T11:44:35+02:00,2.4,964.31,23.76,19.2,131.58,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114545,2026-09-29T11:45:45+02:00,2.41,954.14,23.35,19.4,128.62,1708,,normal,True,,<local path>
+smolvla,m1,bowl_blue_in_pink,smolvla_m1_bowl_blue_in_pink_20260929T114633,2026-09-29T11:46:33+02:00,2.42,960.03,23.4,19.33,129.43,1708,,normal,True,,<local path>
