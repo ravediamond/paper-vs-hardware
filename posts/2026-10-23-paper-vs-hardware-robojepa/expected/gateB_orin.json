@@ -1,0 +1,51 @@
+{
+ "host": "1f0be4114ec5",
+ "machine": "aarch64",
+ "jetpack": "# R36 (release), REVISION: 4.3, GCID: 38968081, BOARD: generic, EABI: aarch64, DATE: Wed Jan  8 01:49:37 UTC 2025",
+ "torch": "2.11.0",
+ "cuda": "12.6",
+ "gpu": "Orin",
+ "power_mode": "",
+ "warmup": 10,
+ "iters": 50,
+ "input": "240x320, fp16 autocast (fp32 weights)",
+ "encoder_weights": "vjepa2_1_vitG_384_te_fp16.pt",
+ "robo_jepa_commit": "",
+ "encoder": {
+  "1_view": {
+   "p50_ms": 397.45,
+   "p95_ms": 398.23,
+   "mean_ms": 397.48,
+   "min_ms": 396.55,
+   "n": 50,
+   "peak_mem_mb": 7106.8
+  },
+  "2_view": {
+   "p50_ms": 526.07,
+   "p95_ms": 526.37,
+   "mean_ms": 525.89,
+   "min_ms": 525.17,
+   "n": 50,
+   "peak_mem_mb": 7124.5
+  }
+ },
+ "predictor_step": {
+  "100m_150k": {
+   "p50_ms": 252.08,
+   "p95_ms": 252.56,
+   "mean_ms": 252.11,
+   "min_ms": 251.4,
+   "n": 50,
+   "peak_mem_mb": 1305.3
+  },
+  "300m_300k": {
+   "p50_ms": 486.5,
+   "p95_ms": 487.3,
+   "mean_ms": 486.46,
+   "min_ms": 484.84,
+   "n": 50,
+   "peak_mem_mb": 2348.9
+  }
+ },
+ "gate_b_encoder_2view_p50_le_200ms": false
+}

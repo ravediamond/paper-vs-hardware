@@ -1,0 +1,59 @@
+{
+ "host": "ravindus-macbook-air.home",
+ "machine": "arm64",
+ "jetpack": "",
+ "torch": "2.7.1",
+ "cuda": null,
+ "device": "mps",
+ "gpu": "arm",
+ "power_mode": "",
+ "warmup": 10,
+ "iters": 50,
+ "input": "240x320, fp16 autocast (fp32 weights)",
+ "encoder_weights": "vjepa2_1_vitG_384_te_fp16.pt",
+ "robo_jepa_commit": "f93106f5f4a451fd526d51778aa8ab7c852eb824",
+ "encoder": {
+  "1_view": {
+   "p50_ms": 761.82,
+   "p95_ms": 921.92,
+   "mean_ms": 767.48,
+   "min_ms": 640.47,
+   "n": 50,
+   "driver_alloc_mb_after": 7240.8
+  },
+  "2_view": {
+   "p50_ms": 1025.12,
+   "p95_ms": 1125.9,
+   "mean_ms": 1037.05,
+   "min_ms": 948.28,
+   "n": 50,
+   "driver_alloc_mb_after": 8268.8
+  }
+ },
+ "predictor_step": {
+  "100m_150k": {
+   "p50_ms": 10353.31,
+   "p95_ms": 12004.69,
+   "mean_ms": 10671.72,
+   "min_ms": 9510.84,
+   "n": 50,
+   "driver_alloc_mb_after": null
+  },
+  "300m_300k": {
+   "p50_ms": 23404.86,
+   "p95_ms": 27642.28,
+   "mean_ms": 23911.06,
+   "min_ms": 21564.39,
+   "n": 50,
+   "driver_alloc_mb_after": null
+  }
+ },
+ "gate_b_encoder_2view_p50_le_200ms": false,
+ "predictor_device": "cpu",
+ "notes": {
+  "encoder": "MPS, fp16 autocast, fp32 weights; no op fell back to CPU in the encoder (PYTORCH_ENABLE_MPS_FALLBACK=1 was set)",
+  "predictor": "MPS fails in F.scaled_dot_product_attention of the predictor ('Placeholder storage has not been allocated on MPS device'), so the predictor step ran on CPU with bf16 autocast",
+  "machine": "Mac, 24 GB, other apps open (swap pressure possible)",
+  "memory": "MPS has no peak counter: driver_alloc_mb_after is the driver allocation after the timed loop"
+ }
+}
