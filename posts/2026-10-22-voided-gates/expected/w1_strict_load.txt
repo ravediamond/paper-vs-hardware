@@ -1,0 +1,6 @@
+transformers 5.5.4, torch 2.11.0
+STRICT LOAD FAILED (with and without the _KEY_REMAP retry)
+Missing key(s): 192; first 3: ['encoder.encoder.layer.0.attention.attention.query.weight', 'encoder.encoder.layer.0.attention.attention.query.bias', 'encoder.encoder.layer.0.attention.attention.key.weight']; last: encoder.encoder.layer.11.layernorm_after.bias
+Unexpected key(s): 192; first 3: ['encoder.layer.0.attention.attention.query.weight', 'encoder.layer.0.attention.attention.query.bias', 'encoder.layer.0.attention.attention.key.weight']; last: encoder.layer.11.output.dense.bias
+transformers 5.19.0, torch 2.11.0
+STRICT LOAD OK on cuda (torch.float16); checkpoint keys used verbatim: True (279 tensors)
