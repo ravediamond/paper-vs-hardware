@@ -17,7 +17,10 @@ site: https://shissorobotics.com
 ## Replication levels
 
 - **L0, check the numbers:** recompute the post's numbers from the small files in `expected/` (seconds, CPU,
-  standard library or numpy). Every folder has `l0_check.py`.
+  standard library or numpy). Every folder has `l0_check.py`. Where `expected/` holds rows (per-seed, per-frame,
+  per-layout, per-tick), the number is recomputed from them; where it only holds a summary (the Robometer pooled AUROC,
+  the LeWorldModel open-loop errors), L0 reads the pinned result file and each line says so. Per-rollout scores for a
+  true AUROC recomputation are L1.
 - **L1, rerun the analysis:** from the public dataset and checkpoint at the pinned revision, rerun the script that
   produced the numbers (CPU or one consumer GPU; time given per folder).
 - **L2, rerun on hardware:** the robot-side protocol, for someone with an SO-101. Described, not re-verified here.

@@ -1,6 +1,6 @@
 # Why your VLA's actions jump at every chunk boundary, and a 0.4 ms fix
 
-Post: https://ravediamond.github.io/blog/2026/10/25/vla-chunk-boundary-jumps/ (blog post (WS-028)).
+Post: https://ravediamond.github.io/blog/2026/10/25/vla-chunk-boundary-jumps/ (shissorobotics.com result 1, second sentence).
 
 ## Claim
 

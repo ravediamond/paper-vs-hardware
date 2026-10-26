@@ -1,6 +1,6 @@
 # ReAP: a failure-risk head that looked strong was a shortcut
 
-Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-reap/ (shissorobotics.com result 4).
+Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-reap/ (shissorobotics.com result 2).
 
 ## Claim
 

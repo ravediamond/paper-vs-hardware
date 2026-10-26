@@ -1,4 +1,6 @@
-"""L0: recompute this post's numbers from expected/ (stdlib only). Exit 1 on any mismatch."""
+"""L0: recompute this post's numbers from the row-level files in expected/ (stdlib, numpy for tick files).
+Where a number is a plain count or a summary with no rows behind it, it is read from the pinned result file and
+compared; each line says which. Exit 1 on any mismatch."""
 import csv, json, statistics, sys
 from pathlib import Path
 
