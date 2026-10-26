@@ -1,0 +1,348 @@
+{
+ "qwen27b": {
+  "n": 50,
+  "successes": 42,
+  "failures": 8,
+  "unparseable": 0,
+  "flags_by_k": {
+   "1": {
+    "successes_flagged": 2,
+    "failures_flagged": 7
+   },
+   "2": {
+    "successes_flagged": 2,
+    "failures_flagged": 7
+   },
+   "3": {
+    "successes_flagged": 2,
+    "failures_flagged": 7
+   },
+   "4": {
+    "successes_flagged": 2,
+    "failures_flagged": 7
+   }
+  },
+  "k": 4,
+  "successes_flagged_at_k": 2,
+  "failures_flagged_at_k": 7,
+  "bar": {
+   "success_flagged_max": 2,
+   "failure_flagged_min": 6
+  },
+  "verdict": "pass",
+  "auroc_score": 0.9137,
+  "auroc_score_ci95": [
+   0.7768,
+   1.0
+  ],
+  "histogram": {
+   "success": {
+    "1": 2,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 40
+   },
+   "failure": {
+    "1": 7,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
+  "mean_score_per_policy": {
+   "act": {
+    "mean": 4.2,
+    "n": 10,
+    "failures": 1
+   },
+   "smolvla": {
+    "mean": 4.2,
+    "n": 10,
+    "failures": 1
+   },
+   "smolvla_vlacpp": {
+    "mean": 4.6,
+    "n": 10,
+    "failures": 2
+   },
+   "smolvla_vlacpp_fa": {
+    "mean": 3.8,
+    "n": 10,
+    "failures": 3
+   },
+   "vla_jepa": {
+    "mean": 4.6,
+    "n": 10,
+    "failures": 1
+   }
+  },
+  "seconds_per_episode": {
+   "median": 6.01,
+   "max": 15.8,
+   "model_median": 4.1
+  },
+  "prompt_tokens": {
+   "min": 7300,
+   "max": 7312
+  },
+  "view": "384x288",
+  "layout": "side",
+  "mosaic_hw": [
+   288,
+   768
+  ],
+  "versions": {
+   "transformers": "5.20.2",
+   "torch": "2.8.0+cu128",
+   "auto_class": "AutoModelForMultimodalLM"
+  },
+  "auroc_expected_score_not_gate": 0.9881,
+  "auroc_expected_score_ci95_not_gate": [
+   0.9583,
+   1.0
+  ],
+  "model": "/workspace/hf/hub/models--Qwen--Qwen3.5-27B/snapshots/fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "scores_nested_successes": {
+   "12": "1",
+   "34": "5"
+  },
+  "peak_gpu_gb": 54.43
+ },
+ "qwen9b": {
+  "n": 50,
+  "successes": 42,
+  "failures": 8,
+  "unparseable": 0,
+  "flags_by_k": {
+   "1": {
+    "successes_flagged": 16,
+    "failures_flagged": 7
+   },
+   "2": {
+    "successes_flagged": 16,
+    "failures_flagged": 7
+   },
+   "3": {
+    "successes_flagged": 16,
+    "failures_flagged": 7
+   },
+   "4": {
+    "successes_flagged": 16,
+    "failures_flagged": 7
+   }
+  },
+  "k": null,
+  "successes_flagged_at_k": null,
+  "failures_flagged_at_k": null,
+  "bar": {
+   "success_flagged_max": 2,
+   "failure_flagged_min": 6
+  },
+  "verdict": "fail",
+  "auroc_score": 0.747,
+  "auroc_score_ci95": [
+   0.5892,
+   0.8571
+  ],
+  "histogram": {
+   "success": {
+    "1": 16,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 26
+   },
+   "failure": {
+    "1": 7,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 1
+   }
+  },
+  "mean_score_per_policy": {
+   "act": {
+    "mean": 2.2,
+    "n": 10,
+    "failures": 1
+   },
+   "smolvla": {
+    "mean": 3.4,
+    "n": 10,
+    "failures": 1
+   },
+   "smolvla_vlacpp": {
+    "mean": 3.4,
+    "n": 10,
+    "failures": 2
+   },
+   "smolvla_vlacpp_fa": {
+    "mean": 3.8,
+    "n": 10,
+    "failures": 3
+   },
+   "vla_jepa": {
+    "mean": 3.0,
+    "n": 10,
+    "failures": 1
+   }
+  },
+  "seconds_per_episode": {
+   "median": 3.545,
+   "max": 9.45,
+   "model_median": 1.63
+  },
+  "prompt_tokens": {
+   "min": 7300,
+   "max": 7312
+  },
+  "view": "384x288",
+  "layout": "side",
+  "mosaic_hw": [
+   288,
+   768
+  ],
+  "versions": {
+   "transformers": "5.20.2",
+   "torch": "2.8.0+cu128",
+   "auto_class": "AutoModelForMultimodalLM"
+  },
+  "auroc_expected_score_not_gate": 0.881,
+  "auroc_expected_score_ci95_not_gate": [
+   0.7143,
+   1.0
+  ],
+  "model": "/workspace/hf/hub/models--Qwen--Qwen3.5-9B/snapshots/c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "scores_nested_successes": {
+   "12": "5",
+   "34": "5"
+  },
+  "peak_gpu_gb": 19.86
+ },
+ "gemini38flash": {
+  "n": 50,
+  "successes": 42,
+  "failures": 8,
+  "unparseable": 0,
+  "flags_by_k": {
+   "1": {
+    "successes_flagged": 3,
+    "failures_flagged": 8
+   },
+   "2": {
+    "successes_flagged": 3,
+    "failures_flagged": 8
+   },
+   "3": {
+    "successes_flagged": 3,
+    "failures_flagged": 8
+   },
+   "4": {
+    "successes_flagged": 3,
+    "failures_flagged": 8
+   }
+  },
+  "k": null,
+  "successes_flagged_at_k": null,
+  "failures_flagged_at_k": null,
+  "bar": {
+   "success_flagged_max": 2,
+   "failure_flagged_min": 6
+  },
+  "verdict": "fail",
+  "auroc_score": 0.9643,
+  "auroc_score_ci95": [
+   0.9167,
+   1.0
+  ],
+  "histogram": {
+   "success": {
+    "1": 3,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 39
+   },
+   "failure": {
+    "1": 8,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   }
+  },
+  "mean_score_per_policy": {
+   "act": {
+    "mean": 4.6,
+    "n": 10,
+    "failures": 1
+   },
+   "smolvla": {
+    "mean": 4.2,
+    "n": 10,
+    "failures": 1
+   },
+   "smolvla_vlacpp": {
+    "mean": 3.8,
+    "n": 10,
+    "failures": 2
+   },
+   "smolvla_vlacpp_fa": {
+    "mean": 3.8,
+    "n": 10,
+    "failures": 3
+   },
+   "vla_jepa": {
+    "mean": 4.2,
+    "n": 10,
+    "failures": 1
+   }
+  },
+  "seconds_per_episode": {
+   "median": 13.065,
+   "max": 42.46,
+   "model_median": 10.05
+  },
+  "prompt_tokens": {
+   "min": 69229,
+   "max": 69229
+  },
+  "view": "384x288",
+  "layout": "side",
+  "mosaic_hw": [
+   288,
+   768
+  ],
+  "versions": {
+   "backend": "openai",
+   "api_model": "gemini-3.8-flash",
+   "url": "https://generativelanguage.googleapis.com/v1beta/openai"
+  },
+  "model": "gemini-3.8-flash",
+  "scores_nested_successes": {
+   "12": "5",
+   "34": "5"
+  },
+  "api": {
+   "calls": 50,
+   "prompt_tokens": 3461450,
+   "completion_tokens": 200,
+   "total_tokens": 3473994,
+   "usd_estimate": 2.6432
+  }
+ },
+ "cost": {
+  "vast": {
+   "instance": "56939316, 1x A100 SXM4 80GB (reused from G-flora)",
+   "usd_per_h": 1.007,
+   "this_gate_from": "2026-10-20T20:09:52Z"
+  },
+  "gemini_price_per_m": {
+   "input": 0.75,
+   "output": 3.75,
+   "source": "third-party listings, higher of the two figures found; not confirmed on Google pricing page"
+  }
+ }
+}

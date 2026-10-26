@@ -1,0 +1,145 @@
+{
+ "n": 50,
+ "successes": 42,
+ "failures": 8,
+ "unparseable": 0,
+ "flags_by_k": {
+  "1": {
+   "successes_flagged": 0,
+   "failures_flagged": 4
+  },
+  "2": {
+   "successes_flagged": 0,
+   "failures_flagged": 6
+  },
+  "3": {
+   "successes_flagged": 0,
+   "failures_flagged": 8
+  },
+  "4": {
+   "successes_flagged": 2,
+   "failures_flagged": 8
+  }
+ },
+ "k": 4,
+ "successes_flagged_at_k": 2,
+ "failures_flagged_at_k": 8,
+ "bar": {
+  "success_flagged_max": 2,
+  "failure_flagged_min": 6
+ },
+ "verdict": "pass",
+ "auroc_score": 1.0,
+ "auroc_score_ci95": [
+  1.0,
+  1.0
+ ],
+ "histogram": {
+  "success": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 2,
+   "5": 40
+  },
+  "failure": {
+   "1": 4,
+   "2": 2,
+   "3": 2,
+   "4": 0,
+   "5": 0
+  }
+ },
+ "mean_score_per_policy": {
+  "act": {
+   "mean": 4.5,
+   "n": 10,
+   "failures": 1
+  },
+  "smolvla": {
+   "mean": 4.6,
+   "n": 10,
+   "failures": 1
+  },
+  "smolvla_vlacpp": {
+   "mean": 4.4,
+   "n": 10,
+   "failures": 2
+  },
+  "smolvla_vlacpp_fa": {
+   "mean": 4.1,
+   "n": 10,
+   "failures": 3
+  },
+  "vla_jepa": {
+   "mean": 4.6,
+   "n": 10,
+   "failures": 1
+  }
+ },
+ "seconds_per_episode": {
+  "median": 6.029999999999999,
+  "max": 16.34,
+  "model_median": 4.11
+ },
+ "prompt_tokens": {
+  "min": 7300,
+  "max": 7312
+ },
+ "view": "384x288",
+ "layout": "side",
+ "mosaic_hw": [
+  288,
+  768
+ ],
+ "versions": {
+  "transformers": "5.20.2",
+  "torch": "2.8.0+cu128",
+  "auto_class": "AutoModelForMultimodalLM"
+ },
+ "auroc_expected_score_not_gate": 1.0,
+ "auroc_expected_score_ci95_not_gate": [
+  1.0,
+  1.0
+ ],
+ "determinism": {
+  "episodes": [
+   0,
+   2,
+   18,
+   30,
+   60
+  ],
+  "scores_gate_vs_rerun": {
+   "0": [
+    "4",
+    "4"
+   ],
+   "2": [
+    "1",
+    "1"
+   ],
+   "18": [
+    "1",
+    "1"
+   ],
+   "30": [
+    "3",
+    "3"
+   ],
+   "60": [
+    "5",
+    "5"
+   ]
+  },
+  "identical_scores": true,
+  "identical_text": true
+ },
+ "cost": {
+  "instance": "vast instance, 1x A100 SXM4 80GB, Utah",
+  "usd_per_h": 1.007,
+  "billed_from": "2026-10-20T19:14:33Z",
+  "model_runs_utc": "19:38:14-19:50:30",
+  "note": "cost at report time, see README"
+ }
+}
