@@ -1,0 +1,31 @@
+name: Propose a paper
+description: Suggest a robot-learning paper or claim to test on the SO-101 + Jetson Orin NX rig.
+title: "Propose: <paper title>"
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The rig: a SO-101 arm (position-controlled hobby servos, no force sensing), a top and a wrist webcam, a Jetson Orin NX 16 GB, rented GPUs for training. It cannot test force, two arms or scale. The bar is committed before the run; fails are published.
+  - type: input
+    id: paper
+    attributes:
+      label: Paper
+      description: Title and arXiv (or other) link.
+      placeholder: "SmolVLA, https://arxiv.org/abs/2506.01844"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim
+      description: The one claim you want tested, as the paper states it (table / figure number if you have it).
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this rig
+      description: Why a low-cost single arm with webcams is a fair test of it, and what result would change your mind.
+    validations:
+      required: true
