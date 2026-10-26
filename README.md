@@ -10,7 +10,7 @@ site: https://shissorobotics.com
 | [2026-09-29-three-policies-so101](posts/2026-09-29-three-policies-so101/) | 09-29 three policies · 10-26 p99 is not a tail | Orin NX + Mac, arm | 0 (training n/r) | ✔ | L2 (arm) |
 | [2026-10-23-paper-vs-hardware-smolvla](posts/2026-10-23-paper-vs-hardware-smolvla/) | 10-01 SmolVLA 4x · PvH SmolVLA | Orin NX, arm | 0 (training n/r) | ✔ | L2 (arm) |
 | [2026-10-06-twelve-vlas-orin](posts/2026-10-06-twelve-vlas-orin/) | 10-06 twelve VLAs | Orin NX | 0 | ✔ | Orin needed |
-| [2026-10-23-paper-vs-hardware-turbovla](posts/2026-10-23-paper-vs-hardware-turbovla/) | 10-08 TurboVLA · PvH TurboVLA | vast.ai GPU | ~2.8 (incl. ~0.8 failed starts; port-era n/r) | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-turbovla](posts/2026-10-23-paper-vs-hardware-turbovla/) | 10-08 TurboVLA · PvH TurboVLA | vast.ai GPU | ~2.8 (incl. ~0.8 failed starts; port-era n/r) | ✔ | inputs public (2026-10-26, DINOv3 License); rerun not yet re-verified |
 | [2026-10-23-paper-vs-hardware-vla-jepa](posts/2026-10-23-paper-vs-hardware-vla-jepa/) | 10-08 VLA-JEPA $10 · PvH VLA-JEPA | vast.ai GPU | ~9.7 | ✔ | pending checkpoint visibility |
 | [2026-10-23-paper-vs-hardware-leworldmodel](posts/2026-10-23-paper-vs-hardware-leworldmodel/) | 10-11 $3.30 world model · 10-13 WM loses · PvH LeWorldModel | vast.ai GPU | ~6.6 (incl. 2.96 failed attempts) | ✔ | inputs public (2026-10-26); rerun not yet re-verified |
 | [2026-10-12-act-vlacpp-port](posts/2026-10-12-act-vlacpp-port/) | 10-12 ACT port | Orin NX | 0 (training n/r) | ✔ | pending checkpoint visibility |
