@@ -1,0 +1,418 @@
+{
+ "protocol": "projects/vla-jepa-world-model/jetson/REAP_PROTOCOL.md",
+ "onsets": "shared/gate/data/2026-10-23_onsets_vlm/onsets.csv",
+ "onset_source": "VLM (gemini-3.8-flash), deviation 2026-10-23",
+ "bar": "caught >= 5 (of 8) and false interventions <= 1/20, median over 5 seeds",
+ "primary_50": {
+  "surprise": {
+   "caught": 2.0,
+   "false_interventions": 2.0,
+   "auroc": 0.8601190476190477,
+   "time_to_warning_s_median": -4.15,
+   "failures": 8,
+   "successes": 42,
+   "per_seed": [
+    {
+     "caught": 2,
+     "failures": 8,
+     "false_interventions": 3,
+     "successes": 42,
+     "auroc": 0.8601190476190477,
+     "time_to_warning_s_median": -4.15
+    },
+    {
+     "caught": 2,
+     "failures": 8,
+     "false_interventions": 2,
+     "successes": 42,
+     "auroc": 0.8601190476190477,
+     "time_to_warning_s_median": -4.15
+    },
+    {
+     "caught": 2,
+     "failures": 8,
+     "false_interventions": 2,
+     "successes": 42,
+     "auroc": 0.8601190476190477,
+     "time_to_warning_s_median": -4.15
+    },
+    {
+     "caught": 2,
+     "failures": 8,
+     "false_interventions": 2,
+     "successes": 42,
+     "auroc": 0.8601190476190477,
+     "time_to_warning_s_median": -4.15
+    },
+    {
+     "caught": 2,
+     "failures": 8,
+     "false_interventions": 3,
+     "successes": 42,
+     "auroc": 0.8601190476190477,
+     "time_to_warning_s_median": -4.15
+    }
+   ],
+   "pass": false
+  },
+  "risk_logistic": {
+   "caught": 6.0,
+   "false_interventions": 7.0,
+   "auroc": 0.9285714285714286,
+   "time_to_warning_s_median": -0.8666666666666663,
+   "failures": 8,
+   "successes": 42,
+   "per_seed": [
+    {
+     "caught": 7,
+     "failures": 8,
+     "false_interventions": 5,
+     "successes": 42,
+     "auroc": 0.9494047619047619,
+     "time_to_warning_s_median": -0.8666666666666663
+    },
+    {
+     "caught": 6,
+     "failures": 8,
+     "false_interventions": 7,
+     "successes": 42,
+     "auroc": 0.9136904761904762,
+     "time_to_warning_s_median": -2.0
+    },
+    {
+     "caught": 6,
+     "failures": 8,
+     "false_interventions": 5,
+     "successes": 42,
+     "auroc": 0.8928571428571429,
+     "time_to_warning_s_median": -0.7999999999999998
+    },
+    {
+     "caught": 6,
+     "failures": 8,
+     "false_interventions": 7,
+     "successes": 42,
+     "auroc": 0.9285714285714286,
+     "time_to_warning_s_median": -0.7999999999999998
+    },
+    {
+     "caught": 7,
+     "failures": 8,
+     "false_interventions": 7,
+     "successes": 42,
+     "auroc": 0.9375,
+     "time_to_warning_s_median": -0.8666666666666663
+    }
+   ],
+   "pass": false
+  },
+  "risk_mlp": {
+   "caught": 7.0,
+   "false_interventions": 13.0,
+   "auroc": 0.8363095238095238,
+   "time_to_warning_s_median": 0.06666666666666643,
+   "failures": 8,
+   "successes": 42,
+   "per_seed": [
+    {
+     "caught": 7,
+     "failures": 8,
+     "false_interventions": 13,
+     "successes": 42,
+     "auroc": 0.8452380952380952,
+     "time_to_warning_s_median": 0.8999999999999999
+    },
+    {
+     "caught": 6,
+     "failures": 8,
+     "false_interventions": 13,
+     "successes": 42,
+     "auroc": 0.8214285714285714,
+     "time_to_warning_s_median": -0.08333333333333348
+    },
+    {
+     "caught": 7,
+     "failures": 8,
+     "false_interventions": 10,
+     "successes": 42,
+     "auroc": 0.8363095238095238,
+     "time_to_warning_s_median": 0.06666666666666643
+    },
+    {
+     "caught": 7,
+     "failures": 8,
+     "false_interventions": 10,
+     "successes": 42,
+     "auroc": 0.8422619047619048,
+     "time_to_warning_s_median": 0.06666666666666643
+    },
+    {
+     "caught": 6,
+     "failures": 8,
+     "false_interventions": 14,
+     "successes": 42,
+     "auroc": 0.7440476190476191,
+     "time_to_warning_s_median": -0.5333333333333332
+    }
+   ],
+   "pass": false
+  },
+  "elapsed": {
+   "caught": 0.0,
+   "false_interventions": 0.0,
+   "auroc": 0.6145833333333334,
+   "time_to_warning_s_median": null,
+   "failures": 8,
+   "successes": 42,
+   "per_seed": [
+    {
+     "caught": 0,
+     "failures": 8,
+     "false_interventions": 0,
+     "successes": 42,
+     "auroc": 0.6145833333333334,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 8,
+     "false_interventions": 0,
+     "successes": 42,
+     "auroc": 0.6145833333333334,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 8,
+     "false_interventions": 0,
+     "successes": 42,
+     "auroc": 0.6145833333333334,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 8,
+     "false_interventions": 0,
+     "successes": 42,
+     "auroc": 0.6145833333333334,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 8,
+     "false_interventions": 0,
+     "successes": 42,
+     "auroc": 0.6145833333333334,
+     "time_to_warning_s_median": null
+    }
+   ],
+   "pass": false
+  }
+ },
+ "secondary_69": {
+  "surprise": {
+   "caught": 3.0,
+   "false_interventions": 2.0,
+   "auroc": 0.7063636363636364,
+   "time_to_warning_s_median": -7.433333333333334,
+   "failures": 25,
+   "successes": 44,
+   "per_seed": [
+    {
+     "caught": 4,
+     "failures": 25,
+     "false_interventions": 2,
+     "successes": 44,
+     "auroc": 0.7063636363636364,
+     "time_to_warning_s_median": -8.633333333333333
+    },
+    {
+     "caught": 3,
+     "failures": 25,
+     "false_interventions": 2,
+     "successes": 44,
+     "auroc": 0.7063636363636364,
+     "time_to_warning_s_median": -7.433333333333334
+    },
+    {
+     "caught": 3,
+     "failures": 25,
+     "false_interventions": 2,
+     "successes": 44,
+     "auroc": 0.7063636363636364,
+     "time_to_warning_s_median": -7.433333333333334
+    },
+    {
+     "caught": 2,
+     "failures": 25,
+     "false_interventions": 3,
+     "successes": 44,
+     "auroc": 0.7063636363636364,
+     "time_to_warning_s_median": -4.15
+    },
+    {
+     "caught": 3,
+     "failures": 25,
+     "false_interventions": 2,
+     "successes": 44,
+     "auroc": 0.7063636363636364,
+     "time_to_warning_s_median": -7.433333333333334
+    }
+   ],
+   "pass": false
+  },
+  "risk_logistic": {
+   "caught": 23.0,
+   "false_interventions": 4.0,
+   "auroc": 0.9718181818181818,
+   "time_to_warning_s_median": -0.7666666666666666,
+   "failures": 25,
+   "successes": 44,
+   "per_seed": [
+    {
+     "caught": 24,
+     "failures": 25,
+     "false_interventions": 8,
+     "successes": 44,
+     "auroc": 0.9718181818181818,
+     "time_to_warning_s_median": -0.8166666666666664
+    },
+    {
+     "caught": 23,
+     "failures": 25,
+     "false_interventions": 6,
+     "successes": 44,
+     "auroc": 0.9709090909090909,
+     "time_to_warning_s_median": -0.7666666666666666
+    },
+    {
+     "caught": 23,
+     "failures": 25,
+     "false_interventions": 4,
+     "successes": 44,
+     "auroc": 0.9318181818181818,
+     "time_to_warning_s_median": -0.7666666666666666
+    },
+    {
+     "caught": 23,
+     "failures": 25,
+     "false_interventions": 4,
+     "successes": 44,
+     "auroc": 0.9781818181818182,
+     "time_to_warning_s_median": 0.033333333333333215
+    },
+    {
+     "caught": 24,
+     "failures": 25,
+     "false_interventions": 4,
+     "successes": 44,
+     "auroc": 0.9872727272727273,
+     "time_to_warning_s_median": -0.7999999999999998
+    }
+   ],
+   "pass": false
+  },
+  "risk_mlp": {
+   "caught": 23.0,
+   "false_interventions": 14.0,
+   "auroc": 0.92,
+   "time_to_warning_s_median": 0.5666666666666664,
+   "failures": 25,
+   "successes": 44,
+   "per_seed": [
+    {
+     "caught": 24,
+     "failures": 25,
+     "false_interventions": 15,
+     "successes": 44,
+     "auroc": 0.9263636363636364,
+     "time_to_warning_s_median": 0.3666666666666666
+    },
+    {
+     "caught": 24,
+     "failures": 25,
+     "false_interventions": 14,
+     "successes": 44,
+     "auroc": 0.94,
+     "time_to_warning_s_median": 0.3666666666666666
+    },
+    {
+     "caught": 23,
+     "failures": 25,
+     "false_interventions": 12,
+     "successes": 44,
+     "auroc": 0.9054545454545454,
+     "time_to_warning_s_median": 0.8999999999999999
+    },
+    {
+     "caught": 23,
+     "failures": 25,
+     "false_interventions": 14,
+     "successes": 44,
+     "auroc": 0.9190909090909091,
+     "time_to_warning_s_median": 0.5666666666666664
+    },
+    {
+     "caught": 23,
+     "failures": 25,
+     "false_interventions": 12,
+     "successes": 44,
+     "auroc": 0.92,
+     "time_to_warning_s_median": 0.8
+    }
+   ],
+   "pass": false
+  },
+  "elapsed": {
+   "caught": 0.0,
+   "false_interventions": 0.0,
+   "auroc": 0.5845454545454546,
+   "time_to_warning_s_median": null,
+   "failures": 25,
+   "successes": 44,
+   "per_seed": [
+    {
+     "caught": 0,
+     "failures": 25,
+     "false_interventions": 0,
+     "successes": 44,
+     "auroc": 0.5845454545454546,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 25,
+     "false_interventions": 0,
+     "successes": 44,
+     "auroc": 0.5845454545454546,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 25,
+     "false_interventions": 0,
+     "successes": 44,
+     "auroc": 0.5845454545454546,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 25,
+     "false_interventions": 0,
+     "successes": 44,
+     "auroc": 0.5845454545454546,
+     "time_to_warning_s_median": null
+    },
+    {
+     "caught": 0,
+     "failures": 25,
+     "false_interventions": 0,
+     "successes": 44,
+     "auroc": 0.5845454545454546,
+     "time_to_warning_s_median": null
+    }
+   ],
+   "pass": false
+  }
+ }
+}

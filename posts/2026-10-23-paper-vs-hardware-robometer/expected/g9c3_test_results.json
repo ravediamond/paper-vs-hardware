@@ -1,0 +1,209 @@
+{
+ "mode": "test",
+ "rule": "g9c2_rule.json",
+ "config": "g9c_config.json",
+ "tau": 0.5,
+ "result": {
+  "n": 88,
+  "n_success": 62,
+  "n_failure": 26,
+  "judged": 87,
+  "coverage": 0.9886363636363636,
+  "invalid_by_cause": {
+   "hand": 1
+  },
+  "invalid_by_outcome": {
+   "failure": 1
+  },
+  "accuracy_on_judged": 0.9425287356321839,
+  "accuracy_on_judged_ci95": [
+   0.8850574712643678,
+   0.9885057471264368
+  ],
+  "false_positives": 0,
+  "false_negatives": 5,
+  "auroc_on_judged": 0.9596774193548387,
+  "auroc_on_judged_ci95": [
+   0.923728813559322,
+   0.9913793103448276
+  ],
+  "per_failure_type_recall_on_judged": {
+   "missed_grasp": {
+    "mean": 1.0,
+    "size": 7
+   },
+   "missed_grasp_retried": {
+    "mean": 1.0,
+    "size": 1
+   },
+   "stalled": {
+    "mean": 1.0,
+    "size": 6
+   },
+   "unspecified": {
+    "mean": 1.0,
+    "size": 2
+   },
+   "wrong_object": {
+    "mean": 1.0,
+    "size": 9
+   }
+  },
+  "judge_frame_why": {
+   "still": 63,
+   "timeout": 25
+  },
+  "s_after_release_p50_p90": [
+   2.1333333333333333,
+   2.7766666666666664
+  ],
+  "s_before_end_p50_p90": [
+   4.933333333333334,
+   12.393333333333333
+  ]
+ },
+ "prior": {
+  "g9c": {
+   "coverage": 1.0,
+   "accuracy": 0.8636,
+   "fp": 0
+  },
+  "g9c2": {
+   "coverage": 0.6704545454545454,
+   "accuracy_on_judged": 0.9661,
+   "fp": 0
+  }
+ },
+ "runtime_s": 108.59965491294861,
+ "pass": false,
+ "result_on_old_labels": {
+  "n": 88,
+  "n_success": 64,
+  "n_failure": 24,
+  "judged": 87,
+  "coverage": 0.9886363636363636,
+  "invalid_by_cause": {
+   "hand": 1
+  },
+  "invalid_by_outcome": {
+   "failure": 1
+  },
+  "accuracy_on_judged": 0.9195402298850575,
+  "accuracy_on_judged_ci95": [
+   0.8620689655172413,
+   0.9655172413793104
+  ],
+  "false_positives": 0,
+  "false_negatives": 7,
+  "auroc_on_judged": 0.9453125,
+  "auroc_on_judged_ci95": [
+   0.9032258064516129,
+   0.9821428571428571
+  ],
+  "per_failure_type_recall_on_judged": {
+   "missed_grasp": {
+    "mean": 1.0,
+    "size": 7
+   },
+   "missed_grasp_retried": {
+    "mean": 1.0,
+    "size": 1
+   },
+   "stalled": {
+    "mean": 1.0,
+    "size": 6
+   },
+   "unspecified": {
+    "mean": 1.0,
+    "size": 2
+   },
+   "wrong_object": {
+    "mean": 1.0,
+    "size": 7
+   }
+  },
+  "judge_frame_why": {
+   "still": 63,
+   "timeout": 25
+  },
+  "s_after_release_p50_p90": [
+   2.1333333333333333,
+   2.7766666666666664
+  ],
+  "s_before_end_p50_p90": [
+   4.933333333333334,
+   12.393333333333333
+  ]
+ },
+ "errors_on_judged": [
+  {
+   "dataset": "orin",
+   "episode": 7,
+   "policy": "act",
+   "outcome": "success",
+   "failure_mode": null,
+   "s": 0.0,
+   "why": "timeout",
+   "judge_frame": 740,
+   "n_frames": 741
+  },
+  {
+   "dataset": "orin",
+   "episode": 23,
+   "policy": "smolvla_vlacpp",
+   "outcome": "success",
+   "failure_mode": null,
+   "s": 0.0,
+   "why": "timeout",
+   "judge_frame": 604,
+   "n_frames": 605
+  },
+  {
+   "dataset": "orin",
+   "episode": 57,
+   "policy": "vla_jepa",
+   "outcome": "success",
+   "failure_mode": null,
+   "s": 0.0,
+   "why": "timeout",
+   "judge_frame": 560,
+   "n_frames": 561
+  },
+  {
+   "dataset": "orin",
+   "episode": 59,
+   "policy": "vla_jepa",
+   "outcome": "success",
+   "failure_mode": null,
+   "s": 0.0,
+   "why": "timeout",
+   "judge_frame": 561,
+   "n_frames": 562
+  },
+  {
+   "dataset": "orin",
+   "episode": 61,
+   "policy": "vla_jepa",
+   "outcome": "success",
+   "failure_mode": null,
+   "s": 0.0,
+   "why": "timeout",
+   "judge_frame": 560,
+   "n_frames": 561
+  }
+ ],
+ "invalid": [
+  {
+   "dataset": "rollout_smolvla_m1_normal_20260929_113204",
+   "episode": 4,
+   "policy": "smolvla",
+   "outcome": "failure",
+   "invalid_cause": "hand",
+   "why": "timeout",
+   "t_rel": 435,
+   "hand_frame": 435.0,
+   "judge_frame": 458,
+   "n_frames": 459
+  }
+ ]
+}

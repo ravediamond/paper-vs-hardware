@@ -1,0 +1,71 @@
+{
+ "colors": {
+  "blue": {
+   "hsv_ranges": [
+    [
+     [
+      92,
+      35,
+      130
+     ],
+     [
+      110,
+      160,
+      255
+     ]
+    ]
+   ]
+  },
+  "pink": {
+   "hsv_ranges": [
+    [
+     [
+      165,
+      22,
+      130
+     ],
+     [
+      180,
+      110,
+      255
+     ]
+    ],
+    [
+     [
+      0,
+      22,
+      130
+     ],
+     [
+      8,
+      110,
+      255
+     ]
+    ]
+   ]
+  }
+ },
+ "open_px": 7,
+ "inside_margin": 0.35,
+ "occluded_below": 0.5,
+ "window_s": 1.0,
+ "step_s": 0.2,
+ "max_window_s": 3.0,
+ "tau": 0.5,
+ "dev_result": {
+  "n": 364,
+  "n_pos": 90,
+  "n_neg": 274,
+  "undecidable": 0,
+  "auroc": 0.9973641524736415,
+  "balanced_accuracy": 0.9981751824817517,
+  "accuracy": 0.9972527472527473,
+  "n_errors": 1
+ },
+ "notes": [
+  "Set on dev data only (teleop demos so101_bowl_blue_in_pink / so101_bowl_pink_in_blue), 2026-10-16, before the test rollouts were looked at.",
+  "HSV ranges from pixel statistics of one dev frame (blue H 97-100 S ~72; pink H 173-177 S ~41; mat H 84-90 S high); first dev pass, not iterated.",
+  "The single dev error (so101_bowl_pink_in_blue ep 18, scored 1.0) is a dev label error: its last frame shows the blue bowl on top. Not tuned to.",
+  "Occlusion is detected by the visible-area rule (occluded_below), not a separate arm mask: implementation choice made on dev, before the test."
+ ]
+}

@@ -1,0 +1,266 @@
+{
+  "protocol": "V1.0_REVIEW.md section 6, W1-C1 / W1-C2 (commit 2bcd2ff)",
+  "w1": "<W1 weights_final.pt>",
+  "c1": {
+    "bar": {
+      "auroc_min": 0.85,
+      "margin_over_current": 0.05
+    },
+    "scored_episodes": 65,
+    "successes": 44,
+    "failures": 21,
+    "not_scored": [
+      {
+        "episode_index": 41,
+        "outcome": "failure",
+        "failure_mode": "none",
+        "reason": "no close"
+      },
+      {
+        "episode_index": 46,
+        "outcome": "failure",
+        "failure_mode": "missed_grasp",
+        "reason": "no close"
+      },
+      {
+        "episode_index": 47,
+        "outcome": "failure",
+        "failure_mode": "stalled",
+        "reason": "no close"
+      },
+      {
+        "episode_index": 49,
+        "outcome": "failure",
+        "failure_mode": "stalled",
+        "reason": "no close"
+      }
+    ],
+    "not_scored_by_mode": {
+      "stalled": 2,
+      "none": 1,
+      "missed_grasp": 1
+    },
+    "imagined": {
+      "auroc_oof_per_seed": [
+        0.7197,
+        0.71,
+        0.7013,
+        0.6548,
+        0.7208
+      ],
+      "auroc": 0.7013,
+      "auroc_fold": {
+        "mean": 0.7186,
+        "std": 0.1341,
+        "min": 0.5,
+        "max": 0.9444,
+        "n": 25
+      },
+      "held_out_false_abort_rate_per_seed": [
+        0.2727272727272727,
+        0.2727272727272727,
+        0.25,
+        0.2727272727272727,
+        0.29545454545454547
+      ],
+      "held_out_recall_per_seed": [
+        0.7142857142857143,
+        0.6190476190476191,
+        0.6190476190476191,
+        0.5714285714285714,
+        0.7142857142857143
+      ],
+      "held_out_false_abort_rate": 0.2727,
+      "held_out_recall": 0.619
+    },
+    "current": {
+      "auroc_oof_per_seed": [
+        0.7554,
+        0.8171,
+        0.8377,
+        0.8561,
+        0.8333
+      ],
+      "auroc": 0.8199,
+      "auroc_fold": {
+        "mean": 0.8303,
+        "std": 0.1076,
+        "min": 0.5833,
+        "max": 1.0,
+        "n": 25
+      },
+      "held_out_false_abort_rate_per_seed": [
+        0.2727272727272727,
+        0.25,
+        0.22727272727272727,
+        0.20454545454545456,
+        0.25
+      ],
+      "held_out_recall_per_seed": [
+        0.5714285714285714,
+        0.7142857142857143,
+        0.7142857142857143,
+        0.7619047619047619,
+        0.7619047619047619
+      ],
+      "held_out_false_abort_rate": 0.25,
+      "held_out_recall": 0.7143
+    },
+    "margin": -0.1186,
+    "imagined_by_mode": {
+      "missed_grasp": {
+        "n": 6,
+        "recall_at_fold_threshold": 0.5667,
+        "auroc_vs_successes": 0.6515
+      },
+      "missed_grasp_retried": {
+        "n": 1,
+        "recall_at_fold_threshold": 0.0,
+        "auroc_vs_successes": 0.1091
+      },
+      "none": {
+        "n": 1,
+        "recall_at_fold_threshold": 1.0,
+        "auroc_vs_successes": 0.9818
+      },
+      "stalled": {
+        "n": 4,
+        "recall_at_fold_threshold": 0.75,
+        "auroc_vs_successes": 0.75
+      },
+      "wrong_object": {
+        "n": 9,
+        "recall_at_fold_threshold": 0.6889,
+        "auroc_vs_successes": 0.7475
+      }
+    },
+    "current_by_mode": {
+      "missed_grasp": {
+        "n": 6,
+        "recall_at_fold_threshold": 0.5333,
+        "auroc_vs_successes": 0.8008
+      },
+      "missed_grasp_retried": {
+        "n": 1,
+        "recall_at_fold_threshold": 0.0,
+        "auroc_vs_successes": 0.4182
+      },
+      "none": {
+        "n": 1,
+        "recall_at_fold_threshold": 1.0,
+        "auroc_vs_successes": 0.8409
+      },
+      "stalled": {
+        "n": 4,
+        "recall_at_fold_threshold": 0.75,
+        "auroc_vs_successes": 0.7989
+      },
+      "wrong_object": {
+        "n": 9,
+        "recall_at_fold_threshold": 0.8444,
+        "auroc_vs_successes": 0.8843
+      }
+    },
+    "verdict": "FAIL: W1 stays a logged signal"
+  },
+  "c2": {
+    "bar": {
+      "success_flagged_max": 0.05,
+      "failure_flagged_min": 0.5
+    },
+    "alpha": 0.05,
+    "splits": 20,
+    "calibration_successes": 22,
+    "test_successes": 22,
+    "failures": 25,
+    "q_rank": "ceil((n+1)(1-alpha)) = 22 of n = 22",
+    "band_length_anchors": 29,
+    "success_flagged": {
+      "median": 0.2273,
+      "min": 0.0909,
+      "max": 0.5909,
+      "iqr": [
+        0.1364,
+        0.2727
+      ]
+    },
+    "failure_flagged": {
+      "median": 0.46,
+      "min": 0.36,
+      "max": 0.68,
+      "iqr": [
+        0.44,
+        0.53
+      ]
+    },
+    "per_split": {
+      "fpr": [
+        0.2727272727272727,
+        0.4090909090909091,
+        0.18181818181818182,
+        0.2727272727272727,
+        0.09090909090909091,
+        0.22727272727272727,
+        0.13636363636363635,
+        0.13636363636363635,
+        0.18181818181818182,
+        0.3181818181818182,
+        0.2727272727272727,
+        0.13636363636363635,
+        0.22727272727272727,
+        0.5909090909090909,
+        0.2727272727272727,
+        0.13636363636363635,
+        0.18181818181818182,
+        0.09090909090909091,
+        0.22727272727272727,
+        0.3181818181818182
+      ],
+      "recall": [
+        0.52,
+        0.48,
+        0.36,
+        0.48,
+        0.4,
+        0.48,
+        0.44,
+        0.44,
+        0.44,
+        0.56,
+        0.6,
+        0.44,
+        0.44,
+        0.68,
+        0.6,
+        0.44,
+        0.44,
+        0.36,
+        0.52,
+        0.64
+      ]
+    },
+    "recall_by_mode": {
+      "missed_grasp": {
+        "n": 7,
+        "flag_rate": 0.7429
+      },
+      "missed_grasp_retried": {
+        "n": 1,
+        "flag_rate": 1.0
+      },
+      "none": {
+        "n": 2,
+        "flag_rate": 0.025
+      },
+      "stalled": {
+        "n": 6,
+        "flag_rate": 0.3417
+      },
+      "wrong_object": {
+        "n": 9,
+        "flag_rate": 0.4333
+      }
+    },
+    "verdict": "FAIL: shadow mode stays"
+  }
+}

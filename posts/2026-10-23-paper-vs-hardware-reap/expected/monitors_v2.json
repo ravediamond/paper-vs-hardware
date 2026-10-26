@@ -1,0 +1,834 @@
+{
+ "protocol": "projects/vla-jepa-world-model/jetson/REAP_PROTOCOL.md version 2",
+ "primary_50": {
+  "T_common": {
+   "Put the blue bowl in the pink bowl.": 374
+  },
+  "failures": 8,
+  "successes": 42,
+  "risk_logistic:true": {
+   "caught": 3.0,
+   "fi": 5.0,
+   "auroc": 0.7886904761904762,
+   "btwa": 0.5498870002546473,
+   "ttw_vs_gemini_s": -0.8666666666666667,
+   "per_seed": [
+    {
+     "caught": 3,
+     "fi": 5,
+     "auroc": 0.7886904761904762,
+     "btwa": 0.5392395594601477,
+     "ttw_vs_gemini_s": -0.7333333333333333
+    },
+    {
+     "caught": 1,
+     "fi": 6,
+     "auroc": 0.6607142857142857,
+     "btwa": 0.478203781512605,
+     "ttw_vs_gemini_s": 0.5666666666666667
+    },
+    {
+     "caught": 5,
+     "fi": 5,
+     "auroc": 0.7976190476190477,
+     "btwa": 0.5800149605296664,
+     "ttw_vs_gemini_s": -0.8666666666666667
+    },
+    {
+     "caught": 3,
+     "fi": 2,
+     "auroc": 0.7886904761904762,
+     "btwa": 0.5498870002546473,
+     "ttw_vs_gemini_s": -0.8666666666666667
+    },
+    {
+     "caught": 4,
+     "fi": 4,
+     "auroc": 0.7648809523809523,
+     "btwa": 0.5506429844665139,
+     "ttw_vs_gemini_s": -1.6333333333333333
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_logistic:shuffled": {
+   "caught": 3.0,
+   "fi": 2.0,
+   "auroc": 0.7083333333333334,
+   "btwa": 0.5754551820728291,
+   "ttw_vs_gemini_s": 5.8,
+   "per_seed": [
+    {
+     "caught": 4,
+     "fi": 2,
+     "auroc": 0.7113095238095238,
+     "btwa": 0.5995193531958237,
+     "ttw_vs_gemini_s": -0.8
+    },
+    {
+     "caught": 1,
+     "fi": 2,
+     "auroc": 0.6369047619047619,
+     "btwa": 0.5341784441049147,
+     "ttw_vs_gemini_s": 5.8
+    },
+    {
+     "caught": 3,
+     "fi": 1,
+     "auroc": 0.7232142857142857,
+     "btwa": 0.6202810669722434,
+     "ttw_vs_gemini_s": 5.8
+    },
+    {
+     "caught": 2,
+     "fi": 2,
+     "auroc": 0.7053571428571429,
+     "btwa": 0.5754551820728291,
+     "ttw_vs_gemini_s": 7.75
+    },
+    {
+     "caught": 3,
+     "fi": 3,
+     "auroc": 0.7083333333333334,
+     "btwa": 0.5630490832696715,
+     "ttw_vs_gemini_s": -0.7333333333333333
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_logistic:zero": {
+   "caught": 1.0,
+   "fi": 0.0,
+   "auroc": 0.6934523809523809,
+   "btwa": 0.5365975935828877,
+   "ttw_vs_gemini_s": 1.35,
+   "per_seed": [
+    {
+     "caught": 2,
+     "fi": 0,
+     "auroc": 0.6845238095238095,
+     "btwa": 0.5365975935828877,
+     "ttw_vs_gemini_s": 1.35
+    },
+    {
+     "caught": 1,
+     "fi": 0,
+     "auroc": 0.5833333333333334,
+     "btwa": 0.5454545454545454,
+     "ttw_vs_gemini_s": -0.26666666666666666
+    },
+    {
+     "caught": 1,
+     "fi": 0,
+     "auroc": 0.7738095238095238,
+     "btwa": 0.5412767379679144,
+     "ttw_vs_gemini_s": 9.7
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7083333333333334,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.6934523809523809,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_mlp:true": {
+   "caught": 6.0,
+   "fi": 13.0,
+   "auroc": 0.7708333333333334,
+   "btwa": 0.5858002291825821,
+   "ttw_vs_gemini_s": 0.7333333333333333,
+   "per_seed": [
+    {
+     "caught": 6,
+     "fi": 13,
+     "auroc": 0.7916666666666666,
+     "btwa": 0.5803651005856888,
+     "ttw_vs_gemini_s": 0.31666666666666665
+    },
+    {
+     "caught": 6,
+     "fi": 16,
+     "auroc": 0.7708333333333334,
+     "btwa": 0.498694932518462,
+     "ttw_vs_gemini_s": -0.8
+    },
+    {
+     "caught": 6,
+     "fi": 15,
+     "auroc": 0.7708333333333334,
+     "btwa": 0.5858002291825821,
+     "ttw_vs_gemini_s": 0.7333333333333334
+    },
+    {
+     "caught": 6,
+     "fi": 11,
+     "auroc": 0.75,
+     "btwa": 0.6167080468551057,
+     "ttw_vs_gemini_s": 0.7333333333333334
+    },
+    {
+     "caught": 6,
+     "fi": 13,
+     "auroc": 0.7351190476190477,
+     "btwa": 0.5928985230455819,
+     "ttw_vs_gemini_s": 0.7333333333333333
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_mlp:shuffled": {
+   "caught": 6.0,
+   "fi": 19.0,
+   "auroc": 0.6994047619047619,
+   "btwa": 0.5172921441303795,
+   "ttw_vs_gemini_s": 0.1,
+   "per_seed": [
+    {
+     "caught": 7,
+     "fi": 18,
+     "auroc": 0.7678571428571429,
+     "btwa": 0.5579402215431627,
+     "ttw_vs_gemini_s": 0.5666666666666667
+    },
+    {
+     "caught": 6,
+     "fi": 19,
+     "auroc": 0.6994047619047619,
+     "btwa": 0.49640310669722437,
+     "ttw_vs_gemini_s": 2.3666666666666667
+    },
+    {
+     "caught": 7,
+     "fi": 19,
+     "auroc": 0.7857142857142857,
+     "btwa": 0.5585688820982939,
+     "ttw_vs_gemini_s": 0.1
+    },
+    {
+     "caught": 5,
+     "fi": 15,
+     "auroc": 0.6517857142857143,
+     "btwa": 0.5069232238349886,
+     "ttw_vs_gemini_s": -0.03333333333333333
+    },
+    {
+     "caught": 6,
+     "fi": 19,
+     "auroc": 0.5922619047619048,
+     "btwa": 0.5172921441303795,
+     "ttw_vs_gemini_s": -0.1
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_mlp:zero": {
+   "caught": 7.0,
+   "fi": 23.0,
+   "auroc": 0.7142857142857143,
+   "btwa": 0.5558712121212122,
+   "ttw_vs_gemini_s": 4.9,
+   "per_seed": [
+    {
+     "caught": 7,
+     "fi": 24,
+     "auroc": 0.7202380952380952,
+     "btwa": 0.5533565699006875,
+     "ttw_vs_gemini_s": 4.9
+    },
+    {
+     "caught": 7,
+     "fi": 23,
+     "auroc": 0.7142857142857143,
+     "btwa": 0.5485501018589254,
+     "ttw_vs_gemini_s": 5.933333333333334
+    },
+    {
+     "caught": 7,
+     "fi": 28,
+     "auroc": 0.7232142857142857,
+     "btwa": 0.5558712121212122,
+     "ttw_vs_gemini_s": 4.666666666666667
+    },
+    {
+     "caught": 6,
+     "fi": 23,
+     "auroc": 0.6428571428571429,
+     "btwa": 0.5782960911637383,
+     "ttw_vs_gemini_s": 6.133333333333333
+    },
+    {
+     "caught": 7,
+     "fi": 23,
+     "auroc": 0.6220238095238095,
+     "btwa": 0.5694391392920805,
+     "ttw_vs_gemini_s": 3.2333333333333334
+    }
+   ],
+   "pass_bar": false
+  },
+  "gru_floor:true": {
+   "caught": 2.0,
+   "fi": 3.0,
+   "auroc": 0.5892857142857143,
+   "btwa": 0.48480073847720906,
+   "ttw_vs_gemini_s": -3.0999999999999996,
+   "per_seed": [
+    {
+     "caught": 2,
+     "fi": 3,
+     "auroc": 0.7291666666666666,
+     "btwa": 0.4799942704354469,
+     "ttw_vs_gemini_s": -2.6166666666666663
+    },
+    {
+     "caught": 0,
+     "fi": 3,
+     "auroc": 0.5297619047619048,
+     "btwa": 0.4642857142857143,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 1,
+     "auroc": 0.5833333333333334,
+     "btwa": 0.4880952380952381,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 2,
+     "fi": 4,
+     "auroc": 0.5892857142857143,
+     "btwa": 0.48480073847720906,
+     "ttw_vs_gemini_s": -4.716666666666667
+    },
+    {
+     "caught": 4,
+     "fi": 4,
+     "auroc": 0.7797619047619048,
+     "btwa": 0.5213983320600968,
+     "ttw_vs_gemini_s": -3.0999999999999996
+    }
+   ],
+   "pass_bar": false
+  },
+  "gru_floor:shuffled": {
+   "caught": 1.0,
+   "fi": 0.0,
+   "auroc": 0.6785714285714286,
+   "btwa": 0.5251941685765215,
+   "ttw_vs_gemini_s": -2.0666666666666664,
+   "per_seed": [
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7410714285714286,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.4732142857142857,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 1,
+     "fi": 0,
+     "auroc": 0.5654761904761905,
+     "btwa": 0.5287433155080213,
+     "ttw_vs_gemini_s": -0.03333333333333333
+    },
+    {
+     "caught": 1,
+     "fi": 1,
+     "auroc": 0.6785714285714286,
+     "btwa": 0.5251941685765215,
+     "ttw_vs_gemini_s": -2.433333333333333
+    },
+    {
+     "caught": 2,
+     "fi": 1,
+     "auroc": 0.7886904761904762,
+     "btwa": 0.5455818691112808,
+     "ttw_vs_gemini_s": -2.0666666666666664
+    }
+   ],
+   "pass_bar": false
+  },
+  "gru_floor:zero": {
+   "caught": 0.0,
+   "fi": 0.0,
+   "auroc": 0.7470238095238095,
+   "btwa": 0.5,
+   "ttw_vs_gemini_s": null,
+   "per_seed": [
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.8035714285714286,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.625,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.6755952380952381,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7529761904761905,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7470238095238095,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_logistic:action_conditioned": true,
+  "risk_mlp:action_conditioned": true,
+  "gru_floor:action_conditioned": false
+ },
+ "secondary_69": {
+  "T_common": {
+   "Put the blue bowl in the pink bowl.": 374,
+   "Pick up the blue bowl.": 601
+  },
+  "failures": 25,
+  "successes": 44,
+  "risk_logistic:true": {
+   "caught": 18.0,
+   "fi": 3.0,
+   "auroc": 0.8963636363636364,
+   "btwa": 0.6588201482377856,
+   "ttw_vs_gemini_s": -1.5833333333333335,
+   "per_seed": [
+    {
+     "caught": 18,
+     "fi": 3,
+     "auroc": 0.8963636363636364,
+     "btwa": 0.6509797841387349,
+     "ttw_vs_gemini_s": -2.0833333333333335
+    },
+    {
+     "caught": 18,
+     "fi": 3,
+     "auroc": 0.9118181818181819,
+     "btwa": 0.6758759020171372,
+     "ttw_vs_gemini_s": -1.5833333333333335
+    },
+    {
+     "caught": 16,
+     "fi": 3,
+     "auroc": 0.8709090909090909,
+     "btwa": 0.6525682240828565,
+     "ttw_vs_gemini_s": -1.55
+    },
+    {
+     "caught": 19,
+     "fi": 4,
+     "auroc": 0.9063636363636364,
+     "btwa": 0.6625678236806748,
+     "ttw_vs_gemini_s": -1.5666666666666667
+    },
+    {
+     "caught": 17,
+     "fi": 2,
+     "auroc": 0.89,
+     "btwa": 0.6588201482377856,
+     "ttw_vs_gemini_s": -1.7
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_logistic:shuffled": {
+   "caught": 18.0,
+   "fi": 5.0,
+   "auroc": 0.8627272727272727,
+   "btwa": 0.6367095393595344,
+   "ttw_vs_gemini_s": -1.1,
+   "per_seed": [
+    {
+     "caught": 15,
+     "fi": 7,
+     "auroc": 0.8545454545454545,
+     "btwa": 0.6193755060638686,
+     "ttw_vs_gemini_s": -1.1
+    },
+    {
+     "caught": 18,
+     "fi": 7,
+     "auroc": 0.8681818181818182,
+     "btwa": 0.6339271001094433,
+     "ttw_vs_gemini_s": -1.2666666666666666
+    },
+    {
+     "caught": 18,
+     "fi": 4,
+     "auroc": 0.8545454545454545,
+     "btwa": 0.6632332031284757,
+     "ttw_vs_gemini_s": -0.9500000000000001
+    },
+    {
+     "caught": 18,
+     "fi": 5,
+     "auroc": 0.8627272727272727,
+     "btwa": 0.6367095393595344,
+     "ttw_vs_gemini_s": -1.3333333333333335
+    },
+    {
+     "caught": 17,
+     "fi": 4,
+     "auroc": 0.8927272727272727,
+     "btwa": 0.6446192175251586,
+     "ttw_vs_gemini_s": -0.8
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_logistic:zero": {
+   "caught": 8.0,
+   "fi": 3.0,
+   "auroc": 0.860909090909091,
+   "btwa": 0.5497515282016603,
+   "ttw_vs_gemini_s": -2.4333333333333336,
+   "per_seed": [
+    {
+     "caught": 6,
+     "fi": 4,
+     "auroc": 0.8372727272727273,
+     "btwa": 0.5244385026737968,
+     "ttw_vs_gemini_s": -0.1166666666666667
+    },
+    {
+     "caught": 8,
+     "fi": 3,
+     "auroc": 0.8809090909090909,
+     "btwa": 0.5497515282016603,
+     "ttw_vs_gemini_s": -2.4833333333333334
+    },
+    {
+     "caught": 11,
+     "fi": 2,
+     "auroc": 0.8572727272727273,
+     "btwa": 0.5792014200930713,
+     "ttw_vs_gemini_s": -4.066666666666666
+    },
+    {
+     "caught": 9,
+     "fi": 5,
+     "auroc": 0.88,
+     "btwa": 0.5379946524064171,
+     "ttw_vs_gemini_s": -1.5666666666666667
+    },
+    {
+     "caught": 8,
+     "fi": 1,
+     "auroc": 0.860909090909091,
+     "btwa": 0.5701319992525826,
+     "ttw_vs_gemini_s": -2.4333333333333336
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_mlp:true": {
+   "caught": 23.0,
+   "fi": 13.0,
+   "auroc": 0.8972727272727272,
+   "btwa": 0.6862594428181195,
+   "ttw_vs_gemini_s": 0.9,
+   "per_seed": [
+    {
+     "caught": 24,
+     "fi": 13,
+     "auroc": 0.8972727272727272,
+     "btwa": 0.6987995497699913,
+     "ttw_vs_gemini_s": 0.7333333333333334
+    },
+    {
+     "caught": 21,
+     "fi": 12,
+     "auroc": 0.8981818181818182,
+     "btwa": 0.6588902631087226,
+     "ttw_vs_gemini_s": 0.5666666666666667
+    },
+    {
+     "caught": 21,
+     "fi": 15,
+     "auroc": 0.8618181818181818,
+     "btwa": 0.639952352140372,
+     "ttw_vs_gemini_s": 0.9
+    },
+    {
+     "caught": 23,
+     "fi": 14,
+     "auroc": 0.889090909090909,
+     "btwa": 0.6862594428181195,
+     "ttw_vs_gemini_s": 0.9
+    },
+    {
+     "caught": 23,
+     "fi": 12,
+     "auroc": 0.9172727272727272,
+     "btwa": 0.7036391219625046,
+     "ttw_vs_gemini_s": 0.9
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_mlp:shuffled": {
+   "caught": 21.0,
+   "fi": 22.0,
+   "auroc": 0.7572727272727273,
+   "btwa": 0.5435321700908469,
+   "ttw_vs_gemini_s": 0.9,
+   "per_seed": [
+    {
+     "caught": 20,
+     "fi": 21,
+     "auroc": 0.8036363636363636,
+     "btwa": 0.540677347024122,
+     "ttw_vs_gemini_s": 0.9
+    },
+    {
+     "caught": 21,
+     "fi": 22,
+     "auroc": 0.7536363636363637,
+     "btwa": 0.5483748120334202,
+     "ttw_vs_gemini_s": 0.9
+    },
+    {
+     "caught": 19,
+     "fi": 27,
+     "auroc": 0.7563636363636363,
+     "btwa": 0.44458109033963,
+     "ttw_vs_gemini_s": 0.1
+    },
+    {
+     "caught": 21,
+     "fi": 22,
+     "auroc": 0.7736363636363637,
+     "btwa": 0.5435321700908469,
+     "ttw_vs_gemini_s": 0.8666666666666667
+    },
+    {
+     "caught": 22,
+     "fi": 23,
+     "auroc": 0.7572727272727273,
+     "btwa": 0.5587460738341623,
+     "ttw_vs_gemini_s": 1.9666666666666668
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_mlp:zero": {
+   "caught": 19.0,
+   "fi": 19.0,
+   "auroc": 0.7045454545454546,
+   "btwa": 0.6031495190724907,
+   "ttw_vs_gemini_s": 2.566666666666667,
+   "per_seed": [
+    {
+     "caught": 19,
+     "fi": 17,
+     "auroc": 0.7036363636363636,
+     "btwa": 0.6324008559708862,
+     "ttw_vs_gemini_s": 3.433333333333333
+    },
+    {
+     "caught": 19,
+     "fi": 21,
+     "auroc": 0.7172727272727273,
+     "btwa": 0.5719134330483062,
+     "ttw_vs_gemini_s": 2.566666666666667
+    },
+    {
+     "caught": 17,
+     "fi": 19,
+     "auroc": 0.6845454545454546,
+     "btwa": 0.5605291982168756,
+     "ttw_vs_gemini_s": 1.7
+    },
+    {
+     "caught": 19,
+     "fi": 16,
+     "auroc": 0.7354545454545455,
+     "btwa": 0.6606392198385934,
+     "ttw_vs_gemini_s": 2.566666666666667
+    },
+    {
+     "caught": 18,
+     "fi": 19,
+     "auroc": 0.7045454545454546,
+     "btwa": 0.6031495190724907,
+     "ttw_vs_gemini_s": 2.566666666666667
+    }
+   ],
+   "pass_bar": false
+  },
+  "gru_floor:true": {
+   "caught": 8.0,
+   "fi": 2.0,
+   "auroc": 0.7536363636363637,
+   "btwa": 0.5628877005347593,
+   "ttw_vs_gemini_s": -2.4833333333333334,
+   "per_seed": [
+    {
+     "caught": 8,
+     "fi": 2,
+     "auroc": 0.76,
+     "btwa": 0.5628877005347593,
+     "ttw_vs_gemini_s": -2.4833333333333334
+    },
+    {
+     "caught": 8,
+     "fi": 2,
+     "auroc": 0.7536363636363637,
+     "btwa": 0.5615508021390374,
+     "ttw_vs_gemini_s": -2.0666666666666664
+    },
+    {
+     "caught": 8,
+     "fi": 2,
+     "auroc": 0.6909090909090909,
+     "btwa": 0.5672947049035921,
+     "ttw_vs_gemini_s": -3.283333333333333
+    },
+    {
+     "caught": 7,
+     "fi": 3,
+     "auroc": 0.7172727272727273,
+     "btwa": 0.5423262032085561,
+     "ttw_vs_gemini_s": -3.3666666666666667
+    },
+    {
+     "caught": 12,
+     "fi": 2,
+     "auroc": 0.7845454545454545,
+     "btwa": 0.595668449197861,
+     "ttw_vs_gemini_s": -2.0666666666666664
+    }
+   ],
+   "pass_bar": true
+  },
+  "gru_floor:shuffled": {
+   "caught": 3.0,
+   "fi": 0.0,
+   "auroc": 0.7390909090909091,
+   "btwa": 0.5289304812834225,
+   "ttw_vs_gemini_s": -3.3,
+   "per_seed": [
+    {
+     "caught": 3,
+     "fi": 0,
+     "auroc": 0.7527272727272727,
+     "btwa": 0.5289304812834225,
+     "ttw_vs_gemini_s": -2.466666666666667
+    },
+    {
+     "caught": 2,
+     "fi": 0,
+     "auroc": 0.7390909090909091,
+     "btwa": 0.513048128342246,
+     "ttw_vs_gemini_s": -6.199999999999999
+    },
+    {
+     "caught": 3,
+     "fi": 0,
+     "auroc": 0.6945454545454546,
+     "btwa": 0.5329411764705883,
+     "ttw_vs_gemini_s": -3.3
+    },
+    {
+     "caught": 3,
+     "fi": 0,
+     "auroc": 0.7190909090909091,
+     "btwa": 0.5262566844919786,
+     "ttw_vs_gemini_s": -3.3
+    },
+    {
+     "caught": 8,
+     "fi": 1,
+     "auroc": 0.7663636363636364,
+     "btwa": 0.5662299465240642,
+     "ttw_vs_gemini_s": -2.783333333333333
+    }
+   ],
+   "pass_bar": false
+  },
+  "gru_floor:zero": {
+   "caught": 0.0,
+   "fi": 0.0,
+   "auroc": 0.7518181818181818,
+   "btwa": 0.5,
+   "ttw_vs_gemini_s": null,
+   "per_seed": [
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7518181818181818,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7645454545454545,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.6663636363636364,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7436363636363637,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    },
+    {
+     "caught": 0,
+     "fi": 0,
+     "auroc": 0.7745454545454545,
+     "btwa": 0.5,
+     "ttw_vs_gemini_s": null
+    }
+   ],
+   "pass_bar": false
+  },
+  "risk_logistic:action_conditioned": false,
+  "risk_mlp:action_conditioned": true,
+  "gru_floor:action_conditioned": false
+ }
+}

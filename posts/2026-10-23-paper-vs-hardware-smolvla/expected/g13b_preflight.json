@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "policy_path": "ravediamond/smolvla_2026-09-24_14-34-40",
+    "revision": "c1d76f6",
+    "source": "ravediamond/so101_bowls_all",
+    "s": 25,
+    "delays": [
+      8,
+      12,
+      20
+    ],
+    "episodes": [
+      2,
+      6,
+      12,
+      29,
+      44,
+      51,
+      84,
+      88,
+      97,
+      101,
+      104,
+      106,
+      112,
+      113,
+      129,
+      138,
+      139,
+      158,
+      170,
+      171
+    ],
+    "device": "cuda",
+    "seed": 0
+  },
+  "beta": 5.0,
+  "device": "cuda",
+  "naive": 1027.6,
+  "identity_d8": 1031.6,
+  "identity_d12": 1033.4,
+  "identity_d20": 1032.4,
+  "exact_d8": 1961.5,
+  "exact_d12": 1963.6,
+  "exact_d20": 1961.6,
+  "overwrite_d8": 1034.3,
+  "overwrite_d12": 1038.9,
+  "overwrite_d20": 1037.5,
+  "max_memory_mib": 1268,
+  "exact_within_budget": false,
+  "budget_ms": 666.7
+}

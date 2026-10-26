@@ -1,0 +1,13 @@
+{
+ "loaded": 666,
+ "reinitialised": [
+  "action_head.state_projection.net.0.weight",
+  "action_head.state_projection.net.0.bias",
+  "action_head.state_projection.net.1.weight",
+  "action_head.state_projection.net.1.bias",
+  "action_head.decoder.action_projection.layers.2.weight",
+  "action_head.decoder.action_projection.layers.2.bias"
+ ],
+ "checkpoint_tensors": 672,
+ "checkpoint": "/root/libero/checkpoints/libero/turbovla_libero.pth"
+}

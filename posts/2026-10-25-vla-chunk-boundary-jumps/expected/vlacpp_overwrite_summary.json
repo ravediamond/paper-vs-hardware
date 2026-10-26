@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "gguf": "<models dir>/smolvla-so101-bowls-020000.gguf",
+    "source": "ravediamond/so101_bowls_all",
+    "episodes": [
+      2,
+      6,
+      12,
+      29,
+      44,
+      51,
+      84,
+      88,
+      97,
+      101,
+      104,
+      106,
+      112,
+      113,
+      129,
+      138,
+      139,
+      158,
+      170,
+      171
+    ],
+    "s": 25,
+    "delays": [
+      8,
+      12,
+      20
+    ],
+    "seed": 0
+  },
+  "summary": {
+    "naive": {
+      "8": {
+        "prefix_err": 1.5969,
+        "jump_ratio": 3.3887,
+        "accel_ratio": 3.634,
+        "drift": 1.5117,
+        "ms": 371.0153,
+        "boundaries": 254
+      },
+      "12": {
+        "prefix_err": 1.6917,
+        "jump_ratio": 3.3806,
+        "accel_ratio": 3.9113,
+        "drift": 1.5505,
+        "ms": 371.0153,
+        "boundaries": 254
+      },
+      "20": {
+        "prefix_err": 1.8787,
+        "jump_ratio": 3.6796,
+        "accel_ratio": 4.629,
+        "drift": 1.5051,
+        "ms": 371.0153,
+        "boundaries": 254
+      }
+    },
+    "overwrite": {
+      "8": {
+        "prefix_err": 0.0,
+        "jump_ratio": 0.9831,
+        "accel_ratio": 1.2087,
+        "drift": 1.4985,
+        "ms": 371.4249,
+        "boundaries": 254
+      },
+      "12": {
+        "prefix_err": 0.0,
+        "jump_ratio": 0.901,
+        "accel_ratio": 1.1882,
+        "drift": 1.5027,
+        "ms": 371.3884,
+        "boundaries": 254
+      },
+      "20": {
+        "prefix_err": 0.0,
+        "jump_ratio": 1.0473,
+        "accel_ratio": 1.2933,
+        "drift": 1.4459,
+        "ms": 371.4144,
+        "boundaries": 254
+      }
+    }
+  },
+  "jump_cut_vs_naive": {
+    "8": 0.71,
+    "12": 0.733,
+    "20": 0.715
+  },
+  "overwrite_max_prefix_err_deg": 0.0
+}

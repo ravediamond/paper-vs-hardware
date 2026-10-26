@@ -1,0 +1,26 @@
+dataset,episode_index,task,n_frames,onset_frame,placeholder,labeller,timestamp,note
+ravediamond/so101-bowls-policy-rollouts,2,Put the blue bowl in the pink bowl.,741,180,0,vlm:gemini-3.8-flash,2026-10-23T06:05:16+00:00,
+ravediamond/so101-bowls-policy-rollouts,18,Put the blue bowl in the pink bowl.,465,349,0,vlm:gemini-3.8-flash,2026-10-23T06:05:41+00:00,
+ravediamond/so101-bowls-policy-rollouts,28,Put the blue bowl in the pink bowl.,605,79,0,vlm:gemini-3.8-flash,2026-10-23T06:06:19+00:00,"refine 1 saw it at 79, kept 79"
+ravediamond/so101-bowls-policy-rollouts,29,Put the blue bowl in the pink bowl.,605,94,0,vlm:gemini-3.8-flash,2026-10-23T06:07:03+00:00,
+ravediamond/so101-bowls-policy-rollouts,30,Put the blue bowl in the pink bowl.,639,201,0,vlm:gemini-3.8-flash,2026-10-23T06:07:43+00:00,
+ravediamond/so101-bowls-policy-rollouts,36,Put the blue bowl in the pink bowl.,658,418,0,vlm:gemini-3.8-flash,2026-10-23T06:08:10+00:00,
+ravediamond/so101-bowls-policy-rollouts,37,Put the blue bowl in the pink bowl.,658,192,0,vlm:gemini-3.8-flash,2026-10-23T06:08:47+00:00,"refine 2 saw it at 192, kept 192"
+ravediamond/so101-bowls-policy-rollouts,40,Put the blue bowl in the pink bowl.,603,105,0,vlm:gemini-3.8-flash,2026-10-23T06:09:29+00:00,"refine 1 saw it at 105, kept 105"
+ravediamond/so101-bowls-policy-rollouts,41,Put the blue bowl in the pink bowl.,601,212,0,vlm:gemini-3.8-flash,2026-10-23T06:10:04+00:00,"refine 2 saw it at 212, kept 212"
+ravediamond/so101-bowls-policy-rollouts,42,Put the blue bowl in the pink bowl.,601,61,0,vlm:gemini-3.8-flash,2026-10-23T06:10:47+00:00,
+ravediamond/so101-bowls-policy-rollouts,44,Put the blue bowl in the pink bowl.,611,265,0,vlm:gemini-3.8-flash,2026-10-23T06:11:13+00:00,"refine 1 saw it at 265, kept 265"
+ravediamond/so101-bowls-policy-rollouts,45,Put the blue bowl in the pink bowl.,611,80,0,vlm:gemini-3.8-flash,2026-10-23T06:11:32+00:00,"refine 1 saw it at 80, kept 80"
+ravediamond/so101-bowls-policy-rollouts,46,Put the blue bowl in the pink bowl.,611,186,0,vlm:gemini-3.8-flash,2026-10-23T06:12:16+00:00,"refine 1 saw it at 186, kept 186"
+ravediamond/so101-bowls-policy-rollouts,47,Put the blue bowl in the pink bowl.,610,79,0,vlm:gemini-3.8-flash,2026-10-23T06:13:13+00:00,"refine 1 saw it at 79, kept 79"
+ravediamond/so101-bowls-policy-rollouts,48,Put the blue bowl in the pink bowl.,610,159,0,vlm:gemini-3.8-flash,2026-10-23T06:13:33+00:00,"refine 1 saw it at 159, kept 159"
+ravediamond/so101-bowls-policy-rollouts,49,Put the blue bowl in the pink bowl.,610,159,0,vlm:gemini-3.8-flash,2026-10-23T06:13:54+00:00,"refine 1 saw it at 159, kept 159"
+ravediamond/so101-bowls-policy-rollouts,51,Put the blue bowl in the pink bowl.,611,80,0,vlm:gemini-3.8-flash,2026-10-23T06:14:20+00:00,"refine 1 saw it at 80, kept 80"
+ravediamond/so101-bowls-policy-rollouts,52,Put the blue bowl in the pink bowl.,610,79,0,vlm:gemini-3.8-flash,2026-10-23T06:14:42+00:00,"refine 1 saw it at 79, kept 79"
+ravediamond/so101-bowls-policy-rollouts,53,Put the blue bowl in the pink bowl.,611,53,0,vlm:gemini-3.8-flash,2026-10-23T06:15:05+00:00,"refine 1 saw it at 53, kept 53"
+ravediamond/so101-bowls-policy-rollouts,54,Pick up the blue bowl.,601,78,0,vlm:gemini-3.8-flash,2026-10-23T06:15:35+00:00,"refine 1 saw it at 78, kept 78"
+ravediamond/so101-bowls-policy-rollouts,55,Pick up the blue bowl.,610,194,0,vlm:gemini-3.8-flash,2026-10-23T06:16:03+00:00,
+ravediamond/so101-bowls-policy-rollouts,58,Put the blue bowl in the pink bowl.,562,220,0,vlm:gemini-3.8-flash,2026-10-23T06:16:36+00:00,"refine 1 saw it at 220, kept 220"
+ravediamond/so101-bowls-policy-rollouts,66,Put the blue bowl in the pink bowl.,603,7,0,vlm:gemini-3.8-flash,2026-10-23T06:17:10+00:00,
+ravediamond/so101-bowls-policy-rollouts,67,Put the blue bowl in the pink bowl.,602,26,0,vlm:gemini-3.8-flash,2026-10-23T06:17:32+00:00,"refine 1 saw it at 26, kept 26"
+ravediamond/so101-bowls-policy-rollouts,68,Put the blue bowl in the pink bowl.,602,131,0,vlm:gemini-3.8-flash,2026-10-23T06:18:04+00:00,"refine 1 saw it at 131, kept 131"

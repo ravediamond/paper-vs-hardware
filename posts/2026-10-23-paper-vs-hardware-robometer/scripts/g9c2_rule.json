@@ -1,0 +1,59 @@
+{
+ "g_open": 10.0,
+ "rest_tol_deg": 15.0,
+ "still_tol_deg": 1.5,
+ "still_s": 0.5,
+ "hand_fps": 5,
+ "skin_ycrcb": [
+  [
+   0,
+   145,
+   77
+  ],
+  [
+   255,
+   180,
+   127
+  ]
+ ],
+ "skin_hsv": [
+  [
+   0,
+   80,
+   50
+  ],
+  [
+   25,
+   255,
+   255
+  ]
+ ],
+ "skin_open_px": 7,
+ "skin_min_px": 4000,
+ "dev_result": {
+  "n": 182,
+  "found_rate": 0.9945,
+  "hand_false_positives": 0,
+  "hand_misses": 0,
+  "hand_true_detected": 3,
+  "max_skin_px_non_hand": 344,
+  "accuracy_at_rule_frame": 0.9945,
+  "s_before_end_p50_p95": [
+   0.0,
+   0.0
+  ],
+  "invalid": [
+   [
+    "so101_bowl_blue_in_pink",
+    77
+   ]
+  ]
+ },
+ "notes": [
+  "Set on dev data only (teleop demos), 2026-10-16, before the rule was run on any test rollout (G9C2_PROTOCOL.md amendment 1).",
+  "g_open 10: gripper closed 0.6, open ~27-33 on dev. rest_tol_deg 15: dev end-vs-start joint deviation p95 ~10 deg (max 20.6). still 1.5 deg over 0.5 s.",
+  "Skin: first candidate (YCrCb Cr 135-173, S >= 40, 1500 px) had dev false positives on red arm cables and a pink-bowl fringe (Cr ~137, S ~53, ~1.7k px); tightened to Cr 145-180, S >= 80, >= 4000 px on dev evidence.",
+  "Dev hand labels by eye: hands only in blue_in_pink ep 8, ep 78 and pink_in_blue ep 6 (operator at the start); all 3 detected, 0 false positives, largest non-hand region 344 px.",
+  "Skin ranges fitted to the one operator in these recordings."
+ ]
+}

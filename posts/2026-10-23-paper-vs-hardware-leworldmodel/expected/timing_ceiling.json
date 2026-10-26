@@ -1,0 +1,19 @@
+{
+ "windows": 192,
+ "latent_var": 0.9917,
+ "d_shift_minus15": 0.3944,
+ "d_shift_plus15": 0.3708,
+ "d_over_var": [
+  0.398,
+  0.374
+ ],
+ "true_action_mse_k30": 0.31331,
+ "indicative_ceiling_ratio": [
+  2.259,
+  2.183
+ ],
+ "measured_ratio_k30": [
+  1.986,
+  1.58
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "windows": 192,
+ "latent_std": 0.9844,
+ "gates": [
+  {
+   "shift_msa": 2.6849,
+   "scale_msa": 3.4127,
+   "gate_msa": 1.614,
+   "shift_mlp": 2.8467,
+   "scale_mlp": 4.016,
+   "gate_mlp": 3.1829,
+   "block": 0
+  },
+  {
+   "shift_msa": 2.5721,
+   "scale_msa": 2.5644,
+   "gate_msa": 1.5589,
+   "shift_mlp": 2.96,
+   "scale_mlp": 3.4024,
+   "gate_mlp": 2.9417,
+   "block": 1
+  },
+  {
+   "shift_msa": 2.6734,
+   "scale_msa": 2.8543,
+   "gate_msa": 1.8387,
+   "shift_mlp": 3.0166,
+   "scale_mlp": 2.8724,
+   "gate_mlp": 2.2388,
+   "block": 2
+  },
+  {
+   "shift_msa": 2.7601,
+   "scale_msa": 2.6509,
+   "gate_msa": 1.284,
+   "shift_mlp": 2.8564,
+   "scale_mlp": 2.6268,
+   "gate_mlp": 2.0301,
+   "block": 3
+  }
+ ],
+ "facts": {
+  "action_raw_mean": [
+   3.819999933242798,
+   -32.27000045776367,
+   30.040000915527344,
+   74.51000213623047,
+   -10.069999694824219,
+   5.070000171661377
+  ],
+  "action_raw_std": [
+   17.489999771118164,
+   42.959999084472656,
+   40.68000030517578,
+   9.199999809265137,
+   7.619999885559082,
+   10.140000343322754
+  ],
+  "pairing": "adapter: frame t and action t (the command recorded at frame t, which leads to frame t+1); model: predict(z[j:j+C], a[j:j+C])[-1] -> z[j+C], so the last action used is a[j+C-1], the one leaving the last context frame"
+ },
+ "by_k": {
+  "1": {
+   "true_mse": 0.00326,
+   "copy_last_mse": 0.00556,
+   "cross_episode_ratio": 2.096,
+   "zero_ratio": 2.075,
+   "constant_first_ratio": 1.034,
+   "shift_+15_ratio": 1.463,
+   "shift_-15_ratio": 1.566
+  },
+  "5": {
+   "true_mse": 0.04155,
+   "copy_last_mse": 0.08506,
+   "cross_episode_ratio": 3.2,
+   "zero_ratio": 3.713,
+   "constant_first_ratio": 1.132,
+   "shift_+15_ratio": 2.056,
+   "shift_-15_ratio": 1.955
+  },
+  "10": {
+   "true_mse": 0.10883,
+   "copy_last_mse": 0.24464,
+   "cross_episode_ratio": 3.341,
+   "zero_ratio": 4.536,
+   "constant_first_ratio": 1.353,
+   "shift_+15_ratio": 1.975,
+   "shift_-15_ratio": 2.091
+  },
+  "15": {
+   "true_mse": 0.17039,
+   "copy_last_mse": 0.42622,
+   "cross_episode_ratio": 3.477,
+   "zero_ratio": 4.641,
+   "constant_first_ratio": 1.739,
+   "shift_+15_ratio": 1.86,
+   "shift_-15_ratio": 2.171
+  },
+  "20": {
+   "true_mse": 0.22507,
+   "copy_last_mse": 0.60875,
+   "cross_episode_ratio": 3.511,
+   "zero_ratio": 4.441,
+   "constant_first_ratio": 2.105,
+   "shift_+15_ratio": 1.765,
+   "shift_-15_ratio": 2.204
+  },
+  "30": {
+   "true_mse": 0.31331,
+   "copy_last_mse": 0.89271,
+   "cross_episode_ratio": 3.341,
+   "zero_ratio": 3.978,
+   "constant_first_ratio": 2.543,
+   "shift_+15_ratio": 1.58,
+   "shift_-15_ratio": 1.986
+  }
+ },
+ "sensitivity_k30": {
+  "cross_episode": 0.9527,
+  "zero": 1.0723,
+  "constant_first": 0.687,
+  "shift_+15": 0.5075,
+  "shift_-15": 0.5529
+ },
+ "verdict_k30_min_ratio": 1.58,
+ "decision": "action path alive (>= 1.3 at K=30 for every corruption)"
+}
