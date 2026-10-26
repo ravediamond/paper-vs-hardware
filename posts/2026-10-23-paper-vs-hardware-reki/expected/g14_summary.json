@@ -1,0 +1,104 @@
+{
+  "all": {
+    "episodes": 69,
+    "oscillating": 14,
+    "share": 0.203
+  },
+  "failed": {
+    "episodes": 25,
+    "oscillating": 6,
+    "share": 0.24
+  },
+  "succeeded": {
+    "episodes": 44,
+    "oscillating": 8,
+    "share": 0.182
+  },
+  "failed_without_turbovla": {
+    "episodes": 8,
+    "oscillating": 5,
+    "share": 0.625
+  },
+  "per_policy": {
+    "act": {
+      "episodes": 10,
+      "oscillating": 5,
+      "share": 0.5
+    },
+    "smolvla": {
+      "episodes": 10,
+      "oscillating": 2,
+      "share": 0.2
+    },
+    "smolvla_vlacpp": {
+      "episodes": 10,
+      "oscillating": 1,
+      "share": 0.1
+    },
+    "smolvla_vlacpp_fa": {
+      "episodes": 10,
+      "oscillating": 3,
+      "share": 0.3
+    },
+    "turbovla_a": {
+      "episodes": 2,
+      "oscillating": 0,
+      "share": 0.0
+    },
+    "turbovla_c": {
+      "episodes": 4,
+      "oscillating": 0,
+      "share": 0.0
+    },
+    "turbovla_trimmed": {
+      "episodes": 10,
+      "oscillating": 1,
+      "share": 0.1
+    },
+    "turbovla_v2": {
+      "episodes": 3,
+      "oscillating": 0,
+      "share": 0.0
+    },
+    "vla_jepa": {
+      "episodes": 10,
+      "oscillating": 2,
+      "share": 0.2
+    }
+  },
+  "bar": ">= 10% of failed episodes oscillate",
+  "verdict": "keep registers (G14 pass)",
+  "arm_state_range": {
+    "min": [
+      -37.20000076293945,
+      -104.19999694824219,
+      -54.0,
+      52.400001525878906,
+      -27.100000381469727
+    ],
+    "max": [
+      39.0,
+      50.29999923706055,
+      96.9000015258789,
+      102.0,
+      0.6000000238418579
+    ]
+  },
+  "params": {
+    "cos": -0.5,
+    "min_move_deg": 3.0,
+    "consecutive": 3,
+    "chunks": {
+      "act": 100,
+      "smolvla": 50,
+      "smolvla_vlacpp": 50,
+      "smolvla_vlacpp_fa": 50,
+      "vla_jepa": 30,
+      "turbovla_a": 12,
+      "turbovla_c": 12,
+      "turbovla_trimmed": 12,
+      "turbovla_v2": 12
+    },
+    "source": "ravediamond/so101-bowls-policy-rollouts"
+  }
+}
