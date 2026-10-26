@@ -4,15 +4,31 @@ Code, pinned data and checkpoints to reproduce each post of the *paper vs hardwa
 tested on a $300 SO-101 arm with two webcams and a Jetson Orin NX. Posts: https://shissorobotics.com/papers/ ·
 site: https://shissorobotics.com
 
-| post | claim (short) | L0 | L1 |
-|---|---|---|---|
-| [LeWorldModel](posts/2026-10-23-paper-vs-hardware-leworldmodel/) | world model 0.31 vs copy-last 0.89; plans no better than an action-only baseline | ✔ | pending checkpoint visibility |
-| [ContactGuard](posts/2026-10-23-paper-vs-hardware-contactguard/) | imagined-latent probe 0.70 vs current latent 0.82 | ✔ | pending checkpoint visibility |
-| [ReAP](posts/2026-10-23-paper-vs-hardware-reap/) | risk head 0.93 → 0.789 vs 0.708 shuffled with controls | ✔ | pending checkpoint visibility |
-| [Robometer](posts/2026-10-23-paper-vs-hardware-robometer/) | Robometer-4B 0.818 pooled; deterministic judge at rest, 0 false positives | ✔ | judge ✔ (public data); Robometer L0 only |
-| [TurboVLA](posts/2026-10-23-paper-vs-hardware-turbovla/) | authors' trainer on our data: task swap 0.020° vs 0.105 control | ✔ | pending checkpoint visibility |
-| [SmolVLA](posts/2026-10-23-paper-vs-hardware-smolvla/) | 974 → 238 ms per chunk on the Orin with vla.cpp | ✔ (tick files) | L2 only (Orin + arm) |
-| [Chunk boundaries](posts/2026-10-25-vla-chunk-boundary-jumps/) | prefix overwrite cuts the boundary jump 71–73 % at +0.4 ms | ✔ | pending checkpoint visibility |
+| folder | posts | compute | cost (USD, retries incl.) | L0 | L1 |
+|---|---|---|---|---|---|
+| [2026-09-09-lerobot-jetson-container](posts/2026-09-09-lerobot-jetson-container/) | 09-09 LeRobot on a Jetson | Orin NX | 0 | ✔ | build (L2-like) |
+| [2026-09-29-three-policies-so101](posts/2026-09-29-three-policies-so101/) | 09-29 three policies | Orin NX + Mac, arm | 0 (training n/r) | ✔ | L2 (arm) |
+| [2026-10-23-paper-vs-hardware-smolvla](posts/2026-10-23-paper-vs-hardware-smolvla/) | 10-01 SmolVLA 4x · PvH SmolVLA | Orin NX, arm | 0 (training n/r) | ✔ | L2 (arm) |
+| [2026-10-06-twelve-vlas-orin](posts/2026-10-06-twelve-vlas-orin/) | 10-06 twelve VLAs | Orin NX | 0 | ✔ | Orin needed |
+| [2026-10-23-paper-vs-hardware-turbovla](posts/2026-10-23-paper-vs-hardware-turbovla/) | 10-08 TurboVLA · PvH TurboVLA | vast.ai GPU | ~2.8 (incl. ~0.8 failed starts; port-era n/r) | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-vla-jepa](posts/2026-10-23-paper-vs-hardware-vla-jepa/) | 10-08 VLA-JEPA $10 · PvH VLA-JEPA | vast.ai GPU | ~9.7 | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-leworldmodel](posts/2026-10-23-paper-vs-hardware-leworldmodel/) | 10-11 $3.30 world model · 10-13 WM loses · PvH LeWorldModel | vast.ai GPU | ~6.6 (incl. 2.96 failed attempts) | ✔ | pending checkpoint visibility |
+| [2026-10-12-act-vlacpp-port](posts/2026-10-12-act-vlacpp-port/) | 10-12 ACT port | Orin NX | 0 (training n/r) | ✔ | pending checkpoint visibility |
+| [2026-10-14-g6-progress-latents](posts/2026-10-14-g6-progress-latents/) | 10-14 latent distance · PvH H-JEPA | Mac | 0 | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-robometer](posts/2026-10-23-paper-vs-hardware-robometer/) | 10-16 judging a rollout · PvH Robometer | vast.ai GPU | ~8.55–9.55 (incl. G9b ~2.3–3.3 never trained, ~1 OOM re-score) | ✔ | judge ✔ public; Robometer L0 only |
+| [2026-10-17-g10-outcome-readout](posts/2026-10-17-g10-outcome-readout/) | 10-17 what the WM is for | Mac | 0 | ✔ | pending checkpoint visibility |
+| [2026-10-19-six-monitors-w1](posts/2026-10-19-six-monitors-w1/) | 10-19 six monitors · PvH VLA-Corrector | Orin NX + Gemini API | ~2.1–3.1 API | ✔ | pending checkpoint visibility; API |
+| [2026-10-20-flora-rewarder-input-format](posts/2026-10-20-flora-rewarder-input-format/) | 10-20 input format | vast.ai GPU + Gemini API | ~4.95 (2.2 GPU + 2.75 API) | ✔ | GPU ≥ 80 GB: L0 only |
+| [2026-10-22-voided-gates](posts/2026-10-22-voided-gates/) | 10-22 two gates voided | Orin NX | 0 | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-contactguard](posts/2026-10-23-paper-vs-hardware-contactguard/) | PvH ContactGuard · PvH FAIL-Detect/SAFE | Orin NX | 0 | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-dino-wm](posts/2026-10-23-paper-vs-hardware-dino-wm/) | PvH DINO-WM | vast.ai GPU | ~1.7 (W2 < 1 bounded) | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-d-jepa](posts/2026-10-23-paper-vs-hardware-d-jepa/) | PvH D-JEPA | Orin NX | 0 | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-reap](posts/2026-10-23-paper-vs-hardware-reap/) | PvH ReAP | Orin NX + Gemini API | < 0.1 API | ✔ | pending checkpoint visibility |
+| [2026-10-23-paper-vs-hardware-reki](posts/2026-10-23-paper-vs-hardware-reki/) | PvH REKI | Orin NX | 0 (REKI training: WS-025, added when done) | ✔ | ✔ public rollouts (CPU) |
+| [2026-10-23-paper-vs-hardware-robojepa](posts/2026-10-23-paper-vs-hardware-robojepa/) | PvH RoboJEPA | vast.ai GPU | ~1.2 | ✔ | GPU (1B encoder) |
+| [2026-10-25-vla-chunk-boundary-jumps](posts/2026-10-25-vla-chunk-boundary-jumps/) | 10-25 chunk boundaries · PvH Real-Time Chunking | Orin NX | 0 | ✔ | pending checkpoint visibility |
+
+**All 32 posts:** ~$32.8–33.8 on vast.ai and ~$4.9–5.9 of API (Gemini; Flora on vast is in the GPU figure), failed or never-finished attempts included where the research notes record them: G0 ($2.96), TurboVLA path A (~$0.8), Robometer G9b (~$2.3–3.3, never trained), Robometer OOM re-score (~$1). Not recorded, so not in the total: the training of the ACT, SmolVLA and port-era TurboVLA checkpoints. One post has no run behind it ([the station as a harness](https://shissorobotics.com/blog/2026/10/22/the-station-as-a-harness/)). Arithmetic: `costs.md` in the research repo (not public); every figure is in the folder's README.
 
 ## Replication levels
 

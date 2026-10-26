@@ -1,0 +1,33 @@
+{
+ "candidate": "W2 (frozen DINOv2-S + predictor, 128 tokens/frame, 33.2 M params)",
+ "device": "mps",
+ "k": 10,
+ "horizon": 30,
+ "reps": 10,
+ "stages": {
+  "encode_2_views": {
+   "median_ms": 19.61,
+   "p95_ms": 20.78
+  },
+  "prior_stand_in": {
+   "median_ms": 0.0,
+   "p95_ms": 0.0
+  },
+  "rollouts_k10_h30": {
+   "median_ms": 1793.44,
+   "p95_ms": 2098.73
+  },
+  "cost_argmin": {
+   "median_ms": 1.28,
+   "p95_ms": 4.0
+  }
+ },
+ "total_median_ms": 1814.33,
+ "total_p95_ms_sum_of_p95": 2123.51,
+ "notes": {
+  "prior": "stand-in: 0.0 ms fixed + dummy MLP 0.0 M params (not a measured SmolVLA / Patch Policy)",
+  "weights": "/Users/ravindu.somawansa@airliquide.com/robot-data/wm/runs/20261012T0937_smoke_55531108/out/w2/weights_final.pt",
+  "chunk": "each decision covers one action chunk; compare total to the chunk duration",
+  "caveat": "Mac MPS smoke while a BotFails ffmpeg conversion used the CPU: indicative only. W2 weights are the 5-minute smoke checkpoint (timing does not depend on values). Not the Orin."
+ }
+}

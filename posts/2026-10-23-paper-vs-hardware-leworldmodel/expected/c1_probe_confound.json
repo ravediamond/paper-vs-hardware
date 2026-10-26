@@ -1,0 +1,277 @@
+{
+ "families": {
+  "act": [
+   20,
+   1
+  ],
+  "smolvla": [
+   42,
+   5
+  ],
+  "turbovla": [
+   9,
+   8
+  ],
+  "vla_jepa": [
+   10,
+   1
+  ]
+ },
+ "auroc": {
+  "policy_only": {
+   "auroc": 0.762,
+   "ci95": [
+    0.588,
+    0.91
+   ]
+  },
+  "z_t": {
+   "auroc": 0.68,
+   "ci95": [
+    0.529,
+    0.82
+   ]
+  },
+  "zhat30": {
+   "auroc": 0.715,
+   "ci95": [
+    0.56,
+    0.859
+   ]
+  },
+  "policy+z_t": {
+   "auroc": 0.69,
+   "ci95": [
+    0.542,
+    0.825
+   ]
+  },
+  "policy+zhat30": {
+   "auroc": 0.689,
+   "ci95": [
+    0.509,
+    0.851
+   ]
+  }
+ },
+ "diff": {
+  "policy+z_t - policy_only": {
+   "diff": -0.072,
+   "ci95": [
+    -0.243,
+    0.1
+   ]
+  },
+  "policy+zhat30 - policy_only": {
+   "diff": -0.073,
+   "ci95": [
+    -0.199,
+    0.058
+   ]
+  },
+  "policy+zhat30 - policy+z_t": {
+   "diff": -0.001,
+   "ci95": [
+    -0.153,
+    0.156
+   ]
+  }
+ },
+ "non_turbo_only": {
+  "policy_only": 0.511,
+  "z_t": 0.679,
+  "zhat30": 0.545,
+  "policy+z_t": 0.604,
+  "policy+zhat30": 0.473
+ },
+ "timecourse": {
+  "z_t": {
+   "bins_s_rel_first_close": [
+    -6.0,
+    -5.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0
+   ],
+   "curves": {
+    "turbo_fail": {
+     "trials": 8,
+     "mean_risk_by_second_rel_close": [
+      0.438,
+      0.292,
+      0.436,
+      0.429,
+      0.437,
+      0.462,
+      0.361,
+      0.353,
+      0.379,
+      0.324,
+      0.331,
+      0.345,
+      0.344
+     ]
+    },
+    "other_fail": {
+     "trials": 7,
+     "mean_risk_by_second_rel_close": [
+      null,
+      0.577,
+      0.442,
+      0.176,
+      0.166,
+      0.237,
+      0.444,
+      0.392,
+      0.384,
+      0.308,
+      0.244,
+      0.255,
+      0.226
+     ]
+    },
+    "turbo_success": {
+     "trials": 1,
+     "mean_risk_by_second_rel_close": [
+      null,
+      null,
+      0.014,
+      0.302,
+      0.068,
+      0.401,
+      0.534,
+      0.0,
+      0.0,
+      0.003,
+      0.395,
+      0.989,
+      0.286
+     ]
+    },
+    "other_success": {
+     "trials": 65,
+     "mean_risk_by_second_rel_close": [
+      0.729,
+      0.499,
+      0.461,
+      0.33,
+      0.215,
+      0.194,
+      0.201,
+      0.099,
+      0.209,
+      0.216,
+      0.366,
+      0.643,
+      0.654
+     ]
+    }
+   },
+   "auroc_fail_vs_success_first_second": 0.495,
+   "auroc_fail_vs_success_first_second_non_turbo": 0.532,
+   "auroc_turbo_vs_other_first_second": 0.414
+  },
+  "zhat30": {
+   "bins_s_rel_first_close": [
+    -6.0,
+    -5.0,
+    -4.0,
+    -3.0,
+    -2.0,
+    -1.0,
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0
+   ],
+   "curves": {
+    "turbo_fail": {
+     "trials": 8,
+     "mean_risk_by_second_rel_close": [
+      0.529,
+      0.684,
+      0.492,
+      0.511,
+      0.682,
+      0.784,
+      0.849,
+      0.796,
+      0.735,
+      0.688,
+      0.62,
+      0.613,
+      0.611
+     ]
+    },
+    "other_fail": {
+     "trials": 7,
+     "mean_risk_by_second_rel_close": [
+      null,
+      0.805,
+      0.488,
+      0.363,
+      0.445,
+      0.262,
+      0.153,
+      0.346,
+      0.593,
+      0.28,
+      0.252,
+      0.524,
+      0.375
+     ]
+    },
+    "turbo_success": {
+     "trials": 1,
+     "mean_risk_by_second_rel_close": [
+      null,
+      null,
+      0.428,
+      0.159,
+      0.429,
+      0.717,
+      0.0,
+      0.545,
+      0.997,
+      1.0,
+      1.0,
+      0.987,
+      1.0
+     ]
+    },
+    "other_success": {
+     "trials": 65,
+     "mean_risk_by_second_rel_close": [
+      0.339,
+      0.495,
+      0.406,
+      0.266,
+      0.27,
+      0.203,
+      0.159,
+      0.325,
+      0.515,
+      0.649,
+      0.553,
+      0.594,
+      0.609
+     ]
+    }
+   },
+   "auroc_fail_vs_success_first_second": 0.431,
+   "auroc_fail_vs_success_first_second_non_turbo": 0.554,
+   "auroc_turbo_vs_other_first_second": 0.327
+  }
+ }
+}
