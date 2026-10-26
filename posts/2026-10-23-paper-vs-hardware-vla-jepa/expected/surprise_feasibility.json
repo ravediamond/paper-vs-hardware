@@ -1,0 +1,25 @@
+{
+ "checkpoint": "/root/.cache/huggingface/hub/models--ravediamond--vla_jepa_so101_bowls_trimmed/snapshots/c65c98bb713d0e8bf3692e2fbc624869e1d10f05",
+ "enable_world_model": true,
+ "world_model_keys_in_model": 739,
+ "world_model_keys_missing_from_checkpoint": [],
+ "model_keys_missing_from_checkpoint": 1,
+ "checkpoint_keys_unused": 0,
+ "observation_delta_indices": [
+  0,
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28
+ ],
+ "checks": 50,
+ "latency_ms_p50": 1973.19389850054,
+ "latency_ms_p95": 1988.7592971521372,
+ "vram_peak_mb_torch": 6025.60595703125,
+ "loss_median": 1.4654501080513,
+ "power_profile": "25W, jetson_clocks off",
+ "note": "latency = Qwen pass with action tokens + V-JEPA 2 (2 views x 8 frames) + predictor, batch 1, bf16"
+}
