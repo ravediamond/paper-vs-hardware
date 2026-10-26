@@ -1,0 +1,1006 @@
+{
+  "params": {
+    "closed_on_nothing": 5.0,
+    "open": 25.0,
+    "min_shift_px": 50.0,
+    "max_dist_px": 42.0,
+    "place_delta": 2.0
+  },
+  "dev_episodes": 69,
+  "dev": {
+    "events": 138,
+    "present": 83,
+    "premature": 10,
+    "missed": 72,
+    "premature_rate": 0.0725,
+    "missed_rate": 0.8675,
+    "by_event": {
+      "grasp": {
+        "on_time": 0,
+        "premature": 10,
+        "missed": 40,
+        "correct": 19
+      },
+      "place": {
+        "on_time": 7,
+        "premature": 0,
+        "missed": 32,
+        "correct": 30
+      }
+    },
+    "per_event": [
+      {
+        "episode": 0,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 180
+      },
+      {
+        "episode": 0,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 248
+      },
+      {
+        "episode": 1,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 182
+      },
+      {
+        "episode": 1,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 256
+      },
+      {
+        "episode": 2,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 2,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 3,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 264,
+        "truth": 193
+      },
+      {
+        "episode": 3,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 257
+      },
+      {
+        "episode": 4,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 270,
+        "truth": 182
+      },
+      {
+        "episode": 4,
+        "event": "place",
+        "result": "on_time",
+        "fired": 279,
+        "truth": 266
+      },
+      {
+        "episode": 5,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 186
+      },
+      {
+        "episode": 5,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 276
+      },
+      {
+        "episode": 6,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 249,
+        "truth": 183
+      },
+      {
+        "episode": 6,
+        "event": "place",
+        "result": "on_time",
+        "fired": 258,
+        "truth": 245
+      },
+      {
+        "episode": 7,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 705,
+        "truth": 179
+      },
+      {
+        "episode": 7,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 273
+      },
+      {
+        "episode": 8,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 184
+      },
+      {
+        "episode": 8,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 243
+      },
+      {
+        "episode": 9,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 184
+      },
+      {
+        "episode": 9,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 257
+      },
+      {
+        "episode": 10,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 231,
+        "truth": 129
+      },
+      {
+        "episode": 10,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 203
+      },
+      {
+        "episode": 11,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 264,
+        "truth": 181
+      },
+      {
+        "episode": 11,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 259
+      },
+      {
+        "episode": 12,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 141
+      },
+      {
+        "episode": 12,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 13,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 126,
+        "truth": 172
+      },
+      {
+        "episode": 13,
+        "event": "place",
+        "result": "on_time",
+        "fired": 255,
+        "truth": 258
+      },
+      {
+        "episode": 14,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 177
+      },
+      {
+        "episode": 14,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 260
+      },
+      {
+        "episode": 15,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 261,
+        "truth": 192
+      },
+      {
+        "episode": 15,
+        "event": "place",
+        "result": "on_time",
+        "fired": 270,
+        "truth": 259
+      },
+      {
+        "episode": 16,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 270,
+        "truth": 199
+      },
+      {
+        "episode": 16,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 276
+      },
+      {
+        "episode": 17,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 231,
+        "truth": 141
+      },
+      {
+        "episode": 17,
+        "event": "place",
+        "result": "on_time",
+        "fired": 240,
+        "truth": 242
+      },
+      {
+        "episode": 18,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 18,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 19,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 258,
+        "truth": 162
+      },
+      {
+        "episode": 19,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 222
+      },
+      {
+        "episode": 20,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 312,
+        "truth": 183
+      },
+      {
+        "episode": 20,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 285
+      },
+      {
+        "episode": 21,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 168,
+        "truth": 289
+      },
+      {
+        "episode": 21,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 406
+      },
+      {
+        "episode": 22,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 294,
+        "truth": 196
+      },
+      {
+        "episode": 22,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 320
+      },
+      {
+        "episode": 23,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 285,
+        "truth": 186
+      },
+      {
+        "episode": 23,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 282
+      },
+      {
+        "episode": 24,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 315
+      },
+      {
+        "episode": 24,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 380
+      },
+      {
+        "episode": 25,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 263
+      },
+      {
+        "episode": 25,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 341
+      },
+      {
+        "episode": 26,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 249,
+        "truth": 174
+      },
+      {
+        "episode": 26,
+        "event": "place",
+        "result": "on_time",
+        "fired": 258,
+        "truth": 236
+      },
+      {
+        "episode": 27,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 348,
+        "truth": 289
+      },
+      {
+        "episode": 27,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 364
+      },
+      {
+        "episode": 28,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 28,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 29,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 29,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 30,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 255,
+        "truth": -1
+      },
+      {
+        "episode": 30,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 31,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 240,
+        "truth": 171
+      },
+      {
+        "episode": 31,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 250
+      },
+      {
+        "episode": 32,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 276,
+        "truth": 182
+      },
+      {
+        "episode": 32,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 251
+      },
+      {
+        "episode": 33,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 196
+      },
+      {
+        "episode": 33,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 250
+      },
+      {
+        "episode": 34,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 240,
+        "truth": 156
+      },
+      {
+        "episode": 34,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 35,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 306,
+        "truth": 257
+      },
+      {
+        "episode": 35,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 301
+      },
+      {
+        "episode": 36,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 36,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 37,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 459,
+        "truth": -1
+      },
+      {
+        "episode": 37,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 38,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 276,
+        "truth": 198
+      },
+      {
+        "episode": 38,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 273
+      },
+      {
+        "episode": 39,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 571
+      },
+      {
+        "episode": 39,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 628
+      },
+      {
+        "episode": 40,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 114,
+        "truth": -1
+      },
+      {
+        "episode": 40,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 41,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 41,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 42,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 42,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 43,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 198,
+        "truth": 132
+      },
+      {
+        "episode": 43,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 44,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 44,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 45,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 45,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 46,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 351,
+        "truth": -1
+      },
+      {
+        "episode": 46,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 47,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 246,
+        "truth": -1
+      },
+      {
+        "episode": 47,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 48,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 48,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 49,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 49,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 50,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 234,
+        "truth": 145
+      },
+      {
+        "episode": 50,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 51,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 51,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 52,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 52,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 53,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 53,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 54,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 54,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 55,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 55,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 56,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 133
+      },
+      {
+        "episode": 56,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 222
+      },
+      {
+        "episode": 57,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 456,
+        "truth": 130
+      },
+      {
+        "episode": 57,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 58,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 58,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 59,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 249,
+        "truth": 292
+      },
+      {
+        "episode": 59,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 372
+      },
+      {
+        "episode": 60,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 216,
+        "truth": 141
+      },
+      {
+        "episode": 60,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 211
+      },
+      {
+        "episode": 61,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 225,
+        "truth": 137
+      },
+      {
+        "episode": 61,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 203
+      },
+      {
+        "episode": 62,
+        "event": "grasp",
+        "result": "missed",
+        "fired": null,
+        "truth": 143
+      },
+      {
+        "episode": 62,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 220
+      },
+      {
+        "episode": 63,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 249,
+        "truth": 146
+      },
+      {
+        "episode": 63,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 268
+      },
+      {
+        "episode": 64,
+        "event": "grasp",
+        "result": "missed",
+        "fired": 231,
+        "truth": 135
+      },
+      {
+        "episode": 64,
+        "event": "place",
+        "result": "missed",
+        "fired": null,
+        "truth": 195
+      },
+      {
+        "episode": 65,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 87,
+        "truth": 166
+      },
+      {
+        "episode": 65,
+        "event": "place",
+        "result": "on_time",
+        "fired": 240,
+        "truth": 220
+      },
+      {
+        "episode": 66,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 66,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 67,
+        "event": "grasp",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 67,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      },
+      {
+        "episode": 68,
+        "event": "grasp",
+        "result": "premature",
+        "fired": 90,
+        "truth": -1
+      },
+      {
+        "episode": 68,
+        "event": "place",
+        "result": "correct",
+        "fired": null,
+        "truth": -1
+      }
+    ]
+  },
+  "bar": {
+    "premature_max": 0.02,
+    "missed_max": 0.1
+  },
+  "dev_meets_bar": false,
+  "note": "dev fit only; the gate is scored once on fresh rollouts (V1.0_REVIEW section 6)"
+}

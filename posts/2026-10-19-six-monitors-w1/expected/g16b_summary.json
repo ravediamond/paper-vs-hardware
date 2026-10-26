@@ -1,0 +1,39 @@
+{
+  "bar": {
+    "success_flagged_max": 2,
+    "failure_flagged_min": 6,
+    "latency_s_median_max": 5.0
+  },
+  "model": "gemini-3.8-flash",
+  "reasoning_effort": "none",
+  "g16_set": {
+    "success": 42,
+    "success_flagged": 41,
+    "failure": 8,
+    "failure_flagged": 8,
+    "failure_flagged_by": {
+      "post_grasp": 8,
+      "at_rest": 8
+    }
+  },
+  "all_69": {
+    "success": 44,
+    "success_flagged": 43,
+    "failure": 25,
+    "failure_flagged": 25,
+    "failure_flagged_by": {
+      "post_grasp": 21,
+      "at_rest": 25
+    }
+  },
+  "parse_errors": 0,
+  "no_post_grasp_checkpoint": 4,
+  "latency_s_median": 3.3850152492523193,
+  "latency_s_p90": 6.562401103973389,
+  "calls_this_run": 134,
+  "tokens_this_run": {
+    "prompt_tokens": 159273,
+    "total_tokens": 197374
+  },
+  "verdict": "FAIL (drop the VLM judge from v1.0)"
+}

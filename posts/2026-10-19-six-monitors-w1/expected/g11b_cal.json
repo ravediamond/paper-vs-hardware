@@ -1,0 +1,78 @@
+{
+  "protocol": "V1.0_REVIEW.md section 6, G11-B-cal",
+  "anchor_stride": 25,
+  "short_k": 3,
+  "long_k": [
+    15,
+    20,
+    25
+  ],
+  "fits": {
+    "p1": {
+      "p": 1,
+      "tau_short": 7.413,
+      "tau_long": 19.4831,
+      "success_flagged": 2,
+      "successes": 44,
+      "failure_flagged": 1,
+      "failures": 25,
+      "recall": 0.04,
+      "failures_flagged_by": {
+        "short": 1,
+        "long": 0
+      },
+      "by_failure_mode": {
+        "missed_grasp_retried": "0/1",
+        "missed_grasp": "0/7",
+        "wrong_object": "1/9",
+        "none": "0/2",
+        "stalled": "0/6"
+      }
+    },
+    "p2": {
+      "p": 2,
+      "tau_short": 4.8213,
+      "tau_long": 16.6001,
+      "success_flagged": 1,
+      "successes": 44,
+      "failure_flagged": 3,
+      "failures": 25,
+      "recall": 0.12,
+      "failures_flagged_by": {
+        "short": 0,
+        "long": 3
+      },
+      "by_failure_mode": {
+        "missed_grasp_retried": "0/1",
+        "missed_grasp": "1/7",
+        "wrong_object": "2/9",
+        "none": "0/2",
+        "stalled": "0/6"
+      }
+    }
+  },
+  "chosen": {
+    "p": 2,
+    "tau_short": 4.8213,
+    "tau_long": 16.6001,
+    "success_flagged": 1,
+    "successes": 44,
+    "failure_flagged": 3,
+    "failures": 25,
+    "recall": 0.12,
+    "failures_flagged_by": {
+      "short": 0,
+      "long": 3
+    },
+    "by_failure_mode": {
+      "missed_grasp_retried": "0/1",
+      "missed_grasp": "1/7",
+      "wrong_object": "2/9",
+      "none": "0/2",
+      "stalled": "0/6"
+    }
+  },
+  "recall_bar": 0.5,
+  "registered_reflex": "baseline 2.2 / 10.0, p = 1 (flags 44/44 successes offline, see W1-A)",
+  "verdict": "FAIL: W1 reflex in shadow mode only on robot day 1"
+}

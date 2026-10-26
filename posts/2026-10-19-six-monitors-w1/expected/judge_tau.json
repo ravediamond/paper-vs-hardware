@@ -1,0 +1,14 @@
+{
+  "tau": 0.98,
+  "false_intervention_rate": 0.0238,
+  "caught_failed": 0,
+  "failed_episodes": 8,
+  "success_episodes": 42,
+  "calls": 187,
+  "stride_s": 3.0,
+  "judge": "openai",
+  "judge_model": "gemini-3.8-flash",
+  "parse_errors": 0,
+  "cost_usd": 0.0,
+  "latency_ms_median": 9384.7
+}

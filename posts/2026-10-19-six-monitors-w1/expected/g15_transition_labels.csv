@@ -1,0 +1,70 @@
+episode_index,grasp_frame,place_frame,labeler,note
+0,180,248,openai:gemini-3.8-flash,
+1,182,256,openai:gemini-3.8-flash,"grasp: refine level 2 found no event, kept frame 182"
+2,-1,-1,openai:gemini-3.8-flash,
+3,193,257,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 193"
+4,182,266,openai:gemini-3.8-flash,
+5,186,276,openai:gemini-3.8-flash,"place: refine level 2 found no event, kept frame 276"
+6,183,245,openai:gemini-3.8-flash,"place: refine level 2 saw it at frame 245 already, kept frame 245"
+7,179,273,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 179"
+8,184,243,openai:gemini-3.8-flash,
+9,184,257,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 257"
+10,129,203,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 129; place: refine level 1 found no event, kept frame 203"
+11,181,259,openai:gemini-3.8-flash,"grasp: refine level 1 saw it at frame 181 already, kept frame 181"
+12,141,-1,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 141"
+13,172,258,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 258"
+14,177,260,openai:gemini-3.8-flash,
+15,192,259,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 192"
+16,199,276,openai:gemini-3.8-flash,
+17,141,242,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 141; place: refine level 1 found no event, kept frame 242"
+18,-1,-1,openai:gemini-3.8-flash,
+19,162,222,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 162; place: refine level 1 found no event, kept frame 222"
+20,183,285,openai:gemini-3.8-flash,
+21,289,406,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 289"
+22,196,320,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 320"
+23,186,282,openai:gemini-3.8-flash,
+24,315,380,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 315; place: refine level 2 saw it at frame 380 already, kept frame 380"
+25,263,341,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 263; place: refine level 1 found no event, kept frame 341"
+26,174,236,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 236"
+27,289,364,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 289; place: refine level 2 saw it at frame 364 already, kept frame 364"
+28,-1,-1,openai:gemini-3.8-flash,
+29,-1,-1,openai:gemini-3.8-flash,
+30,-1,-1,openai:gemini-3.8-flash,
+31,171,250,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 171; place: refine level 2 found no event, kept frame 250"
+32,182,251,openai:gemini-3.8-flash,
+33,196,250,openai:gemini-3.8-flash,"place: refine level 2 found no event, kept frame 250"
+34,156,-1,openai:gemini-3.8-flash,
+35,257,301,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 257"
+36,-1,-1,openai:gemini-3.8-flash,
+37,-1,-1,openai:gemini-3.8-flash,
+38,198,273,openai:gemini-3.8-flash,
+39,571,628,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 571; place: refine level 1 saw it at frame 628 already, kept frame 628"
+40,-1,-1,openai:gemini-3.8-flash,
+41,-1,-1,openai:gemini-3.8-flash,
+42,-1,-1,openai:gemini-3.8-flash,
+43,132,-1,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 132"
+44,-1,-1,openai:gemini-3.8-flash,
+45,-1,-1,openai:gemini-3.8-flash,
+46,-1,-1,openai:gemini-3.8-flash,
+47,-1,-1,openai:gemini-3.8-flash,
+48,-1,-1,openai:gemini-3.8-flash,
+49,-1,-1,openai:gemini-3.8-flash,
+50,145,-1,openai:gemini-3.8-flash,
+51,-1,-1,openai:gemini-3.8-flash,
+52,-1,-1,openai:gemini-3.8-flash,
+53,-1,-1,openai:gemini-3.8-flash,
+54,-1,-1,openai:gemini-3.8-flash,
+55,-1,-1,openai:gemini-3.8-flash,
+56,133,222,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 133; place: refine level 1 found no event, kept frame 222"
+57,130,-1,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 130"
+58,-1,-1,openai:gemini-3.8-flash,
+59,292,372,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 372"
+60,141,211,openai:gemini-3.8-flash,
+61,137,203,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 203"
+62,143,220,openai:gemini-3.8-flash,"place: refine level 1 found no event, kept frame 220"
+63,146,268,openai:gemini-3.8-flash,"grasp: refine level 1 found no event, kept frame 146; place: refine level 1 found no event, kept frame 268"
+64,135,195,openai:gemini-3.8-flash,"grasp: refine level 2 found no event, kept frame 135; place: refine level 1 found no event, kept frame 195"
+65,166,220,openai:gemini-3.8-flash,"grasp: refine level 2 found no event, kept frame 166; place: refine level 1 found no event, kept frame 220"
+66,-1,-1,openai:gemini-3.8-flash,
+67,-1,-1,openai:gemini-3.8-flash,
+68,-1,-1,openai:gemini-3.8-flash,

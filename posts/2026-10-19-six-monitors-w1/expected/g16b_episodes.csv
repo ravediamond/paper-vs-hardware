@@ -1,0 +1,334 @@
+episode_index,policy,outcome,in_g16_set,at_rest_frame,at_rest_answer,at_rest_raw,post_grasp_frame,post_grasp_answer,post_grasp_raw,flagged
+0,act,success,True,724,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting alone on the mat, separate from the pink bowl.""}
+```",165.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper slipped off and the blue bowl remains stationary on the mat while the arm moved up.""}
+```",True
+1,act,success,True,740,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is visible separately near the gripper in the wrist view, not under the blue bowl.""}
+```",167.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat while the empty gripper lifts away.""}
+```",True
+2,act,failure,True,740,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the mat separate from the pink bowl.""}
+```",181.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper closed empty, leaving the blue bowl still resting on the mat.""}
+```",True
+3,act,success,True,740,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting directly on the green mat rather than inside the pink bowl.""}
+```",181.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to grasp the blue bowl, which remains resting on the mat as the arm moves away.""}
+```",True
+4,act,success,True,617,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is placed inside the pink bowl, completely concealing it from the overhead view.""}
+```",176.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper has closed on the rim of the blue bowl, but it has not yet lifted it off the mat.""}
+```",True
+5,act,success,True,740,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting directly on the mat while the pink bowl is elsewhere near the gripper.""}
+```",180.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to grasp the blue bowl, which remains resting on the mat as the arm moves away.""}
+```",True
+6,act,success,True,714,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting on the mat next to the pink bowl rather than inside it.""}
+```",166.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is holding the rim of the blue bowl, but the bowl has not yet been lifted off the mat.""}
+```",True
+7,act,success,True,588,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is being held and moved by a person rather than resting inside the pink bowl.""}
+```",175.0,yes,"```json
+{""answer"": ""yes"", ""why"": ""The gripper is pinching the rim of the blue bowl and has lifted it above the mat, as shown by its increased size in the overhead view.""}
+```",True
+8,act,success,True,740,yes,"```json
+{""answer"": ""yes"", ""why"": ""Only one bowl stack is on the mat, with the blue bowl nested inside and completely obscuring the pink bowl beneath it.""}
+```",172.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper pulled away and the blue bowl remains resting on the mat.""}
+```",True
+9,act,success,True,740,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting directly on the green mat, while the pink bowl is separate and visible in the background of the wrist camera.""}
+```",175.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat as the gripper moves away.""}
+```",True
+10,smolvla,success,True,424,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl, with the pink bowl's rim visible beneath it.""}
+```",144.0,yes,"```json
+{""answer"": ""yes"", ""why"": ""The gripper has grasped the rim of the blue bowl and lifted it off the mat toward the camera.""}
+```",False
+11,smolvla,success,True,462,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is resting separately to the side as seen from the wrist camera, so the blue bowl is not inside it.""}
+```",163.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is open above the blue bowl without holding it, and the bowl remains on the mat.""}
+```",True
+12,smolvla,success,True,462,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting alone on the mat while the pink bowl is separate near the robot base.""}
+```",145.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the mat and the gripper failed to grasp or lift it.""}
+```",True
+13,smolvla,success,True,456,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting directly on the green mat, not inside the pink bowl.""}
+```",160.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat as the gripper pulled away without lifting it.""}
+```",True
+14,smolvla,success,True,462,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is resting separately to the right of the gripper as seen in the wrist camera.""}
+```",170.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to grasp the blue bowl and is empty above it while the bowl remains on the mat.""}
+```",True
+15,smolvla,success,True,441,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl, with the rim of the pink bowl visible beneath it.""}
+```",165.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to grasp the blue bowl and it remains resting on the mat.""}
+```",True
+16,smolvla,success,True,464,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested directly inside the pink bowl, as clearly seen from the wrist camera.""}
+```",162.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting flat on the green mat.""}
+```",True
+17,smolvla,success,True,463,no,"```json
+{""answer"": ""no"", ""why"": ""Only the blue bowl is visible resting directly on the mat, with no pink bowl present.""}
+```",146.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is gripping the rim of the blue bowl, but it has not been lifted off the mat yet.""}
+```",True
+18,smolvla,failure,True,464,no,"```json
+{""answer"": ""no"", ""why"": ""Both bowls are sitting side by side on the green mat.""}
+```",143.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains untouched on the mat while the gripper closes empty above the pink bowl.""}
+```",True
+19,smolvla,success,True,465,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested directly inside the pink bowl.""}
+```",137.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is open above the blue bowl and not holding it.""}
+```",True
+20,smolvla_vlacpp,success,True,598,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting alone on the mat while the pink bowl is elsewhere in the workspace.""}
+```",165.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is grasping the rim of the blue bowl, but it has not yet been lifted off the mat.""}
+```",True
+21,smolvla_vlacpp,success,True,604,yes,"{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl, whose rim is visible just beneath the blue bowl's edge.""}",154.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is holding the pink bowl instead of the blue bowl.""}
+```",True
+22,smolvla_vlacpp,success,True,525,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl, with the pink bowl's outer rim visible underneath.""}
+```",187.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper slipped off the rim and the blue bowl remains resting on the mat.""}
+```",True
+23,smolvla_vlacpp,success,True,455,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl.""}
+```",172.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to pinch the rim and lifted up empty, leaving the blue bowl resting on the mat.""}
+```",True
+24,smolvla_vlacpp,success,True,604,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is neatly nested inside the pink bowl as visible from both views.""}
+```",302.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper fingers have closed completely without grasping the rim of the blue bowl.""}
+```",True
+25,smolvla_vlacpp,success,True,604,yes,"{""answer"": ""yes"", ""why"": ""The blue bowl is successfully nested inside the pink bowl.""}",249.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is raised above the blue bowl, which remains resting on the mat.""}
+```",True
+26,smolvla_vlacpp,success,True,604,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is placed inside the pink bowl, completely obscuring it from the overhead view.""}
+```",168.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat and has not been lifted.""}
+```",True
+27,smolvla_vlacpp,success,True,604,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl, with the pink rim slightly visible underneath.""}
+```",253.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper has grasped the edge of the blue bowl, but it has not yet lifted it off the mat.""}
+```",True
+28,smolvla_vlacpp,failure,True,604,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting on the mat next to the pink bowl.""}
+```",150.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is completely empty and closed without grasping the blue bowl, which remains on the mat.""}
+```",True
+29,smolvla_vlacpp,failure,True,604,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is placed on top of the blue bowl instead of the blue bowl inside the pink bowl.""}
+```",160.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is holding the pink bowl instead of the blue bowl.""}
+```",True
+30,smolvla_vlacpp_fa,failure,True,638,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is completely empty, and the blue bowl is nowhere to be seen.""}
+```",150.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is grasping the rim of the blue bowl, but the bowl has not yet been lifted off the mat.""}
+```",True
+31,smolvla_vlacpp_fa,success,True,657,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is neatly stacked inside the pink bowl, with the pink bowl's rim visible beneath it.""}
+```",164.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat and has not been lifted.""}
+```",True
+32,smolvla_vlacpp_fa,success,True,657,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting directly on the mat while the pink bowl is separated and tilted nearby.""}
+```",173.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat while the gripper has moved away empty.""}
+```",True
+33,smolvla_vlacpp_fa,success,True,657,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting alone on the mat while the pink bowl is elsewhere.""}
+```",190.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is tilted and still resting on the mat rather than lifted off it.""}
+```",True
+34,smolvla_vlacpp_fa,success,True,657,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested directly inside the pink bowl, with only a sliver of the pink bowl's rim visible along the edge.""}
+```",147.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat and has not been lifted.""}
+```",True
+35,smolvla_vlacpp_fa,success,True,657,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is successfully nested inside the pink bowl.""}
+```",142.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is hovering in the air and neither bowl is grasped or lifted.""}
+```",True
+36,smolvla_vlacpp_fa,failure,True,657,no,"```json
+{""answer"": ""no"", ""why"": ""Both bowls are sitting separately on the table.""}
+```",146.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper closed completely empty above the blue bowl without grasping it.""}
+```",True
+37,smolvla_vlacpp_fa,failure,True,657,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting separately on the mat and has not been placed inside the pink bowl.""}
+```",175.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper closed empty, and the blue bowl remains resting on the mat.""}
+```",True
+38,smolvla_vlacpp_fa,success,True,657,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting alone on the mat, separate from the pink bowl visible near the robot base.""}
+```",183.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is gripping the rim of the blue bowl, but the bowl has not been lifted off the mat yet.""}
+```",True
+39,smolvla_vlacpp_fa,success,True,657,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is fully seated inside the pink bowl with the gripper retracted.""}
+```",155.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is completely closed and empty, while the blue bowl remains resting on the mat.""}
+```",True
+40,turbovla_trimmed,failure,False,602,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is being held above the blue bowl, so the blue bowl is not inside the pink bowl.""}
+```",160.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is gripping the edge of the blue bowl, but the bowl has not been lifted off the mat yet.""}
+```",True
+41,turbovla_trimmed,failure,False,600,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl and pink bowl are sitting separately on the mat.""}
+```",,,,True
+42,turbovla_trimmed,failure,False,600,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is completely empty and no blue bowl is inside it.""}
+```",118.0,no,"```json
+{""answer"": ""no"", ""why"": ""The robot is attempting to grasp the pink bowl instead of the blue bowl, which remains untouched on the mat.""}
+```",True
+43,turbovla_trimmed,success,False,609,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting alone on the mat, and the pink bowl is separate and off to the side.""}
+```",118.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to grasp the blue bowl and is empty while the bowl remains on the mat.""}
+```",True
+44,turbovla_trimmed,failure,False,610,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is visible on top and nested inside the blue bowl rather than the blue bowl inside the pink bowl.""}
+```",157.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the mat and has not been grasped or lifted.""}
+```",True
+45,turbovla_trimmed,failure,False,610,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl is resting inside or on top of the blue bowl instead of the blue bowl being in the pink bowl.""}
+```",141.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is grasping the pink bowl instead of the blue bowl.""}
+```",True
+46,turbovla_trimmed,failure,False,610,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl and pink bowl are sitting separately on the table.""}
+```",,,,True
+47,turbovla_trimmed,failure,False,609,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the table next to the empty pink bowl.""}
+```",,,,True
+48,turbovla_trimmed,failure,False,609,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the table separately from the pink bowl.""}
+```",353.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting on the mat and has not been grasped or lifted.""}
+```",True
+49,turbovla_trimmed,failure,False,609,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl and pink bowl are resting separately on the mat.""}
+```",,,,True
+50,turbovla_c,success,False,600,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting alone on the mat while the pink bowl is separate near the base of the arm.""}
+```",144.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to secure the blue bowl and is empty above it while the bowl remains on the mat.""}
+```",True
+51,turbovla_c,failure,False,610,no,"```json
+{""answer"": ""no"", ""why"": ""The pink bowl on the table is empty and the blue bowl is not inside it.""}
+```",159.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is holding the pink bowl instead of the blue bowl.""}
+```",True
+52,turbovla_c,failure,False,609,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting on the mat next to the pink bowl, not inside it.""}
+```",191.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper has closed completely on empty air, missing the blue bowl entirely.""}
+```",True
+53,turbovla_c,failure,False,610,no,"```json
+{""answer"": ""no"", ""why"": ""Both bowls are sitting separately on the mat.""}
+```",610.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is hovering over the pink bowl and has closed empty without grasping the blue bowl.""}
+```",True
+54,turbovla_a,failure,False,600,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains on the table next to the pink bowl.""}
+```",161.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains untouched on the mat while the gripper is positioned near the pink bowl.""}
+```",True
+55,turbovla_a,failure,False,609,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains on the green mat next to the pink bowl.""}
+```",221.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains untouched on the mat while the gripper closed near the pink bowl.""}
+```",True
+56,vla_jepa,success,True,510,yes,"```json
+{""answer"": ""yes"", ""why"": ""The wrist camera shows the blue bowl successfully nested inside the pink bowl, which is hidden from overhead view.""}
+```",123.0,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl remains resting flat on the mat while the gripper is above it.""}
+```",True
+57,vla_jepa,success,True,373,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting directly on the table surface with no pink bowl underneath it.""}
+```",124.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper has grasped the rim of the blue bowl, but the bowl has not been lifted off the mat yet.""}
+```",True
+58,vla_jepa,failure,True,561,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl was never picked up and remains in its initial position separate from the pink bowl.""}
+```",155.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper closed completely without grasping the rim of the blue bowl, which remains resting on the mat.""}
+```",True
+59,vla_jepa,success,True,450,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is sitting directly on the mat with no pink bowl underneath it.""}
+```",148.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper closed without grasping the blue bowl, which remains on the mat.""}
+```",True
+60,vla_jepa,success,True,560,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is successfully nested inside the pink bowl.""}
+```",126.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper failed to secure the blue bowl and lifted away while the bowl remains on the mat.""}
+```",True
+61,vla_jepa,success,True,467,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is being moved by a human hand and is not placed inside the pink bowl.""}
+```",126.0,yes,"```json
+{""answer"": ""yes"", ""why"": ""The gripper has clamped the rim of the blue bowl and tilted it up off the mat.""}
+```",True
+62,vla_jepa,success,True,562,yes,"```json
+{""answer"": ""yes"", ""why"": ""The wrist camera shows the blue bowl successfully nested inside the pink bowl.""}
+```",123.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper slipped off and closed completely without grasping the blue bowl, leaving it resting on the mat.""}
+```",True
+63,vla_jepa,success,True,561,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is nested inside the pink bowl, completely occluding it from the overhead view.""}
+```",133.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is open above the blue bowl and has not grasped or lifted it.""}
+```",True
+64,vla_jepa,success,True,561,yes,"```json
+{""answer"": ""yes"", ""why"": ""The blue bowl is successfully placed inside the pink bowl, completely occluding it from the overhead view.""}
+```",126.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is open and not holding the blue bowl.""}
+```",True
+65,vla_jepa,success,True,561,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is resting alone on the mat while the pink bowl remains separate.""}
+```",143.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is grasping the rim of the blue bowl, but it has not yet lifted it off the mat.""}
+```",True
+66,turbovla_v2,failure,False,602,no,"```json
+{""answer"": ""no"", ""why"": ""Both bowls are sitting side by side on the mat and the blue bowl is not inside the pink bowl.""}
+```",508.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is hovering over the pink bowl, while the blue bowl remains untouched on the mat.""}
+```",True
+67,turbovla_v2,failure,False,601,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the mat next to the pink bowl.""}
+```",503.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is interacting with the pink bowl instead of the blue bowl, and it is empty.""}
+```",True
+68,turbovla_v2,failure,False,601,no,"```json
+{""answer"": ""no"", ""why"": ""The blue bowl is still resting on the table next to the pink bowl.""}
+```",120.0,no,"```json
+{""answer"": ""no"", ""why"": ""The gripper is closed empty over the blue bowl, which remains flat on the mat.""}
+```",True

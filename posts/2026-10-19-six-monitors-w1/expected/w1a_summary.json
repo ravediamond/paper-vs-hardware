@@ -1,0 +1,842 @@
+{
+  "meta": {
+    "w1": "<W1 weights_final.pt>",
+    "source": "ravediamond/so101-bowls-policy-rollouts",
+    "stride": 25,
+    "horizon": 25,
+    "check_k": [
+      15,
+      20,
+      25
+    ],
+    "encode_ms_per_frame_batched": null,
+    "dtype": "torch.float16",
+    "device": "cuda"
+  },
+  "bar": {
+    "failures_flagged_min": 5,
+    "false_intervention_max": 0.05
+  },
+  "g16_set": {
+    "reflex_live_rule": {
+      "success_flagged": 42,
+      "success": 42,
+      "failure_flagged": 8,
+      "failure": 8
+    },
+    "l2": {
+      "tau": 17.3143,
+      "false_intervention_rate": 0.0476,
+      "caught_failed": 2.0,
+      "failed_episodes": 8,
+      "success_episodes": 42,
+      "auroc": 0.8601190476190477,
+      "frames_before_end_when_caught": [
+        303,
+        412
+      ]
+    },
+    "cos": {
+      "tau": 1.6533,
+      "false_intervention_rate": 0.0476,
+      "caught_failed": 0.0,
+      "failed_episodes": 8,
+      "success_episodes": 42,
+      "auroc": 0.30357142857142855,
+      "frames_before_end_when_caught": []
+    }
+  },
+  "all_69": {
+    "reflex_live_rule": {
+      "success_flagged": 44,
+      "success": 44,
+      "failure_flagged": 25,
+      "failure": 25
+    },
+    "l2": {
+      "tau": 16.2081,
+      "false_intervention_rate": 0.0455,
+      "caught_failed": 4.0,
+      "failed_episodes": 25,
+      "success_episodes": 44,
+      "auroc": 0.7063636363636364,
+      "frames_before_end_when_caught": [
+        133,
+        301,
+        303,
+        412
+      ]
+    },
+    "cos": {
+      "tau": 1.7062,
+      "false_intervention_rate": 0.0455,
+      "caught_failed": 0.0,
+      "failed_episodes": 25,
+      "success_episodes": 44,
+      "auroc": 0.4172727272727273,
+      "frames_before_end_when_caught": []
+    }
+  },
+  "verdict": "FAIL (W1 stays a reflex only)",
+  "episodes": [
+    {
+      "episode_index": 0,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 28,
+      "end": 725,
+      "score_l2": 9.20263147354126,
+      "score_cos": 1.4439000288645427,
+      "reflex": true
+    },
+    {
+      "episode_index": 1,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 29,
+      "end": 741,
+      "score_l2": 9.799846649169922,
+      "score_cos": 1.545811931292216,
+      "reflex": true
+    },
+    {
+      "episode_index": 2,
+      "policy": "act",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 29,
+      "end": 741,
+      "score_l2": 14.848152160644531,
+      "score_cos": 1.095449984073639,
+      "reflex": true
+    },
+    {
+      "episode_index": 3,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 29,
+      "end": 741,
+      "score_l2": 8.137731393178305,
+      "score_cos": 1.3219157059987385,
+      "reflex": true
+    },
+    {
+      "episode_index": 4,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 618,
+      "score_l2": 7.028059164683024,
+      "score_cos": 1.6533203919728596,
+      "reflex": true
+    },
+    {
+      "episode_index": 5,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 29,
+      "end": 741,
+      "score_l2": 7.0813188552856445,
+      "score_cos": 1.5944163004557292,
+      "reflex": true
+    },
+    {
+      "episode_index": 6,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 28,
+      "end": 715,
+      "score_l2": 13.838831583658854,
+      "score_cos": 1.5212355852127075,
+      "reflex": true
+    },
+    {
+      "episode_index": 7,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 23,
+      "end": 589,
+      "score_l2": 13.780083974202475,
+      "score_cos": 1.3076701164245605,
+      "reflex": true
+    },
+    {
+      "episode_index": 8,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 29,
+      "end": 741,
+      "score_l2": 16.07851759592692,
+      "score_cos": 1.2516119877497356,
+      "reflex": true
+    },
+    {
+      "episode_index": 9,
+      "policy": "act",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 29,
+      "end": 741,
+      "score_l2": 7.909892241160075,
+      "score_cos": 1.5431746641794841,
+      "reflex": true
+    },
+    {
+      "episode_index": 10,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 16,
+      "end": 425,
+      "score_l2": 10.787393887837728,
+      "score_cos": 1.0185356934865315,
+      "reflex": true
+    },
+    {
+      "episode_index": 11,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 463,
+      "score_l2": 10.343676090240479,
+      "score_cos": 1.4034283955891926,
+      "reflex": true
+    },
+    {
+      "episode_index": 12,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 463,
+      "score_l2": 7.354534149169922,
+      "score_cos": 1.070157249768575,
+      "reflex": true
+    },
+    {
+      "episode_index": 13,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 457,
+      "score_l2": 6.569558461507161,
+      "score_cos": 1.5485847393671672,
+      "reflex": true
+    },
+    {
+      "episode_index": 14,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 463,
+      "score_l2": 8.081713358561197,
+      "score_cos": 1.1436292727788289,
+      "reflex": true
+    },
+    {
+      "episode_index": 15,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 17,
+      "end": 442,
+      "score_l2": 9.858876387278238,
+      "score_cos": 1.064240574836731,
+      "reflex": true
+    },
+    {
+      "episode_index": 16,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 465,
+      "score_l2": 12.634658495585123,
+      "score_cos": 0.9761791427930196,
+      "reflex": true
+    },
+    {
+      "episode_index": 17,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 464,
+      "score_l2": 12.755888938903809,
+      "score_cos": 1.1954114437103271,
+      "reflex": true
+    },
+    {
+      "episode_index": 18,
+      "policy": "smolvla",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 465,
+      "score_l2": 15.75068442026774,
+      "score_cos": 1.2301174799601238,
+      "reflex": true
+    },
+    {
+      "episode_index": 19,
+      "policy": "smolvla",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 466,
+      "score_l2": 8.789412498474121,
+      "score_cos": 1.2686060269673665,
+      "reflex": true
+    },
+    {
+      "episode_index": 20,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 23,
+      "end": 599,
+      "score_l2": 8.236087640126547,
+      "score_cos": 1.3671697576840718,
+      "reflex": true
+    },
+    {
+      "episode_index": 21,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 14.864848454793295,
+      "score_cos": 1.600822647412618,
+      "reflex": true
+    },
+    {
+      "episode_index": 22,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 20,
+      "end": 526,
+      "score_l2": 10.332565307617188,
+      "score_cos": 0.952659547328949,
+      "reflex": true
+    },
+    {
+      "episode_index": 23,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 456,
+      "score_l2": 13.356191953023275,
+      "score_cos": 1.246439774831136,
+      "reflex": true
+    },
+    {
+      "episode_index": 24,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 11.441545168558756,
+      "score_cos": 1.47302242120107,
+      "reflex": true
+    },
+    {
+      "episode_index": 25,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 9.01914914449056,
+      "score_cos": 1.3443430264790852,
+      "reflex": true
+    },
+    {
+      "episode_index": 26,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 12.142973899841309,
+      "score_cos": 1.6004708607991536,
+      "reflex": true
+    },
+    {
+      "episode_index": 27,
+      "policy": "smolvla_vlacpp",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 11.28073263168335,
+      "score_cos": 1.4724500974019368,
+      "reflex": true
+    },
+    {
+      "episode_index": 28,
+      "policy": "smolvla_vlacpp",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 17.882708231608074,
+      "score_cos": 1.4496583541234334,
+      "reflex": true
+    },
+    {
+      "episode_index": 29,
+      "policy": "smolvla_vlacpp",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 24,
+      "end": 605,
+      "score_l2": 15.468705813090006,
+      "score_cos": 1.4077005783716838,
+      "reflex": true
+    },
+    {
+      "episode_index": 30,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 25,
+      "end": 639,
+      "score_l2": 19.136391321818035,
+      "score_cos": 1.090056300163269,
+      "reflex": true
+    },
+    {
+      "episode_index": 31,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 10.233454386393229,
+      "score_cos": 1.6168971459070842,
+      "reflex": true
+    },
+    {
+      "episode_index": 32,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 11.135224024454752,
+      "score_cos": 1.6323060592015584,
+      "reflex": true
+    },
+    {
+      "episode_index": 33,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 12.14324919382731,
+      "score_cos": 1.725740949312846,
+      "reflex": true
+    },
+    {
+      "episode_index": 34,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 9.906935691833496,
+      "score_cos": 1.4827118317286174,
+      "reflex": true
+    },
+    {
+      "episode_index": 35,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 10.786015351613363,
+      "score_cos": 1.555420994758606,
+      "reflex": true
+    },
+    {
+      "episode_index": 36,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 12.563050587972006,
+      "score_cos": 1.2160028616587322,
+      "reflex": true
+    },
+    {
+      "episode_index": 37,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 14.968363126118978,
+      "score_cos": 1.2352522015571594,
+      "reflex": true
+    },
+    {
+      "episode_index": 38,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 11.391163190205893,
+      "score_cos": 1.6452806790669758,
+      "reflex": true
+    },
+    {
+      "episode_index": 39,
+      "policy": "smolvla_vlacpp_fa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 26,
+      "end": 658,
+      "score_l2": 11.953500429789225,
+      "score_cos": 1.2574328184127808,
+      "reflex": true
+    },
+    {
+      "episode_index": 40,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 603,
+      "score_l2": 10.760910352071127,
+      "score_cos": 1.524356762568156,
+      "reflex": true
+    },
+    {
+      "episode_index": 41,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 23,
+      "end": 601,
+      "score_l2": 12.83177407582601,
+      "score_cos": 1.0569630066553752,
+      "reflex": true
+    },
+    {
+      "episode_index": 42,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 23,
+      "end": 601,
+      "score_l2": 8.901685078938803,
+      "score_cos": 1.3845836917559307,
+      "reflex": true
+    },
+    {
+      "episode_index": 43,
+      "policy": "turbovla_trimmed",
+      "outcome": "success",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 610,
+      "score_l2": 7.17176628112793,
+      "score_cos": 1.706248124440511,
+      "reflex": true
+    },
+    {
+      "episode_index": 44,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 611,
+      "score_l2": 13.686390240987143,
+      "score_cos": 1.6080375115076702,
+      "reflex": true
+    },
+    {
+      "episode_index": 45,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 611,
+      "score_l2": 12.0688107808431,
+      "score_cos": 1.6116164922714233,
+      "reflex": true
+    },
+    {
+      "episode_index": 46,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 611,
+      "score_l2": 12.041968981424967,
+      "score_cos": 1.1797925631205242,
+      "reflex": true
+    },
+    {
+      "episode_index": 47,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 610,
+      "score_l2": 12.762063026428223,
+      "score_cos": 1.3370753526687622,
+      "reflex": true
+    },
+    {
+      "episode_index": 48,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 610,
+      "score_l2": 11.571523984273275,
+      "score_cos": 1.5753190120061238,
+      "reflex": true
+    },
+    {
+      "episode_index": 49,
+      "policy": "turbovla_trimmed",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 610,
+      "score_l2": 10.257529576619467,
+      "score_cos": 1.3293368816375732,
+      "reflex": true
+    },
+    {
+      "episode_index": 50,
+      "policy": "turbovla_c",
+      "outcome": "success",
+      "in_g16_set": false,
+      "anchors": 23,
+      "end": 601,
+      "score_l2": 10.137535095214844,
+      "score_cos": 1.6839782396952312,
+      "reflex": true
+    },
+    {
+      "episode_index": 51,
+      "policy": "turbovla_c",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 611,
+      "score_l2": 11.323490778605143,
+      "score_cos": 1.349406361579895,
+      "reflex": true
+    },
+    {
+      "episode_index": 52,
+      "policy": "turbovla_c",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 610,
+      "score_l2": 16.20812193552653,
+      "score_cos": 1.4020212491353352,
+      "reflex": true
+    },
+    {
+      "episode_index": 53,
+      "policy": "turbovla_c",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 611,
+      "score_l2": 13.970842679341635,
+      "score_cos": 1.4812896649042766,
+      "reflex": true
+    },
+    {
+      "episode_index": 54,
+      "policy": "turbovla_a",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 23,
+      "end": 601,
+      "score_l2": 10.359524726867676,
+      "score_cos": 1.3875117301940918,
+      "reflex": true
+    },
+    {
+      "episode_index": 55,
+      "policy": "turbovla_a",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 610,
+      "score_l2": 10.578710873921713,
+      "score_cos": 1.0517665942509968,
+      "reflex": true
+    },
+    {
+      "episode_index": 56,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 20,
+      "end": 511,
+      "score_l2": 13.936920166015625,
+      "score_cos": 1.269429365793864,
+      "reflex": true
+    },
+    {
+      "episode_index": 57,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 14,
+      "end": 374,
+      "score_l2": 14.641961733500162,
+      "score_cos": 1.2340904871622722,
+      "reflex": true
+    },
+    {
+      "episode_index": 58,
+      "policy": "vla_jepa",
+      "outcome": "failure",
+      "in_g16_set": true,
+      "anchors": 22,
+      "end": 562,
+      "score_l2": 15.28644053141276,
+      "score_cos": 1.2311620712280273,
+      "reflex": true
+    },
+    {
+      "episode_index": 59,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 17,
+      "end": 451,
+      "score_l2": 15.901885668436686,
+      "score_cos": 1.1563209295272827,
+      "reflex": true
+    },
+    {
+      "episode_index": 60,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 22,
+      "end": 561,
+      "score_l2": 14.39116350809733,
+      "score_cos": 1.1941173076629639,
+      "reflex": true
+    },
+    {
+      "episode_index": 61,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 18,
+      "end": 468,
+      "score_l2": 16.016347249348957,
+      "score_cos": 1.1358341773351033,
+      "reflex": true
+    },
+    {
+      "episode_index": 62,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 22,
+      "end": 563,
+      "score_l2": 17.65305455525716,
+      "score_cos": 1.3088444868723552,
+      "reflex": true
+    },
+    {
+      "episode_index": 63,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 22,
+      "end": 562,
+      "score_l2": 17.314348856608074,
+      "score_cos": 1.3701928456624348,
+      "reflex": true
+    },
+    {
+      "episode_index": 64,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 22,
+      "end": 562,
+      "score_l2": 13.036731402079264,
+      "score_cos": 1.2636441389719646,
+      "reflex": true
+    },
+    {
+      "episode_index": 65,
+      "policy": "vla_jepa",
+      "outcome": "success",
+      "in_g16_set": true,
+      "anchors": 22,
+      "end": 562,
+      "score_l2": 15.941553433736166,
+      "score_cos": 1.262494444847107,
+      "reflex": true
+    },
+    {
+      "episode_index": 66,
+      "policy": "turbovla_v2",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 24,
+      "end": 603,
+      "score_l2": 16.254345258076984,
+      "score_cos": 1.126433531443278,
+      "reflex": true
+    },
+    {
+      "episode_index": 67,
+      "policy": "turbovla_v2",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 23,
+      "end": 602,
+      "score_l2": 15.89767583211263,
+      "score_cos": 1.2461739778518677,
+      "reflex": true
+    },
+    {
+      "episode_index": 68,
+      "policy": "turbovla_v2",
+      "outcome": "failure",
+      "in_g16_set": false,
+      "anchors": 23,
+      "end": 602,
+      "score_l2": 15.916450500488281,
+      "score_cos": 1.4092570940653484,
+      "reflex": true
+    }
+  ]
+}
