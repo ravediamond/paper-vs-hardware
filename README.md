@@ -1,7 +1,7 @@
 # paper-vs-hardware
 
 Code, pinned data and checkpoints to reproduce each post of the *paper vs hardware* series: robot-learning papers
-tested on a $300 SO-101 arm with two webcams and a Jetson Orin NX. Posts: https://ravediamond.github.io/papers/ ·
+tested on a $300 SO-101 arm with two webcams and a Jetson Orin NX. Posts: https://shissorobotics.com/papers/ ·
 site: https://shissorobotics.com
 
 | post | claim (short) | L0 | L1 |

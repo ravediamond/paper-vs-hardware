@@ -1,6 +1,6 @@
 # TurboVLA: our own claim, withdrawn (the data, not the port)
 
-Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-turbovla/ (shissorobotics.com result 3).
+Post: https://shissorobotics.com/blog/2026/10/23/paper-vs-hardware-turbovla/ (shissorobotics.com result 3).
 
 ## Claim
 

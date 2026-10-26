@@ -1,6 +1,6 @@
 # SmolVLA on the Orin: 974 ms to 238 ms per chunk
 
-Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-smolvla/ (shissorobotics.com result 1).
+Post: https://shissorobotics.com/blog/2026/10/23/paper-vs-hardware-smolvla/ (shissorobotics.com result 1).
 
 ## Claim
 

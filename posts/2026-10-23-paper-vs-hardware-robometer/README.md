@@ -1,6 +1,6 @@
 # Robometer-4B as a failure judge vs episode length; a deterministic judge at rest
 
-Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-robometer/ (shissorobotics.com result 7).
+Post: https://shissorobotics.com/blog/2026/10/23/paper-vs-hardware-robometer/ (shissorobotics.com result 7).
 
 ## Claim
 

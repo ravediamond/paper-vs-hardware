@@ -1,6 +1,6 @@
 # LeWorldModel: learns the arm's dynamics, does not plan better than the commanded joints
 
-Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-leworldmodel/ (shissorobotics.com results 4 and 5).
+Post: https://shissorobotics.com/blog/2026/10/23/paper-vs-hardware-leworldmodel/ (shissorobotics.com results 4 and 5).
 
 ## Claim
 

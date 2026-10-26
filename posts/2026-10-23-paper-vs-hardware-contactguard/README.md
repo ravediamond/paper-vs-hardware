@@ -1,6 +1,6 @@
 # ContactGuard: an event-anchored probe on imagined latents did not transfer
 
-Post: https://ravediamond.github.io/blog/2026/10/23/paper-vs-hardware-contactguard/ (shissorobotics.com result 6).
+Post: https://shissorobotics.com/blog/2026/10/23/paper-vs-hardware-contactguard/ (shissorobotics.com result 6).
 
 ## Claim
 
