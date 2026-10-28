@@ -1,0 +1,89 @@
+/opt/conda/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+learned step 0 loss 1.0561 0s
+learned step 1000 loss 0.4024 40s
+learned step 2000 loss 0.3156 80s
+learned step 3000 loss 0.2823 120s
+learned step 4000 loss 0.2591 159s
+learned step 5000 loss 0.2401 199s
+learned step 6000 loss 0.2230 239s
+learned step 7000 loss 0.2081 279s
+learned step 8000 loss 0.1995 319s
+learned step 9000 loss 0.1976 359s
+learned step 10000 loss 0.1959 399s
+learned step 11000 loss 0.1881 439s
+learned step 12000 loss 0.1924 479s
+learned step 13000 loss 0.1843 519s
+learned step 14000 loss 0.1731 559s
+learned step 15000 loss 0.1612 599s
+learned step 16000 loss 0.1659 639s
+learned step 17000 loss 0.1669 679s
+learned step 18000 loss 0.1629 719s
+learned step 19000 loss 0.1535 759s
+/opt/conda/lib/python3.11/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+concat step 0 loss 1.0519 0s
+concat step 1000 loss 0.4546 15s
+concat step 2000 loss 0.3795 34s
+concat step 3000 loss 0.3458 52s
+concat step 4000 loss 0.3273 71s
+concat step 5000 loss 0.3019 89s
+concat step 6000 loss 0.2892 103s
+concat step 7000 loss 0.2649 120s
+concat step 8000 loss 0.2753 134s
+concat step 9000 loss 0.2516 152s
+concat step 10000 loss 0.2531 168s
+concat step 11000 loss 0.2512 185s
+concat step 12000 loss 0.2468 204s
+concat step 13000 loss 0.2457 222s
+concat step 14000 loss 0.2244 239s
+concat step 15000 loss 0.2159 257s
+concat step 16000 loss 0.2187 272s
+concat step 17000 loss 0.2273 289s
+concat step 18000 loss 0.2263 306s
+concat step 19000 loss 0.2106 321s
+disp step 0 loss 1.0671 0s
+disp step 1000 loss 0.5443 16s
+disp step 2000 loss 0.5055 31s
+disp step 3000 loss 0.4970 48s
+disp step 4000 loss 0.4894 65s
+disp step 5000 loss 0.4769 78s
+disp step 6000 loss 0.4606 96s
+disp step 7000 loss 0.4680 111s
+disp step 8000 loss 0.4532 129s
+disp step 9000 loss 0.4580 147s
+disp step 10000 loss 0.4480 165s
+disp step 11000 loss 0.4441 184s
+disp step 12000 loss 0.4534 199s
+disp step 13000 loss 0.4331 214s
+disp step 14000 loss 0.4355 232s
+disp step 15000 loss 0.4240 247s
+disp step 16000 loss 0.4275 265s
+disp step 17000 loss 0.4337 283s
+disp step 18000 loss 0.4415 301s
+disp step 19000 loss 0.4317 317s
+{
+ "H1": {
+  "crossover_frames": null,
+  "high_below_low": [
+   false,
+   false,
+   false,
+   false,
+   false
+  ],
+  "met": false
+ },
+ "H2": {
+  "high_2s": 0.75933,
+  "low_2s": 0.5626599788665771,
+  "ratio": 1.3495,
+  "met": false
+ },
+ "H3": {
+  "learned": 0.6078,
+  "disp": 0.551,
+  "concat": 0.6024,
+  "met": true
+ }
+}
