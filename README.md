@@ -24,13 +24,13 @@ site: https://shissorobotics.com
 | [2026-10-23-paper-vs-hardware-dino-wm](posts/2026-10-23-paper-vs-hardware-dino-wm/) | PvH DINO-WM | vast.ai GPU | ~1.7 (W2 < 1 bounded) | ✔ | inputs public (2026-10-26); rerun not yet re-verified |
 | [2026-10-23-paper-vs-hardware-d-jepa](posts/2026-10-23-paper-vs-hardware-d-jepa/) | PvH D-JEPA | Orin NX | 0 | ✔ | inputs public (2026-10-26); rerun not yet re-verified |
 | [2026-10-23-paper-vs-hardware-reap](posts/2026-10-23-paper-vs-hardware-reap/) | PvH ReAP · 10-26 audit your labels | Orin NX + Gemini API | < 0.1 API | ✔ | inputs public (2026-10-26); rerun not yet re-verified |
-| [2026-10-23-paper-vs-hardware-reki](posts/2026-10-23-paper-vs-hardware-reki/) | PvH REKI | Orin NX | 0 (REKI training: WS-025, added when done) | ✔ | ✔ public rollouts (CPU) |
+| [2026-10-23-paper-vs-hardware-reki](posts/2026-10-23-paper-vs-hardware-reki/) | PvH REKI | Orin NX + vast.ai GPU, arm | ~13.05 (training 11.25 + smoke 0.60 over 3 attempts + serving 1.20) | ✔ | ✔ public rollouts (CPU); REKI arm trials: L2 |
 | [2026-10-23-paper-vs-hardware-robojepa](posts/2026-10-23-paper-vs-hardware-robojepa/) | PvH RoboJEPA | vast.ai GPU | ~1.2 | ✔ | GPU (1B encoder) |
 | [2026-10-25-vla-chunk-boundary-jumps](posts/2026-10-25-vla-chunk-boundary-jumps/) | 10-25 chunk boundaries · PvH Real-Time Chunking | Orin NX | 0 | ✔ | inputs public (2026-10-26); rerun not yet re-verified |
 | [2026-10-26-vla-jepa-rope-compat](posts/2026-10-26-vla-jepa-rope-compat/) | 10-26 upstream fix 47 % worse | Orin NX | 0 | ✔ | pending checkpoint visibility |
 | [2026-10-28-paper-vs-hardware-hwm](posts/2026-10-28-paper-vs-hardware-hwm/) | PvH HWM | Orin NX + vast.ai GPU | ~0.4 (one invalid run incl.) | ✔ | latents not published: rebuild on the Orin, then GPU |
 
-**All 36 posts:** ~$33.2–34.2 on vast.ai and ~$4.9–5.9 of API (Gemini; Flora on vast is in the GPU figure), failed or never-finished attempts included where the research notes record them: G0 ($2.96), HWM's red-only first run (~$0.2), TurboVLA path A (~$0.8), Robometer G9b (~$2.3–3.3, never trained), Robometer OOM re-score (~$1). Not recorded, so not in the total: the training of the ACT, SmolVLA and port-era TurboVLA checkpoints. One post has no run behind it ([the station as a harness](https://shissorobotics.com/blog/2026/10/22/the-station-as-a-harness/)). Arithmetic: `costs.md` in the research repo (not public); every figure is in the folder's README.
+**All 36 posts:** ~$46.3–47.3 on vast.ai and ~$4.9–5.9 of API (Gemini; Flora on vast is in the GPU figure), failed or never-finished attempts included where the research notes record them: G0 ($2.96), HWM's red-only first run (~$0.2), TurboVLA path A (~$0.8), Robometer G9b (~$2.3–3.3, never trained), Robometer OOM re-score (~$1). Not recorded, so not in the total: the training of the ACT, SmolVLA and port-era TurboVLA checkpoints. One post has no run behind it ([the station as a harness](https://shissorobotics.com/blog/2026/10/22/the-station-as-a-harness/)). Arithmetic: `costs.md` in the research repo (not public); every figure is in the folder's README.
 
 ## Replication levels
 

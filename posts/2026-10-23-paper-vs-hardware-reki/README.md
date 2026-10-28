@@ -9,7 +9,7 @@ REKI's oscillation metric on the 69 published rollouts: 14/69 = 20.3 % oscillate
 
 ## Compute
 
-**Compute.** External GPU: no (Orin NX). Cost: $0 for the oscillation audit. REKI SO-101 training (WS-025): smoke $0.60 over 3 attempts (1 host never reachable, 1 failed on git ownership) + full run in progress (~$11 projected); added when the run ends.
+**Compute.** Oscillation audit on the Orin NX: $0. REKI on vast.ai: training $11.25 (16.07 GPU h, RTX PRO 5000), smoke $0.60 over 3 attempts (1 host never reachable, 1 failed on git ownership), serving for the 40 arm trials $1.20 (RTX 3090, two sessions). Total $13.05.
 
 ## What is not proven
 
