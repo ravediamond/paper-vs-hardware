@@ -1,4 +1,7 @@
-# Paper vs hardware: Adaptive Action Chunking (AAC) on an SO-101 + Jetson
+# Paper vs hardware 19: Adaptive Action Chunking (AAC) (the entropy rule returns its floor and N = 20 costs 4.75 s on the Orin: fail)
+
+Posts:
+- https://shissorobotics.com/blog/2026/10/30/paper-vs-hardware-adaptive-chunking/
 
 **Claim tested.** Adaptive Action Chunking (Liang et al., CVPR 2026, arXiv 2604.04161) picks each chunk's length from
 the entropy of N sampled chunks: chunks get longer where the policy is confident (transport) and shorter where it is

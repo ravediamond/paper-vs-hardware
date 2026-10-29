@@ -1,4 +1,7 @@
-# Paper vs hardware: PACT-VLA on an SO-101 + Jetson
+# Paper vs hardware 20: PACT-VLA (the selection replicates offline; the no-delay claim fails on the Orin)
+
+Posts:
+- https://shissorobotics.com/blog/2026/10/30/paper-vs-hardware-pact-vla/
 
 ## Claim
 
