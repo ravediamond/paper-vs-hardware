@@ -1,0 +1,105 @@
+{
+ "meta": {
+  "policy": "ravediamond/smolvla_2026-09-24_14-34-40",
+  "revision": "c1d76f6",
+  "data": "ravediamond/so101_bowls_all",
+  "episodes": [
+   2,
+   6,
+   12,
+   29,
+   44,
+   51,
+   84,
+   88,
+   97,
+   101,
+   104,
+   106,
+   112,
+   113,
+   129,
+   138,
+   139,
+   158,
+   170,
+   171
+  ],
+  "seed": 0,
+  "N": 20,
+  "xi": 2,
+  "s_fixed": 25,
+  "beta": 5.0,
+  "delays": [
+   8,
+   12,
+   20
+  ],
+  "g_open": 10.0
+ },
+ "A1": {
+  "median_h_grasp": 2.0,
+  "n_grasp": 24,
+  "median_h_transport": 2.0,
+  "n_transport": 72,
+  "median_h_all": 2.0,
+  "n_all": 254,
+  "met": false
+ },
+ "A2_descriptive": {
+  "fixed+naive|8": {
+   "median": 3.4165,
+   "n": 254
+  },
+  "fixed+overwrite|8": {
+   "median": 0.9395,
+   "n": 254
+  },
+  "aac+naive|8": {
+   "median": 2.275,
+   "n": 254
+  },
+  "aac+overwrite|8": {
+   "median": 0.9728,
+   "n": 254
+  },
+  "fixed+naive|12": {
+   "median": 3.6524,
+   "n": 254
+  },
+  "fixed+overwrite|12": {
+   "median": 0.9605,
+   "n": 254
+  },
+  "aac+naive|12": {
+   "median": 2.31,
+   "n": 254
+  },
+  "aac+overwrite|12": {
+   "median": 0.97,
+   "n": 254
+  },
+  "fixed+naive|20": {
+   "median": 3.7748,
+   "n": 254
+  },
+  "fixed+overwrite|20": {
+   "median": 1.0721,
+   "n": 254
+  },
+  "aac+naive|20": {
+   "median": 2.5252,
+   "n": 254
+  },
+  "aac+overwrite|20": {
+   "median": 1.0273,
+   "n": 254
+  }
+ },
+ "A3": {
+  "aac+overwrite_d8": 0.9728,
+  "fixed+overwrite_d8": 0.9395,
+  "met": false
+ },
+ "ms_n20_median": 22615.85
+}

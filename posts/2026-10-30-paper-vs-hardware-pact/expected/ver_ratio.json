@@ -1,0 +1,6 @@
+{
+ "pytorch_step_ms": 63.83868799980519,
+ "pytorch_16_rows_ms": 1018.7983934997646,
+ "ratio": 15.958949430522031,
+ "note": "16 rows run one by one on one cached prefix, as the gate-B scorer does"
+}

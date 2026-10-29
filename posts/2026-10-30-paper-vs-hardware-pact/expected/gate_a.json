@@ -1,0 +1,18 @@
+{
+ "T_gen_1_ms": 237.478822499952,
+ "T_gen_4_ms": 949.915289999808,
+ "T_gen_4_label": "sequential (vla.cpp has no batched sampling)",
+ "T_prefix_ms": 165.6811205546061,
+ "T_ver_ms": 84.54524329828698,
+ "T_ver_label": "projected (PyTorch ratio x vla.cpp step)",
+ "T_PACT_ms": 1200.1416538527012,
+ "optimistic_overlap_ms": 1034.460533298095,
+ "d_naive": 8,
+ "d_PACT": 37,
+ "d_PACT_optimistic": 32,
+ "verdict_A": "fail",
+ "sources": [
+  "/home/jetson/workspace/road-to-robotics/projects/horizon-depth/results/a2_latency.json",
+  "ver_ratio.json"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "vla_cpp_commit": "79dcc9d",
+ "power": "NV Power Mode: MAXN_SUPER\n0",
+ "path": "sequential (vla.cpp has no batched sampling)",
+ "by_n": {
+  "1": {
+   "decisions": 10,
+   "median_ms": 240.94276849996277,
+   "min_ms": 240.20672699998613,
+   "max_ms": 241.90541300004043
+  },
+  "5": {
+   "decisions": 10,
+   "median_ms": 1190.6291414998122,
+   "min_ms": 1189.4464179999886,
+   "max_ms": 1206.0772330000873
+  },
+  "10": {
+   "decisions": 10,
+   "median_ms": 2378.691232999927,
+   "min_ms": 2376.7887069998324,
+   "max_ms": 2380.8377079999445
+  },
+  "20": {
+   "decisions": 10,
+   "median_ms": 4751.330551499905,
+   "min_ms": 4747.695888999715,
+   "max_ms": 4759.86779599998
+  },
+  "40": {
+   "decisions": 10,
+   "median_ms": 9506.044773999974,
+   "min_ms": 9496.661578000385,
+   "max_ms": 9514.029057999778
+  }
+ },
+ "peak_ram_mb": 2926,
+ "n1_vs_238_pct": 1.236457352925524,
+ "A4_bar_ms": 298.0,
+ "A4_n20_ms": 4751.330551499905,
+ "verdict_A4": "fail"
+}
