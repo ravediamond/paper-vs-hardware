@@ -1,7 +1,7 @@
 # paper-vs-hardware
 
 This repository backs **[shissorobotics.com](https://shissorobotics.com)**, a register of robot-learning papers
-re-tested on a ≈ $930 rig (an SO-101 arm, two webcams and a Jetson Orin NX), each with its bar, verdict, cost and
+re-tested on a ≈ €1,350 rig (an SO-101 arm, two webcams and a Jetson Orin NX, at the prices paid), each with its bar, verdict, cost and
 code: **[the register](https://shissorobotics.com/papers/)**. Every post there has a folder here with the code, pinned
 data and checkpoints to reproduce it.
 
