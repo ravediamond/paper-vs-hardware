@@ -1,8 +1,9 @@
 # paper-vs-hardware
 
-Code, pinned data and checkpoints to reproduce each post of the *paper vs hardware* series: robot-learning papers
-tested on a $300 SO-101 arm with two webcams and a Jetson Orin NX. Posts: https://shissorobotics.com/papers/ ·
-site: https://shissorobotics.com
+This repository backs **[shissorobotics.com](https://shissorobotics.com)**, a register of robot-learning papers
+re-tested on a ≈ $930 rig (an SO-101 arm, two webcams and a Jetson Orin NX), each with its bar, verdict, cost and
+code: **[the register](https://shissorobotics.com/papers/)**. Every post there has a folder here with the code, pinned
+data and checkpoints to reproduce it.
 
 | folder | posts | compute | cost (USD, retries incl.) | L0 | L1 |
 |---|---|---|---|---|---|
