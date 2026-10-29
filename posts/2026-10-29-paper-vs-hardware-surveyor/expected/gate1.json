@@ -1,0 +1,78 @@
+{
+ "tau": 1.2488,
+ "drafter": "W1's own imagination (stand-in for FF-JEPA's GDM drafter)",
+ "S10": {
+  "primary_50": {
+   "caught": 1,
+   "failures": 8,
+   "fi": 1,
+   "successes": 42,
+   "auroc": 0.619,
+   "ttw_vs_gemini_s_median": -0.37
+  },
+  "primary_50_shuffled": {
+   "caught": 8,
+   "failures": 8,
+   "fi": 42,
+   "successes": 42,
+   "auroc": 0.628,
+   "ttw_vs_gemini_s_median": 5.62
+  },
+  "all_69": {
+   "caught": 1,
+   "failures": 25,
+   "fi": 1,
+   "successes": 44,
+   "auroc": 0.4509,
+   "ttw_vs_gemini_s_median": -0.37
+  },
+  "delta_success_median": 0.2816,
+  "bars": {
+   "S3": {
+    "met": false
+   },
+   "S4": {
+    "true": 0.619,
+    "shuffled": 0.628,
+    "met": false
+   }
+  }
+ },
+ "S30": {
+  "primary_50": {
+   "caught": 3,
+   "failures": 8,
+   "fi": 6,
+   "successes": 42,
+   "auroc": 0.756,
+   "ttw_vs_gemini_s_median": -3.43
+  },
+  "primary_50_shuffled": {
+   "caught": 8,
+   "failures": 8,
+   "fi": 41,
+   "successes": 42,
+   "auroc": 0.5595,
+   "ttw_vs_gemini_s_median": 4.78
+  },
+  "all_69": {
+   "caught": 6,
+   "failures": 25,
+   "fi": 6,
+   "successes": 44,
+   "auroc": 0.6709,
+   "ttw_vs_gemini_s_median": -2.22
+  },
+  "delta_success_median": 0.5492,
+  "bars": {
+   "S3": {
+    "met": false
+   },
+   "S4": {
+    "true": 0.756,
+    "shuffled": 0.5595,
+    "met": true
+   }
+  }
+ }
+}
