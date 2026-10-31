@@ -10,7 +10,7 @@ Expected: every line `ok`, last line `L0 PASS`. A1 and A2 are recomputed from `e
 
 ## L1: rerun the gates
 
-A1 (PyTorch, lerobot-jetson container, ~40 min on the Orin at 25 W): `scripts/hd_cloud.py`, policy
+A1 (PyTorch, lerobot-jetson container, ~80 min on the Orin at 25 W; 81 min cold on 2026-10-31 in `ghcr.io/ravediamond/lerobot-jetson:public`, no token, output byte-identical to `expected/a1_cloud.json`): `scripts/hd_cloud.py`, policy
 `ravediamond/smolvla_2026-09-24_14-34-40` @ `c1d76f6`, 20 frames of `ravediamond/so101_bowls_all` (episode list in
 `scripts/run_g13b_rtc_offline.py`). A2 and A4 (vla.cpp with `--num-steps`): `scripts/hd_latency.py frames` (container,
 once), then `hd_latency.py run` at MAXN_SUPER + `jetson_clocks`, and `scripts/hd_thermal.py run` once per power mode.

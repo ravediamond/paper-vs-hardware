@@ -10,7 +10,7 @@ Expected: every line `ok`, last line `L0 PASS`. The bars are recomputed from `ex
 
 ## L1: rerun the gates
 
-Gate 0 (PyTorch, ~3 h on an Orin NX at 25 W): `scripts/aac_gate0.py` in the lerobot-jetson container, policy
+Gate 0 (PyTorch, ~3 h on an Orin NX at 25 W; 161 min cold on 2026-10-31 in `ghcr.io/ravediamond/lerobot-jetson:public`, no token: `gate0.json` identical to `expected/` except the N = 20 timing median, 22,567 vs 22,616 ms): `scripts/aac_gate0.py` in the lerobot-jetson container, policy
 `ravediamond/smolvla_2026-09-24_14-34-40` @ `c1d76f6`, the 20 G13b episodes of `ravediamond/so101_bowls_all`
 (`scripts/run_g13b_rtc_offline.py` holds the episode list and the SmolVLA wrapper).
 

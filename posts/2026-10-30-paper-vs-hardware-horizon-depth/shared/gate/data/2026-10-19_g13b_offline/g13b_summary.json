@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "policy_path": "ravediamond/smolvla_2026-09-24_14-34-40",
+    "revision": "c1d76f6",
+    "source": "ravediamond/so101_bowls_all",
+    "s": 25,
+    "delays": [
+      8,
+      12,
+      20
+    ],
+    "episodes": [
+      2,
+      6,
+      12,
+      29,
+      44,
+      51,
+      84,
+      88,
+      97,
+      101,
+      104,
+      106,
+      112,
+      113,
+      129,
+      138,
+      139,
+      158,
+      170,
+      171
+    ],
+    "device": "cuda",
+    "seed": 0
+  },
+  "results": {
+    "beta=5": {
+      "summary": {
+        "naive": {
+          "8": {
+            "prefix_err": 1.6547,
+            "jump_ratio": 3.4218,
+            "accel_ratio": 3.8051,
+            "drift": 1.4826,
+            "ms": 1041.3766,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 1.6896,
+            "jump_ratio": 3.6905,
+            "accel_ratio": 4.1287,
+            "drift": 1.5258,
+            "ms": 1041.3766,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 1.9077,
+            "jump_ratio": 3.7651,
+            "accel_ratio": 4.2682,
+            "drift": 1.5255,
+            "ms": 1041.3766,
+            "boundaries": 254
+          }
+        },
+        "identity": {
+          "8": {
+            "prefix_err": 0.476,
+            "jump_ratio": 1.2601,
+            "accel_ratio": 1.5026,
+            "drift": 1.4709,
+            "ms": 1047.8809,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 0.4452,
+            "jump_ratio": 1.1928,
+            "accel_ratio": 1.5396,
+            "drift": 1.496,
+            "ms": 1048.0785,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 0.4225,
+            "jump_ratio": 1.3427,
+            "accel_ratio": 1.6662,
+            "drift": 1.571,
+            "ms": 1048.1172,
+            "boundaries": 254
+          }
+        },
+        "exact": {
+          "8": {
+            "prefix_err": 0.9911,
+            "jump_ratio": 2.4298,
+            "accel_ratio": 2.8273,
+            "drift": 1.5691,
+            "ms": 2002.0812,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 0.9844,
+            "jump_ratio": 2.5475,
+            "accel_ratio": 3.0396,
+            "drift": 1.6068,
+            "ms": 2001.9107,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 0.9749,
+            "jump_ratio": 2.9883,
+            "accel_ratio": 3.7697,
+            "drift": 1.6037,
+            "ms": 2002.4656,
+            "boundaries": 254
+          }
+        },
+        "overwrite": {
+          "8": {
+            "prefix_err": 0.0,
+            "jump_ratio": 0.9321,
+            "accel_ratio": 1.2308,
+            "drift": 1.4851,
+            "ms": 1049.078,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 0.0,
+            "jump_ratio": 0.9599,
+            "accel_ratio": 1.2606,
+            "drift": 1.5543,
+            "ms": 1049.1312,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 0.0,
+            "jump_ratio": 1.0638,
+            "accel_ratio": 1.3415,
+            "drift": 1.4922,
+            "ms": 1049.0368,
+            "boundaries": 254
+          }
+        }
+      },
+      "decision": {
+        "per_delay": {
+          "8": {
+            "best_gradient_free": "overwrite",
+            "jump_cut_vs_naive": 0.728,
+            "within_20pct_of_exact": true,
+            "drift_ok": true,
+            "exact_20pct_better": false,
+            "best_cut_any": 0.728
+          },
+          "12": {
+            "best_gradient_free": "overwrite",
+            "jump_cut_vs_naive": 0.74,
+            "within_20pct_of_exact": true,
+            "drift_ok": true,
+            "exact_20pct_better": false,
+            "best_cut_any": 0.74
+          },
+          "20": {
+            "best_gradient_free": "overwrite",
+            "jump_cut_vs_naive": 0.717,
+            "within_20pct_of_exact": true,
+            "drift_ok": true,
+            "exact_20pct_better": false,
+            "best_cut_any": 0.717
+          }
+        },
+        "decision": "propose 1+2 (engine inputs + gradient-free correction)"
+      }
+    },
+    "beta=10": {
+      "summary": {
+        "naive": {
+          "8": {
+            "prefix_err": 1.6547,
+            "jump_ratio": 3.4218,
+            "accel_ratio": 3.8051,
+            "drift": 1.4826,
+            "ms": 1032.8638,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 1.6896,
+            "jump_ratio": 3.6905,
+            "accel_ratio": 4.1287,
+            "drift": 1.5258,
+            "ms": 1032.8638,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 1.9077,
+            "jump_ratio": 3.7651,
+            "accel_ratio": 4.2682,
+            "drift": 1.5255,
+            "ms": 1032.8638,
+            "boundaries": 254
+          }
+        },
+        "identity": {
+          "8": {
+            "prefix_err": 0.0822,
+            "jump_ratio": 0.9506,
+            "accel_ratio": 1.264,
+            "drift": 1.5121,
+            "ms": 1039.7369,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 0.078,
+            "jump_ratio": 1.0212,
+            "accel_ratio": 1.2795,
+            "drift": 1.5159,
+            "ms": 1039.7287,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 0.0755,
+            "jump_ratio": 1.1202,
+            "accel_ratio": 1.3263,
+            "drift": 1.6222,
+            "ms": 1039.992,
+            "boundaries": 254
+          }
+        },
+        "exact": {
+          "8": {
+            "prefix_err": 0.749,
+            "jump_ratio": 2.0298,
+            "accel_ratio": 2.4226,
+            "drift": 1.614,
+            "ms": 1974.1327,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 0.73,
+            "jump_ratio": 2.2384,
+            "accel_ratio": 2.5747,
+            "drift": 1.6227,
+            "ms": 1975.2823,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 0.7421,
+            "jump_ratio": 2.7445,
+            "accel_ratio": 3.5013,
+            "drift": 1.586,
+            "ms": 1974.4931,
+            "boundaries": 254
+          }
+        },
+        "overwrite": {
+          "8": {
+            "prefix_err": 0.0,
+            "jump_ratio": 0.9321,
+            "accel_ratio": 1.2308,
+            "drift": 1.4851,
+            "ms": 1040.3237,
+            "boundaries": 254
+          },
+          "12": {
+            "prefix_err": 0.0,
+            "jump_ratio": 0.9599,
+            "accel_ratio": 1.2606,
+            "drift": 1.5543,
+            "ms": 1040.3293,
+            "boundaries": 254
+          },
+          "20": {
+            "prefix_err": 0.0,
+            "jump_ratio": 1.0638,
+            "accel_ratio": 1.3415,
+            "drift": 1.4922,
+            "ms": 1040.5481,
+            "boundaries": 254
+          }
+        }
+      },
+      "decision": {
+        "per_delay": {
+          "8": {
+            "best_gradient_free": "overwrite",
+            "jump_cut_vs_naive": 0.728,
+            "within_20pct_of_exact": true,
+            "drift_ok": true,
+            "exact_20pct_better": false,
+            "best_cut_any": 0.728
+          },
+          "12": {
+            "best_gradient_free": "overwrite",
+            "jump_cut_vs_naive": 0.74,
+            "within_20pct_of_exact": true,
+            "drift_ok": true,
+            "exact_20pct_better": false,
+            "best_cut_any": 0.74
+          },
+          "20": {
+            "best_gradient_free": "overwrite",
+            "jump_cut_vs_naive": 0.717,
+            "within_20pct_of_exact": true,
+            "drift_ok": true,
+            "exact_20pct_better": false,
+            "best_cut_any": 0.717
+          }
+        },
+        "decision": "propose 1+2 (engine inputs + gradient-free correction)"
+      }
+    }
+  }
+}
