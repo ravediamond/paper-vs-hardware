@@ -5,6 +5,9 @@ re-tested on a ≈ €1,350 rig (an SO-101 arm, two webcams and a Jetson Orin NX
 code: **[the register](https://shissorobotics.com/papers/)**. Every post there has a folder here with the code, pinned
 data and checkpoints to reproduce it.
 
+**Reproducibility, checked cold on 2026-10-31:** L0 29 / 29 PASS; L1 6 reproduced, 0 contradicted — the table, the
+versions used and the tolerance rule are in [`rig/REPRODUCIBILITY.md`](rig/REPRODUCIBILITY.md).
+
 | folder | posts | compute | cost (USD, retries incl.) | L0 | L1 |
 |---|---|---|---|---|---|
 | [2026-09-09-lerobot-jetson-container](posts/2026-09-09-lerobot-jetson-container/) | 09-09 LeRobot on a Jetson | Orin NX | 0 | ✔ | build (L2-like) |
