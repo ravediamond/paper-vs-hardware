@@ -1,0 +1,73 @@
+{
+ "test_episodes": 34,
+ "R0": {
+  "premature_rate": 0.4852941176470588,
+  "missed_rate": 0.4666666666666667,
+  "flips_mean": 1.0,
+  "regression_recall": 0.0,
+  "windows": 7,
+  "false_regressions": 0.0,
+  "MAE": 0.24797835898918805,
+  "S": 0.010721648904243982,
+  "J": 0.011325102457024358
+ },
+ "R1": {
+  "premature_rate": 0.25,
+  "missed_rate": 0.13333333333333333,
+  "flips_mean": 5.970588235294118,
+  "regression_recall": 0.42857142857142855,
+  "windows": 7,
+  "false_regressions": 0.5555555555555556,
+  "MAE": 0.1829716441357282,
+  "S": 0.03127839530263825,
+  "J": 0.03185607419383231
+ },
+ "R2": {
+  "premature_rate": 0.39705882352941174,
+  "missed_rate": 0.13333333333333333,
+  "flips_mean": 6.352941176470588,
+  "regression_recall": 0.42857142857142855,
+  "windows": 7,
+  "false_regressions": 0.7407407407407407,
+  "MAE": 0.21769763563682484,
+  "S": 0.027945617788444926,
+  "J": 0.028525465617606483
+ },
+ "R3": {
+  "premature_rate": 0.22058823529411764,
+  "missed_rate": 0.13333333333333333,
+  "flips_mean": 4.205882352941177,
+  "regression_recall": 0.2857142857142857,
+  "windows": 7,
+  "false_regressions": 0.5185185185185185,
+  "MAE": 0.18411611343032167,
+  "S": 0.0233885727069333,
+  "J": 0.023966255099527912
+ },
+ "paired": {
+  "premature_R3_minus_R1_mean": -0.058823529411764705,
+  "premature_ci95": [
+   -0.17647058823529413,
+   0.0
+  ],
+  "missed_R3_minus_R1_mean": 0.0,
+  "missed_ci95": [
+   0.0,
+   0.0
+  ],
+  "flips_R3_over_R1": 0.7044334975369458,
+  "flips_ratio_ci95": [
+   0.48363154726068636,
+   0.9418604651162791
+  ]
+ },
+ "verdicts": {
+  "P1": "pass",
+  "P2": "fail",
+  "P3": "fail",
+  "R0_check_vs_g15_test": {
+   "premature_rate": 0.4853,
+   "missed_rate": 0.4667
+  }
+ }
+}

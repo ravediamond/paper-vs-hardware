@@ -1,0 +1,27 @@
+{
+ "check1": {
+  "R0_dev_premature": 0.4714,
+  "R0_dev_missed": 0.4737,
+  "g15_dev_premature": 0.4714,
+  "g15_dev_missed": 0.4737,
+  "ok": true
+ },
+ "check2": {
+  "ok": true,
+  "windows_in_flat_stretch": [
+   0,
+   1,
+   2,
+   9,
+   18,
+   36,
+   37,
+   41,
+   58
+  ]
+ },
+ "check3": {
+  "flips_on_alternating_equal_peaks": 0,
+  "ok": true
+ }
+}

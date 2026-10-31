@@ -1,0 +1,2 @@
+# L0 needs the standard library only. L1: the lerobot-jetson container (G15's feature extraction decodes the top-camera
+# video; numpy, pandas, opencv), the rollouts at the pinned revision.
