@@ -17,7 +17,7 @@ Pins: lerobot-jetson container + transformers 5.19.0; rollouts `ravediamond/so10
 python scripts/run_w1_offline_screening.py --w1 weights/w1/weights_final.pt --out out/w1_screening
 python scripts/run_w1c_offline.py --w1 weights/w1/weights_final.pt --out out/w1c
 ```
-Status: inputs public since 2026-10-26; the token-free rerun is **not yet re-verified** here.
+Status: **re-verified 2026-11-01** in `ghcr.io/ravediamond/lerobot-jetson:w1`, token-free; w1c summary identical to `expected/` except the weights path (`rig/w1/L1_W1.md`).
 
 ## L2: rerun on hardware
 
