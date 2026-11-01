@@ -1,0 +1,27 @@
+{
+ "n_failures": 8,
+ "n_successes": 42,
+ "failures_flagged": 8,
+ "successes_flagged": 40,
+ "wilson_failures": [
+  0.6755924316585924,
+  1.0
+ ],
+ "wilson_successes": [
+  0.8421014748159644,
+  0.986842475209687
+ ],
+ "pass": false,
+ "auroc_maxE": 0.7172619047619048,
+ "shuffled": {
+  "failures_flagged": 8,
+  "successes_flagged": 41,
+  "auroc_maxE": 0.6696428571428571
+ },
+ "flagged_failures_before_onset": 5,
+ "interrupts_per_min_successes": 10.036380892122747,
+ "auroc_maxE_ci95": [
+  0.5492424242424242,
+  0.8704488741232926
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "protocol": "TOPREWARD_PROTOCOL.md",
+ "armnetbench": {
+  "n": 2047,
+  "n_success": 515,
+  "errors_all_scored": 0,
+  "s_succ": {
+   "pooled": 0.6532732135161855,
+   "pooled_ci95": [
+    0.6231309354586184,
+    0.6838122079225637
+   ],
+   "within": 0.6609510357815442,
+   "within_ci95": [
+    0.6306203813351258,
+    0.69237708554463
+   ]
+  },
+  "s_top": {
+   "pooled": 0.6028156607265076,
+   "pooled_ci95": [
+    0.5731362408141282,
+    0.6330646613902003
+   ],
+   "within": 0.6095951035781544,
+   "within_ci95": [
+    0.5779508070402299,
+    0.643046434087007
+   ]
+  },
+  "s_yn": {
+   "pooled": 0.6717907931759994,
+   "pooled_ci95": [
+    0.6414759817502124,
+    0.7018832256991586
+   ],
+   "within": 0.6778813559322034,
+   "within_ci95": [
+    0.6477259612799612,
+    0.7090019610459226
+   ]
+  },
+  "s_cap": {
+   "pooled": 0.6584438135313949,
+   "pooled_ci95": [
+    0.6289331372699155,
+    0.688119721723039
+   ],
+   "within": 0.6671892655367232,
+   "within_ci95": [
+    0.6367170458936553,
+    0.6982470899470635
+   ]
+  },
+  "neg_len": {
+   "pooled": 0.9383045197596898,
+   "pooled_ci95": [
+    0.925376553377449,
+    0.9511992976380578
+   ],
+   "within": 0.9421610169491526,
+   "within_ci95": [
+    0.9267145327748452,
+    0.9558304469657879
+   ]
+  },
+  "neg_cap": {
+   "pooled": 0.8380307485614338,
+   "pooled_ci95": [
+    0.8175614813359742,
+    0.8593342042326964
+   ],
+   "within": 0.8509604519774011,
+   "within_ci95": [
+    0.8288410457425673,
+    0.8730908095482164
+   ]
+  },
+  "per_policy": {
+   "act": 0.7006111176401457,
+   "diffusion": 0.6441755537325676,
+   "grootn1.7": 0.6702118820108018,
+   "molmoact2": 0.7061173008198445,
+   "pi0": 0.6304636797247635,
+   "pi0.5": 0.6182466870540265,
+   "smolvla": 0.5850770478507705
+  },
+  "per_task": {
+   "Insert the colourful ring into the central wooden peg": 0.7388975045819822,
+   "Insert the missing tool into the empty slot on the toolbox": 0.32275132275132273,
+   "Push the Displayport cable into the cable holder on the white block": null,
+   "Put the eye drops into the basket": 0.7704166666666666,
+   "Put the eye drops on the shelf": 0.9697928653624857,
+   "Remove the power cable from cable holder": 0.5330992612098603,
+   "Remove the small middle tool (3/8 Extension Bar 75mm) from the toolbox": 0.6788397790055248,
+   "Stack the colouful blocks on top of each other": 0.4468137862633276
+  },
+  "delta_within_vs_length_ci95": [
+   -0.31282040745857287,
+   -0.24813227643691374
+  ],
+  "delta_within_cap_vs_length_cap_ci95": [
+   -0.2153550433810936,
+   -0.152847748726193
+  ],
+  "reading_full": "below",
+  "reading_cap50": "below"
+ },
+ "own": {
+  "n": 69,
+  "n_success": 44,
+  "errors": 0,
+  "s_succ": {
+   "auroc": 0.8245454545454546,
+   "ci95": [
+    0.7017727272727272,
+    0.9272954545454544
+   ]
+  },
+  "s_top": {
+   "auroc": 0.769090909090909,
+   "ci95": [
+    0.6417954545454546,
+    0.8827272727272727
+   ]
+  },
+  "s_yn": {
+   "auroc": 0.85,
+   "ci95": [
+    0.7363409090909091,
+    0.9354545454545454
+   ]
+  },
+  "neg_len": {
+   "auroc": 0.5604545454545454,
+   "ci95": [
+    0.42453409090909094,
+    0.6931818181818182
+   ]
+  },
+  "pol_rate": {
+   "auroc": 0.87,
+   "ci95": [
+    0.7654545454545455,
+    0.9545454545454546
+   ]
+  },
+  "non_turbovla": {
+   "n": 50,
+   "n_failure": 8,
+   "auroc": 0.7797619047619048
+  }
+ }
+}

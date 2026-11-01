@@ -40,6 +40,10 @@ versions used and the tolerance rule are in [`rig/REPRODUCIBILITY.md`](rig/REPRO
 | [2026-10-30-paper-vs-hardware-pact](posts/2026-10-30-paper-vs-hardware-pact/) | PvH PACT-VLA | Orin NX (25 W PyTorch; MAXN vla.cpp) | 0 | ✔ | Orin needed |
 | [2026-10-30-paper-vs-hardware-horizon-depth](posts/2026-10-30-paper-vs-hardware-horizon-depth/) | PvH Horizon × depth | Orin NX (25 W PyTorch; MAXN vla.cpp) | 0 | ✔ | Orin needed |
 | [2026-10-31-paper-vs-hardware-remora-readout](posts/2026-10-31-paper-vs-hardware-remora-readout/) | PvH REMORA readout | Orin NX (CPU) | 0 | ✔ | rollouts public, CPU |
+| [2026-11-01-topreward-vs-length](posts/2026-11-01-topreward-vs-length/) | gate log: TOPReward vs elapsed time | vast RTX 3090 | 0.69 | ✔ | ≥ 24 GB GPU, ~2.7 h |
+| [2026-11-01-race-diagnostic](posts/2026-11-01-race-diagnostic/) | gate log: RACE diagnostic | Orin NX (CPU) | 0 | ✔ | SmolVLA chunks, CPU |
+| [2026-11-01-vla-corrector-zju](posts/2026-11-01-vla-corrector-zju/) | gate log: VLA-Corrector (ZJU) monitor | Orin NX | 0 | ✔ | Orin GPU, ~3 h |
+| [2026-11-01-execution-gap](posts/2026-11-01-execution-gap/) | gate log: execution gap (C1, C2) | Orin NX (CPU) | 0 | ✔ | rollouts public, CPU |
 
 **All 43 posts:** ~$46.3–47.3 on vast.ai and ~$4.9–5.9 of API (Gemini; Flora on vast is in the GPU figure), failed or never-finished attempts included where the research notes record them: G0 ($2.96), HWM's red-only first run (~$0.2), TurboVLA path A (~$0.8), Robometer G9b (~$2.3–3.3, never trained), Robometer OOM re-score (~$1). Not recorded, so not in the total: the training of the ACT, SmolVLA and port-era TurboVLA checkpoints. One post has no run behind it ([the station as a harness](https://shissorobotics.com/blog/2026/10/22/the-station-as-a-harness/)). Arithmetic: `costs.md` in the research repo (not public); every figure is in the folder's README.
 
