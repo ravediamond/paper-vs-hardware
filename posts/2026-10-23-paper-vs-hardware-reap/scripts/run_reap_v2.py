@@ -70,6 +70,7 @@ class GRUFloor(torch.nn.Module):
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--repo-id", default="ravediamond/so101-bowls-policy-rollouts")
+    ap.add_argument("--root", type=Path, help="local copy of the dataset at the pinned revision bad1c8ea (default: download the latest)")
     ap.add_argument("--outcomes", type=Path, default=ROOT / "data/rollouts/so101-bowls-policy-rollouts_labels.csv")
     ap.add_argument("--w1a", type=Path, default=ROOT / "shared/gate/data/2026-10-19_w1_screening/w1a_summary.json")
     ap.add_argument("--latents", type=Path, default=ROOT / "outputs/reap/latents")
@@ -80,7 +81,7 @@ def main() -> int:
     from so101_harness.w1_live import W1_ACTION_MEAN, W1_ACTION_STD
     from sklearn.model_selection import StratifiedKFold
 
-    ds = EpisodeDataset(download(args.repo_id, with_videos=True))
+    ds = EpisodeDataset(args.root if args.root else download(args.repo_id, with_videos=True))
     oc = pd.read_csv(args.outcomes); oc = oc[oc.outcome.isin(["success", "failure"])]
     g16 = {e["episode_index"] for e in json.loads(args.w1a.read_text())["episodes"] if e["in_g16_set"]}
     on = pd.read_csv(args.onsets).groupby("episode_index").last()

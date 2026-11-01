@@ -13,7 +13,7 @@ Expected: every line `ok`, last line `L0 PASS`. Each line says whether the numbe
 
 Pins: transformers 5.5.4 vs 5.19.0 in the lerobot-jetson image; W1 weights (public since 2026-10-26).
 
-`python scripts/strict_load_log.py <W1 weights_final.pt>` under both transformers versions. Status: inputs public since 2026-10-26 (W1 / W2′); the token-free rerun is **not yet re-verified** here.
+`python scripts/strict_load_log.py <W1 weights_final.pt>` under both transformers versions. Status: **re-verified 2026-11-01** in `ghcr.io/ravediamond/lerobot-jetson:w1`, token-free, identical to `expected/` (`rig/w1/L1_W1.md`).
 
 ## L2: rerun on hardware
 

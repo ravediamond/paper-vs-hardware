@@ -234,6 +234,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--w1", required=True, help="weights_final.pt")
     ap.add_argument("--repo-id", default="ravediamond/so101-bowls-policy-rollouts")
+    ap.add_argument("--root", type=Path, help="local copy of the dataset at the pinned revision bad1c8ea (default: download the latest)")
     ap.add_argument("--outcomes", type=Path, default=ROOT / "data/rollouts/so101-bowls-policy-rollouts_labels.csv")
     ap.add_argument("--labels", type=Path, default=ROOT / "shared/gate/data/2026-10-19_g15/transition_labels.csv")
     ap.add_argument("--g15-summary", type=Path, default=ROOT / "shared/gate/data/2026-10-19_g15/g15_summary.json")
@@ -242,7 +243,7 @@ def main(argv: list[str] | None = None) -> int:
 
     from so101_harness.w1_live import W1LiveMonitor
 
-    ds = EpisodeDataset(download(args.repo_id, with_videos=True))
+    ds = EpisodeDataset(args.root if args.root else download(args.repo_id, with_videos=True))
     outcomes = pd.read_csv(args.outcomes)
     outcomes = outcomes[outcomes.outcome.isin(["success", "failure"])].copy()
     outcomes["end"] = [len(ds.states(int(r.episode_index))) if int(r.reset_start) < 0

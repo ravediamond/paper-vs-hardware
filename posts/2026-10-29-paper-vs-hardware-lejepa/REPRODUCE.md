@@ -17,3 +17,5 @@ W1: `ravediamond/lewm-w2-so101-bowls` `w1/weights_final.pt` @ `d0336db6`; data `
 ## L2
 
 Gate 1 (random-walk data on the arm and a retrain) is not run.
+
+**L1 re-verified 2026-11-01** in `ghcr.io/ravediamond/lerobot-jetson:w1` (`rig/w1/Dockerfile`), token-free, identical to `expected/`; see `rig/w1/L1_W1.md`.

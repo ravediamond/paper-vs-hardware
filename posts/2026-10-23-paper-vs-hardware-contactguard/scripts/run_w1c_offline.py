@@ -201,6 +201,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--w1", required=True)
     ap.add_argument("--repo-id", default="ravediamond/so101-bowls-policy-rollouts")
+    ap.add_argument("--root", type=Path, help="local copy of the dataset at the pinned revision bad1c8ea (default: download the latest)")
     ap.add_argument("--outcomes", type=Path, default=ROOT / "data/rollouts/so101-bowls-policy-rollouts_labels.csv")
     ap.add_argument("--latents", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
@@ -210,7 +211,7 @@ def main(argv: list[str] | None = None) -> int:
     from so101_harness.episodes import EpisodeDataset, download
     from so101_harness.w1_live import W1LiveMonitor
 
-    ds = EpisodeDataset(download(args.repo_id, with_videos=True))
+    ds = EpisodeDataset(args.root if args.root else download(args.repo_id, with_videos=True))
     o = pd.read_csv(args.outcomes)
     o = o[o.outcome.isin(["success", "failure"])]
     mon = W1LiveMonitor.from_checkpoint(args.w1)
