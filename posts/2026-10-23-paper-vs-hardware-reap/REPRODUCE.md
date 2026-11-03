@@ -16,7 +16,7 @@ Pins: lerobot-jetson container + transformers 5.19.0; rollouts @ `bad1c8ea`; W1 
 ```bash
 python scripts/run_reap_v2.py --help
 ```
-Status: inputs public since 2026-10-26; the token-free rerun is **not yet re-verified** here.
+Status: inputs public since 2026-10-26. L1 rerun in the W1 image (WS-090, 2026-11-03): `monitors_v2.json` equals `expected/` except one value of the zero-action control (`primary_50` / `risk_logistic:zero` / seed 0 AUROC 0.6875 vs 0.6845): **DIFF**, details in `rig/w1/L1_W1.md`.
 
 ## L2: rerun on hardware
 
