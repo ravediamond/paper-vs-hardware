@@ -18,6 +18,8 @@ Pins in `env/PINS.md`. Two steps:
 2. High level (CUDA GPU, ~25 min on an RTX 3090): `python scripts/hwm_train.py out results`, which writes
    `results/gate0.json` with the bars.
 
+L1 rerun in the W1 image (WS-090, 2026-11-03): step 1 byte-identical to the pins (**REPRO**); step 2 on an RTX 2080 Ti gives the same three verdicts (H1 and H2 not met, H3 met) with values within 0.003 of `expected/gate0.json` (**DIFF**, numerical); details in `rig/w1/L1_W1.md`.
+
 ## L2: rerun on hardware
 
 Not applicable: gate 0 is offline; gate 1 was not run (it needs H1).
