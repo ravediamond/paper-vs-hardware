@@ -13,7 +13,7 @@ Expected: every line `ok`, last line `L0 PASS`. Each line says whether the numbe
 
 Pins: W1 weights (public since 2026-10-26); data @ `4e5c6fda`.
 
-`python scripts/djepa_operator.py --help`. Status: inputs public since 2026-10-26 (W1 / W2′); the token-free rerun is **not yet re-verified** here.
+`python scripts/djepa_operator.py --help`. Status: inputs public since 2026-10-26 (W1 / W2′); L1 rerun 2026-11-05 on the Orin (W1 image, `rig/w1/L1_W1.md`): **REPRO** (451 of 452 values equal, only the timing differs).
 
 ## L2: rerun on hardware
 

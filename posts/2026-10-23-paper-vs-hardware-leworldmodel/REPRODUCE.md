@@ -19,7 +19,7 @@ hf download ravediamond/so101_bowls_all_trimmed --repo-type dataset --revision 4
 python scripts/eval_action_sensitivity.py --help   # K = 1..30 open loop vs copy-last
 python scripts/g1b_range.py --help                 # G1b top-1 of 8 candidates
 ```
-Status: inputs public since 2026-10-26; the token-free rerun is **not yet re-verified** here. Training (~$3.30 on vast) is documented in the source README, not rerun.
+Status: inputs public since 2026-10-26; L1 rerun 2026-11-05 on the Orin (W1 image, `rig/w1/L1_W1.md`): **DIFF** (G1b rounding, action sensitivity within 0.07, same decisions). Training (~$3.30 on vast) is documented in the source README, not rerun.
 
 ## L2: rerun on hardware
 
