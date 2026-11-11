@@ -1,0 +1,141 @@
+{
+ "H2": {
+  "frozen": {
+   "per_seed_pct": [
+    8.0,
+    6.0,
+    2.0
+   ],
+   "mean_pct": 5.33,
+   "n_per_seed": 50
+  },
+  "adajepa": {
+   "per_seed_pct": [
+    6.0,
+    10.0,
+    2.0
+   ],
+   "mean_pct": 6.0,
+   "n_per_seed": 50
+  },
+  "optta": {
+   "per_seed_pct": [
+    6.0,
+    2.0,
+    4.0
+   ],
+   "mean_pct": 4.0,
+   "n_per_seed": 50
+  },
+  "pess_s0_pct": 6.0,
+  "seed0_paired_bootstrap_ref": {
+   "adajepa_s0_pct": 6.0,
+   "optta_s0_pct": 6.0
+  },
+  "optta_minus_adajepa": {
+   "pp": -2.0,
+   "ci95": [
+    -6.67,
+    2.67
+   ],
+   "per_seed_pp": [
+    0.0,
+    -8.0,
+    2.0
+   ],
+   "preregistered": true
+  },
+  "adajepa_minus_frozen": {
+   "pp": 0.67,
+   "ci95": [
+    -4.0,
+    5.33
+   ],
+   "per_seed_pp": [
+    -2.0,
+    4.0,
+    0.0
+   ],
+   "preregistered": false
+  },
+  "optta_minus_frozen": {
+   "pp": -1.33,
+   "ci95": [
+    -6.0,
+    2.67
+   ],
+   "per_seed_pp": [
+    -2.0,
+    -4.0,
+    2.0
+   ],
+   "preregistered": false
+  },
+  "verdict": {
+   "bar_met": false,
+   "pess_below_adajepa_s0": false,
+   "word": "fail"
+  }
+ },
+ "H1": {
+  "frozen": {
+   "ms_per_seed": [
+    3596,
+    1437,
+    1432
+   ],
+   "adapt_ms_per_seed": [
+    0,
+    0,
+    0
+   ],
+   "ms_median_of_seeds": 1437,
+   "ratio_vs_paper": 12.2,
+   "paper_ms": 118
+  },
+  "adajepa": {
+   "ms_per_seed": [
+    1322,
+    1444,
+    1436
+   ],
+   "adapt_ms_per_seed": [
+    19,
+    19,
+    19
+   ],
+   "ms_median_of_seeds": 1436,
+   "ratio_vs_paper": 10.2,
+   "paper_ms": 141
+  },
+  "optta": {
+   "ms_per_seed": [
+    1783,
+    1783,
+    1777
+   ],
+   "adapt_ms_per_seed": [
+    360,
+    359,
+    358
+   ],
+   "ms_median_of_seeds": 1783,
+   "ratio_vs_paper": 10.9,
+   "paper_ms": 163
+  },
+  "optta30": {
+   "ms": 1536,
+   "adapt_ms": 121,
+   "ratio_vs_paper": 9.3,
+   "paper_ms": 165,
+   "n_episodes": 5
+  },
+  "optta_update_alone_ms": [
+   360,
+   359,
+   358
+  ],
+  "optta_update_over_1s": false,
+  "note": "25 W quiet profile, FP32 TF32 off, Orin NX, not the paper's RTX PRO 6000; frozen s0 CEM (3596 ms) is 2.5x the other 8 runs (about 1.4 s) and is flagged as an unexplained outlier (the pilot also saw 3.6 s); median of seeds used."
+ }
+}
