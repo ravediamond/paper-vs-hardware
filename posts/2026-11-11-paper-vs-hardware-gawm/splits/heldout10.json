@@ -1,0 +1,1 @@
+{"episodes": [172, 173, 174, 175, 176, 177, 178, 179, 180, 181], "n": 10, "rule": "train=0..171, heldout=172..181; quarter = numpy default_rng(0).choice(172, 43, replace=False), sorted"}

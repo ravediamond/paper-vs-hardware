@@ -1,0 +1,16 @@
+{
+ "full_ms_median_p90_min": [
+  42.998304503271356,
+  43.66047518560663,
+  42.59104299126193
+ ],
+ "encoder_ms_median_p90_min": [
+  27.901349996682256,
+  28.063922317232937,
+  27.61519595514983
+ ],
+ "rest_ms_median": 15.0969545065891,
+ "n": 200,
+ "batch": 1,
+ "precision": "as trained: frozen encoder bf16 autocast, trainable core fp32 (not FP16)"
+}
