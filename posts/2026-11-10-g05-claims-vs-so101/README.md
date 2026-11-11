@@ -9,7 +9,7 @@ What is here:
 - `scripts/s2_swap_probe.py`: its `frames` subcommand builds the frames file (`outputs/s2/frames.npz`).
 - `expected/a2_latency.json`: the saved result (System 2 median 8,727.9 ms, System 1 median 6,222.6 ms, MAXN_SUPER, 50 calls).
 
-The script keeps only the summary numbers, not the 55 individual call times per system, so none are stored.
+The script keeps only the summary numbers, not the 55 individual call times, so none are stored.
 
 Run (container `lerobot-jetson:0.7.0-jp6.2`, LeRobot `main` at `d490e472a5d1a207cfe0255caaaf74b6d66e4656` on `PYTHONPATH`):
 
