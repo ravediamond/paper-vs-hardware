@@ -1,0 +1,105 @@
+{
+ "protocol": "projects/jepa-distill-edge/D1_PROTOCOL.md",
+ "s30_both_k5_ridge": {
+  "W1": {
+   "arm": {
+    "i": -20.10614585876465,
+    "ii": -18.92635154724121,
+    "iii": -19.673839569091797,
+    "iv": 0.9323669672012329,
+    "v": 0.939287543296814
+   },
+   "term": 0.7474880218505859,
+   "check_v_minus_iv": 0.006920576095581055
+  },
+  "W1_random_init": {
+   "arm": {
+    "i": -19.029870986938477,
+    "ii": -17.780010223388672,
+    "iii": -18.582393646240234
+   },
+   "term": 0.8023834228515625
+  },
+  "D1_best": {
+   "arm": {
+    "i": -10.200214385986328,
+    "ii": -8.71690559387207,
+    "iii": -10.182345390319824
+   },
+   "term": 1.465439796447754
+  },
+  "D1_final": {
+   "arm": {
+    "i": -10.442328453063965,
+    "ii": -9.129060745239258,
+    "iii": -10.386598587036133
+   },
+   "term": 1.257537841796875
+  },
+  "pooled_pairs": {
+   "D1_best_minus_W1": {
+    "point": 0.717951774597168,
+    "ci95": [
+     0.20289958715438844,
+     1.2519374132156371
+    ]
+   },
+   "D1_best_minus_W1_random_init": {
+    "point": 0.6630563735961914,
+    "ci95": [
+     0.016271924972534182,
+     1.2655664443969727
+    ]
+   },
+   "D1_final_minus_W1": {
+    "point": 0.5100498199462891,
+    "ci95": [
+     -0.01285930871963501,
+     1.060383558273315
+    ]
+   },
+   "D1_final_minus_W1_random_init": {
+    "point": 0.4551544189453125,
+    "ci95": [
+     -0.04796309471130371,
+     0.9354558229446407
+    ]
+   },
+   "W1_minus_W1_random_init": {
+    "point": -0.05489540100097656,
+    "ci95": [
+     -0.7480153799057007,
+     0.6523237228393555
+    ]
+   }
+  },
+  "val_episodes": 25
+ },
+ "g1b": "not measured (D1_PROTOCOL \u00a77 G3)",
+ "decision": {
+  "decision_row": "D1_best",
+  "beats_W1": {
+   "best": true,
+   "final": false
+  },
+  "beats_random_init_W1": {
+   "best": true,
+   "final": false
+  },
+  "B1": "decided 2026-11-08 from results/d1/b1.json (random-teacher student rt.json): not met. D1_best beats W1 (lower bound > 0) but does not beat the random-teacher student RT_best on the section 30 term: D1_best - RT_best (0.133, [-0.294, 0.491]).",
+  "B1_met": false,
+  "b1_file": "results/d1/b1.json"
+ },
+ "b2": {
+  "bar": "latency <= 2 x W1",
+  "W1_fp32_ms": 22.21811000345042,
+  "D1_student_fp32_ms": 22.214733999135206,
+  "ratio_fp32": 0.9998480516878038,
+  "W1_fp16_ms": 18.21750050294213,
+  "D1_student_fp16_ms": 18.17892300459789,
+  "ratio_fp16": 0.9978823934524932,
+  "verdict": "met",
+  "power_profile": "25W quiet (not MAXN_SUPER)",
+  "note": "same graph as W1 (arch_check.json), random-init encode path rebuilt with transformers ViTModel; 1 frame x 2 views, GPU, details results/d1/b2.json, code d1_b2.py"
+ }
+}

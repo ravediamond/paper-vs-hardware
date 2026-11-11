@@ -1,0 +1,38 @@
+{
+ "label": "exploratory",
+ "statistic": "pooled \u00a730 term, cell both, k = 5, ridge, teleop val; paired episode bootstrap 2,000, seed 0",
+ "protocol": "projects/jepa-distill-edge/GAP5_PROTOCOL.md",
+ "val_episodes": 25,
+ "terms": {
+  "VJEPA2": 1.6509523391723633,
+  "W1": 0.7475566864013672,
+  "W1_random_init": 0.7974472045898438
+ },
+ "pairs": {
+  "VJEPA2_minus_W1": {
+   "point": 0.9033956527709961,
+   "ci95": [
+    0.44542977809906004,
+    1.3494193792343137
+   ]
+  },
+  "VJEPA2_minus_W1_random_init": {
+   "point": 0.8535051345825195,
+   "ci95": [
+    0.14867396354675294,
+    1.5304842710494986
+   ]
+  },
+  "W1_minus_W1_random_init": {
+   "point": -0.04989051818847656,
+   "ci95": [
+    -0.740316104888916,
+    0.6558754920959472
+   ]
+  }
+ },
+ "orin_recompute_from_preds_matches": true,
+ "W1_check_v_minus_iv": 0.00691753625869751,
+ "owner_rule": "T - random CI entirely > 0 -> queue D1 for the owner's go; otherwise not proven above the random-encoder floor",
+ "T_minus_random_ci_above_0": true
+}
