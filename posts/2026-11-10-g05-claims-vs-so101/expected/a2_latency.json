@@ -1,0 +1,23 @@
+{
+ "policy": "lerobot/g05_so101",
+ "revision": "59119185170fa3e08a43a508d8255a7b6d96ecc3",
+ "power": "NV Power Mode: MAXN_SUPER",
+ "calls": 50,
+ "warmup": 5,
+ "label": "MAXN_SUPER",
+ "system2": {
+  "p50_ms": 8727.880715494393,
+  "p90_ms": 9939.159900709637,
+  "min_ms": 7618.608946009772,
+  "max_ms": 24130.158982006833,
+  "peak_torch_mb": 6415.7333984375
+ },
+ "system1": {
+  "p50_ms": 6222.576783009572,
+  "p90_ms": 6675.376841495745,
+  "min_ms": 5795.826471992768,
+  "max_ms": 6844.946750003146,
+  "peak_torch_mb": 6416.2646484375
+ },
+ "verdict_A2": "fail: arm gates dropped"
+}
