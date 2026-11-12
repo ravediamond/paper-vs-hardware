@@ -1,0 +1,316 @@
+{
+ "checks": {
+  "E_top_s3072": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.8789224624633789,
+    "eff_rank_frac": 0.08381122350692749,
+    "pass_std": true,
+    "pass_rank": false,
+    "all_pass_config_incl_idm_arm": false
+   },
+   "void": true
+  },
+  "E_top_s3073": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.870990514755249,
+    "eff_rank_frac": 0.08236133555571239,
+    "pass_std": true,
+    "pass_rank": false,
+    "all_pass_config_incl_idm_arm": false
+   },
+   "void": true
+  },
+  "E_wrist_s3072": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.9360290765762329,
+    "eff_rank_frac": 0.13875414927800497,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": true
+   },
+   "void": false
+  },
+  "E_wrist_s3073": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.9430984258651733,
+    "eff_rank_frac": 0.13916722933451334,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": true
+   },
+   "void": false
+  },
+  "P_top_s3072": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.8836650848388672,
+    "eff_rank_frac": 0.1290818154811859,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": true
+   },
+   "void": false
+  },
+  "P_top_s3073": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.8792645931243896,
+    "eff_rank_frac": 0.12908018628756204,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": true
+   },
+   "void": false
+  },
+  "P_wrist_s3072": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.9522531032562256,
+    "eff_rank_frac": 0.1650355656941732,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": true
+   },
+   "void": false
+  },
+  "P_wrist_s3073": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.9503898024559021,
+    "eff_rank_frac": 0.16738094886144003,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": true
+   },
+   "void": false
+  },
+  "E_crop1": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.9411031603813171,
+    "eff_rank_frac": 0.14880544940630594,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": false
+   },
+   "void": false
+  },
+  "E_crop2": {
+   "shape": [
+    1417,
+    192
+   ],
+   "frames_match_reference": true,
+   "finite": true,
+   "collapse": {
+    "emb_std_mean": 0.9409621953964233,
+    "eff_rank_frac": 0.1477447251478831,
+    "pass_std": true,
+    "pass_rank": true,
+    "all_pass_config_incl_idm_arm": false
+   },
+   "void": false
+  },
+  "F_dino_top": {
+   "frames_match_reference": true,
+   "shape": [
+    1417,
+    384
+   ]
+  },
+  "F_dino_wrist": {
+   "frames_match_reference": true,
+   "shape": [
+    1417,
+    384
+   ]
+  }
+ },
+ "checks_ok": true,
+ "N_frames_5fps": 1417,
+ "N_eligible": 1367,
+ "n_episodes": 25,
+ "chance_10nn": 0.00762009266032675,
+ "void_models": [
+  "E_top_s3072",
+  "E_top_s3073"
+ ],
+ "b3_excluded_episodes_area0_zero": [],
+ "point": {
+  "a1_crop": 0.514484272128749,
+  "a2_top_topprime": 0.2186539868324799,
+  "a3_top_wrist": 0.09882955376737383,
+  "a4_Ptop_Pwrist": 0.25479151426481345,
+  "a5_fdino": 0.07629846378931968,
+  "B1_a3_minus_a1": -0.4156547183613752,
+  "B2_a3_minus_a4": -0.1559619604974396,
+  "O5_a2_minus_a1": -0.2958302852962691,
+  "b3_bin0_mean": 0.10606060606060608,
+  "b3_bin0_n": 99,
+  "b3_bin1_mean": 0.14892857142857144,
+  "b3_bin1_n": 140,
+  "b3_bin2_mean": 0.12650602409638556,
+  "b3_bin2_n": 83,
+  "b3_bin3_mean": 0.08923444976076557,
+  "b3_bin3_n": 1045,
+  "b3_spearman": -0.09915409085471961
+ },
+ "ci95": {
+  "a1_crop": [
+   0.3542380912378392,
+   0.5163572756737688
+  ],
+  "a2_top_topprime": [
+   0.07380710820866837,
+   0.2585368139101181
+  ],
+  "a3_top_wrist": [
+   0.04091749884774927,
+   0.11547665093978333
+  ],
+  "a4_Ptop_Pwrist": [
+   0.15220285387509813,
+   0.286240844114554
+  ],
+  "a5_fdino": [
+   0.050460113604970054,
+   0.0948342848471885
+  ],
+  "B1_a3_minus_a1": [
+   -0.4362682118858454,
+   -0.2867878863165557
+  ],
+  "B2_a3_minus_a4": [
+   -0.2004052652531009,
+   -0.09191789664850589
+  ],
+  "O5_a2_minus_a1": [
+   -0.37249684696113816,
+   -0.1901293860867825
+  ],
+  "b3_bin0_mean": [
+   0.027715632992327367,
+   0.15600624999999999
+  ],
+  "b3_bin0_n": [
+   58.975,
+   144.0
+  ],
+  "b3_bin1_mean": [
+   0.03955501388362993,
+   0.1911783088235294
+  ],
+  "b3_bin1_n": [
+   97.975,
+   186.0
+  ],
+  "b3_bin2_mean": [
+   0.021161764705882356,
+   0.1846705357142857
+  ],
+  "b3_bin2_n": [
+   55.0,
+   112.0
+  ],
+  "b3_bin3_mean": [
+   0.036298520900872114,
+   0.10625583251473475
+  ],
+  "b3_bin3_n": [
+   958.975,
+   1140.0
+  ],
+  "b3_spearman": [
+   -0.21255127641087693,
+   0.059633320131783754
+  ]
+ },
+ "n_boot": 2000,
+ "O5_anchors_separate": false,
+ "verdict": {
+  "B1": "void (\u00a76.3 / O8: E_top_s3072, E_top_s3073 failed the collapse check)",
+  "B2": "void (\u00a76.3 / O8: E_top_s3072, E_top_s3073)",
+  "B1_ci_only_exploratory": "fail",
+  "B2_ci_only_exploratory": "fail",
+  "O5_exploratory": "fail",
+  "voided_models": [
+   "E_top_s3072",
+   "E_top_s3073"
+  ],
+  "note": "numbers of a void model are exploratory: the model failed a pre-registered check"
+ },
+ "B3": {
+  "descriptive": true,
+  "bins_n": [
+   99,
+   140,
+   83,
+   1045
+  ],
+  "evaluable": true,
+  "spearman": -0.09915409085471961,
+  "spearman_ci95": [
+   -0.21255127641087693,
+   0.059633320131783754
+  ],
+  "bin_means": [
+   0.10606060606060608,
+   0.14892857142857144,
+   0.12650602409638556,
+   0.08923444976076557
+  ]
+ },
+ "procrustes_exploratory": {
+  "a3_E_top_E_wrist": 1.3394976258277893,
+  "a4_P_top_P_wrist": 1.3068663477897644
+ }
+}
